@@ -1,4 +1,3 @@
-# Introduction #
 JPF started as a software model checker, but nowadays, JPF is a runtime system with many different execution modes and extensions which go beyond model checking. All the various modes of JPF, while serving different purposes, used to verify Java programs by
 
  * detecting and explaining defects
