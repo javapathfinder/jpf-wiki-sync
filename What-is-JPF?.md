@@ -1,5 +1,3 @@
-# What is JPF? #
-
 That depends on how you configure it. 
 First and foremost, there is no single, monolithic JPF - it is a runtime configured combination of different components. The project *jpf-core* is the essential component that constitutes the core structure of JPF. 
 Here we explain what *jpf-core* is.
@@ -8,7 +6,7 @@ We therefore restrict ourselves here to what the *jpf core* is, but keep in mind
 
 ## The Core : a VM that supports Model Checking ##
 
-![Figure 1: High level view of JPF](../graphics/jpf-basic.svg){align=center width=400}
+![Figure 1: High level view of JPF](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/jpf-basic.svg){align=center width=400}
 
 The JPF core is a Virtual Machine (VM) for Java™ bytecode. That means that JPF is a program which executes the system under test (SUT). The VM of JPF is able to handle bytecode instructions that are created by a standard Java compiler. While execution semantics of Java bytecodes are clearly defined in [Sun's Java virtual machine specifications](http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html/), we have little hardwired semantics in JPF - the VM instruction set is represented by a set of classes that can be replaced. 
 JPF is a special VM. JPF itself is written in Java, so it is not as fast as your normal Java. That implies  that JPF is VM which is running on top of another VM. 
