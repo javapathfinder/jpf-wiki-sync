@@ -14,14 +14,14 @@ This page is our primary source of documentation, and is divided into the follow
     
     ---
 
-  * [How to obtain and install JPF](install/index) -- everything to get it running on your machine
-    - [System requirements](install/requirements)
-    - Downloading [binary snapshots](install/snapshot) and [sources](install/repositories)
-    - [Creating a site properties file](install/site-properties)
-    - [Building, testing, and running](install/build)
+  * [How to obtain and install JPF](install/How-to-install-JPF) -- everything to get it running on your machine
+    - [System requirements](System-requirements)
+    - Downloading [binary snapshots](Downloading-binary-snapshots) and [sources](Downloading-sources)
+    - [Creating a site properties file](Creating-site-properties-file)
+    - [Building, testing, and running](Build,-Test,-Run)
     - Installing the JPF plugins
-         - [Eclipse](install/eclipse-plugin) 
-         - [NetBeans](install/netbeans-plugin)
+         - [Eclipse](Eclipse-Plugin) 
+         - [NetBeans](NetBeans-Plugin)
     
     ---
          
