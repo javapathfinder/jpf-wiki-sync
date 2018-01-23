@@ -56,9 +56,9 @@ This page is our primary source of documentation, and is divided into the follow
         
     ---
         
-  * [JPF core project](jpf-core/index) -- description and link to jpf-core
+  * [JPF core project](JPF-core) -- description and link to jpf-core
     
     ---
       
-  * [Related research and publications](papers/index)    
+  * [Related research and publications](Related-publications)    
 
