@@ -14,7 +14,7 @@ This page is our primary source of documentation, and is divided into the follow
     
     ---
 
-  * [How to obtain and install JPF](install/How-to-install-JPF) -- everything to get it running on your machine
+  * [How to obtain and install JPF](How-to-install-JPF) -- everything to get it running on your machine
     - [System requirements](System-requirements)
     - Downloading [binary snapshots](Downloading-binary-snapshots) and [sources](Downloading-sources)
     - [Creating a site properties file](Creating-site-properties-file)
