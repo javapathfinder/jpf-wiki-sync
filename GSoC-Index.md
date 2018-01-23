@@ -18,19 +18,18 @@ You can find existing project ideas [here](wiki:projects/projects). If you are i
 
 ## Timeline ##
 
-| :------------- | ------------- |
-| 01/04 | Mentoring organizations can begin submitting applications to Google |
-| 01/23 | Mentoring organization application deadline |
-| 02/12 | Announcement of accepted mentoring organizations |
-| 03/12 - 03/27 | Student application period |
-| 04/23 | Announcement of accepted students |
-| 04/23 - 05/13 | Community Bonding Period |
-| 05/14 | Coding officially begins |
-| 06/15 | Phase 1 Evaluation deadline |
-| 07/13 | Phase 2 Evaluation deadline |
-| 08/06 - 08/14 | Students submit their final work product |
-| 08/21 | Final Evaluation deadline |
-| 08/22 | Final results of Google Summer of Code 2017 announced |
+* | 01/04 | Mentoring organizations can begin submitting applications to Google |
+* | 01/23 | Mentoring organization application deadline |
+* | 02/12 | Announcement of accepted mentoring organizations |
+* | 03/12 - 03/27 | Student application period |
+* | 04/23 | Announcement of accepted students |
+* | 04/23 - 05/13 | Community Bonding Period |
+* | 05/14 | Coding officially begins |
+* | 06/15 | Phase 1 Evaluation deadline |
+* | 07/13 | Phase 2 Evaluation deadline |
+* | 08/06 - 08/14 | Students submit their final work product |
+* | 08/21 | Final Evaluation deadline |
+* | 08/22 | Final results of Google Summer of Code 2017 announced |
 
 ## Required Skills ##
 
