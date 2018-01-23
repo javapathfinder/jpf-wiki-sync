@@ -35,24 +35,24 @@ This page is our primary source of documentation, and is divided into the follow
     
     ---
         
-  * [Developer guide](devel/index) -- what's under the hood
-    * [Top-level design](devel/design)
+  * [Developer guide](Developer-guide) -- what's under the hood
+    * [Top-level design](Search-Strategies)
     * Key mechanisms, such as 
-        - [ChoiceGenerators](devel/choicegenerator)
-        - [Partial order reduction](devel/partial_order_reduction)
-        - [Slot and field attributes](devel/attributes)
+        - [ChoiceGenerators](ChoiceGenerators)
+        - [Partial order reduction](Partial-Order-Reduction)
+        - [Slot and field attributes](Slot-and-field-attributes)
     * Extension mechanisms, such as
-        - [Listeners](devel/listener)
-        - [Search Strategies](devel/design)
-        - [Model Java Interface (MJI)](devel/mji)
-        - [Bytecode Factories](devel/bytecode_factory)
+        - [Listeners](Listeners)
+        - [Search Strategies](Search-Strategies)
+        - [Model Java Interface (MJI)](Model-Java-Interface)
+        - [Bytecode Factories](Bytecode-Factories)
     * Common utility infrastructures, such as
-        - [Logging system](devel/logging)
-        - [Reporting system](devel/report)
-    * [Running JPF from within your application](devel/embedded)
-    * [Writing JPF tests](devel/jpf_tests)
-    * [Coding conventions](devel/coding_conventions)
-    * [Hosting an Eclipse plugin update site](devel/eclipse_plugin_update) 
+        - [Logging system](Logging-system)
+        - [Reporting system](Reporting-system)
+    * [Running JPF from within your application](Running-JPF-from-application)
+    * [Writing JPF tests](Writing-JPF-tests)
+    * [Coding conventions](Coding-Convention)
+    * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site) 
         
     ---
         
