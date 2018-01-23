@@ -25,13 +25,13 @@ This page is our primary source of documentation, and is divided into the follow
     
     ---
          
-  * [How to use JPF](user/index) -- the user manual for JPF    
-    - [Different applications of JPF](user/application_types)
-    - [JPF's runtime components](user/components)
-    - [Starting JPF](user/run)
-    - [Configuring JPF](user/config)
-    - [Understanding JPF output](user/output)
-    - [Using JPF's Verify API in the system under test](user/api)
+  * [How to use JPF](How-to-use-JPF) -- the user manual for JPF    
+    - [Different applications of JPF](Different-applications-of-JPF)
+    - [JPF's runtime components](Runtime-components-of-JPF)
+    - [Starting JPF](Starting-JPF)
+    - [Configuring JPF](Configuring-JPF)
+    - [Understanding JPF output](Understanding-JPF-output)
+    - [Using JPF's Verify API in the system under test](Verify-API-of-JPF)
     
     ---
         
