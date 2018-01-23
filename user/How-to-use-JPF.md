@@ -4,7 +4,7 @@ This section is where the real fun starts. Here you learn about
 
   - [Different applications of JPF](Different-applications-of-JPF)
   - [JPF's runtime components](Runtime-components-of-JPF)
-  - [Starting JPF](Starting-JPF)
+  - [Running JPF](Starting-JPF)
   - [Configuring JPF](Configuring-JPF)
   - [Understanding JPF output](Understanding-JPF-output)
   - [Using JPF's Verify API in the system under test](Verify-API-of-JPF)
