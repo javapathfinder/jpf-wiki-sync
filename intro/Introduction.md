@@ -11,8 +11,8 @@ Here is the outline of this section:
 
   * [What is JPF?](What-is-JPF)
   * [Testing vs. Model Checking](Testing-vs.-Model-Checking)
-         * [Random value example](Random-Example)
-         * [Data race example](Race-Example)
-    * [JPF key features](Classification)
+    - [Random value example](Random-Example)
+    - [Data race example](Race-Example)
+  * [JPF key features](Classification)
     
 
