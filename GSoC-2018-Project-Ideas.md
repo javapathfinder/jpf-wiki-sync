@@ -78,7 +78,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 ### Projects Descriptions
 
 
-#### Upgrading the Build System from Ant to sbt
+#### Upgrading the Build System
 The goal of this project is to improve the JPF build system. Currently, JPF uses Ant, and this project includes changing the JPF build system to [sbt](http://www.scala-sbt.org/). This also includes bringing the configuration mechanism of JPF under sbt. Currently, the configuration mechanism is part of the core of JPF, [jpf-core](https://github.com/javapathfinder/jpf-core). The goal is to make this functionally as part of the build system.
 
 #### Support Java 9 for jpf-core
