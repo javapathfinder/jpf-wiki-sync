@@ -5,12 +5,12 @@ This page is our primary source of documentation, and is divided into the follow
 
    ---
 
-  * [Introduction](intro_index) -- a brief introduction into model checking and JPF
+  * [Introduction](Introduction) -- a brief introduction into model checking and JPF
     * [What is JPF?](What-is-JPF)
-    * [Testing vs. Model Checking](testing_vs_model_checking)
-         - [Random value example](random_example)
-         - [Data race example](race_example)
-    * [JPF key features](classification)
+    * [Testing vs. Model Checking](Testing-vs.-Model-Checking)
+         - [Random value example](Random-Example)
+         - [Data race example](Race-Example)
+    * [JPF key features](Classification)
     
     ---
 
