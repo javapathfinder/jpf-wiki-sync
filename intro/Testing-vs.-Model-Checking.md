@@ -14,7 +14,7 @@ To illustrate this, look at the [Random value example](random_example), which sh
 
 With the random example, we can at least see the choices in our program. Consider a concurrent program, such as [Data race example](race_example) - do you know where the operating system switches between threads? All we know is that different scheduling sequences can lead to different program behavior (e.g. if there are data races), but there is little we can do in our tests to force scheduling variation. There are program/test spec combinations which are "untestable". Being a virtual machine, our software model checker doesn't suffer the same fate - it has complete control over all threads of our program, and can execute all scheduling combinations.
 
-![Figure 3: Threads interleaving](../graphics/interleavings.svg){align=center width=550}
+![Figure 3: Threads interleaving](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/interleavings.svg){align=center width=550}
 
 That is the theory. In reality "all possible" can be a pretty large number - too large for existing computing resources or our patience. Just assume the number of different scheduling sequences of a program consisting of N threads P,,1,, .. P,,N,, that each have n,,i,, atomic instruction sequences.
 
