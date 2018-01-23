@@ -6,7 +6,7 @@ This page is our primary source of documentation, and is divided into the follow
    ---
 
   * [Introduction](intro_index) -- a brief introduction into model checking and JPF
-    * [What is JPF?](what_is_jpf)
+    * [What is JPF?](What-is-JPF)
     * [Testing vs. Model Checking](testing_vs_model_checking)
          - [Random value example](random_example)
          - [Data race example](race_example)
