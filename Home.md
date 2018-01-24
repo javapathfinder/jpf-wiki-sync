@@ -1,3 +1,5 @@
+# Java Pathfinder 
+This is the main page for Java™ Pathfinder (JPF). JPF is an extensible software model checking framework for Java™ bytecode programs. The system was developed at the [NASA Ames Research Center](http://arc.nasa.gov), open sourced in 2005, and is freely available on this server under the [Apache-2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
 #### Latest JPF News
 *  23/01/2018 The JPF team is applying to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2018. To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2018) page.
@@ -7,10 +9,6 @@
 *  06/01/2016 [JPF Workshop 2016](http://jpf.byu.edu/jpf-workshop-2016/) will be co-located with [FSE 2016](http://www.cs.ucdavis.edu/fse2016/) in Seattle, WA, on November 18, 2016. Please consider submitting a paper.
 *  04/22/2016 JPF student proposals accepted for GSoC 2016 [announced](https://summerofcode.withgoogle.com/organizations/5791763432210432/#projects) - Congratulations to the students!
 *  02/29/2016 JPF got accepted for [GSoC 2016](https://summerofcode.withgoogle.com/organizations/5791763432210432/). Please visit our [ideas page](https://jpf.byu.edu/gsoc16/projects/projects.html), and let us know if you would like to propose a project.
-
-
-This is the main page for Java™ Pathfinder (JPF). JPF is an extensible software model checking framework for Java™ bytecode programs. The system was developed at the [NASA Ames Research Center](http://arc.nasa.gov), open sourced in 2005, and is freely available on this server under the [Apache-2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
-
 
 This page is our primary source of documentation, and is divided into the following sections.
 
