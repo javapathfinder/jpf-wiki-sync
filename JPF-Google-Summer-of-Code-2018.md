@@ -37,7 +37,7 @@ JPF is written in Java, and it analyzes Java bytecode, so the minimum skill requ
 
 JPF is a software verification tool. It is a customizable virtual machine that enables the development of various verification algorithms. It will be to your advantage if you are familiar with formal methods, software testing, or model checking. However, JPF is where research meets development, so for many projects it is not a show stopper. We are looking for students who are highly motivated, bright, willing to learn, and love to code.
 
-JPF is a fairly complex system. The first step to start is to get JPF [running](Starting-JPF) and [configured](Configuring-JPF). This in itself can be a steep learning curve. It also helps if you already know what [listeners](Listeners), [bytecode factories](Bytecode-Factories) and [native peers](Model-Java-Interface) are, but no worries - the mentors will help you there. One thing you have to look at, but what is now surprisingly simple is how to [set up JPF projects](create_project).
+JPF is a fairly complex system. The first step to start is to get JPF [running](Running-JPF) and [configured](Configuring-JPF). This in itself can be a steep learning curve. It also helps if you already know what [listeners](Listeners), [bytecode factories](Bytecode-Factories) and [native peers](Model-Java-Interface) are, but no worries - the mentors will help you there. One thing you have to look at, but what is now surprisingly simple is how to [set up JPF projects](create_project).
 
 ## Applying for GSoC ##
 

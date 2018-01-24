@@ -1,4 +1,3 @@
-# The Verify API #
 Although the primary purpose of JPF is to verify applications that are not JPF dependent, it can also be used to check programs that are explicitly written to execute under JPF. There are two ways to do this
 
  * use of jpf annotations such as `@gov.nasa.jpf.annotation.JPFConfig` and `@gov.nasa.jpf.annotation.FilterField`

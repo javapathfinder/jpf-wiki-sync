@@ -1,5 +1,3 @@
-# Understanding JPF Output #
-
 There are three different ways a JPF run can produce output, each of them with a different purpose, but all controlled by the [general JPF configuration mechanism](config):
 
   1. System under test output - what is the SUT doing?\

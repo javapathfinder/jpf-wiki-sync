@@ -1,4 +1,3 @@
-# Coding Conventions #
 JPF is an open system. In order to keep the source format reasonably consistent, we strive to keep the following minimal set of conventions
 
   * Two space indentation (no tabs)

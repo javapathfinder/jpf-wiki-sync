@@ -1,5 +1,3 @@
-## Hosting an Eclipse plugin update site ##
-
 The first step is to create the local version of the update site.  For example, chapter 18, section 3 of "Eclipse Plug-ins, 3rd edition" will explain how to do this.
   
 > **Tip:** do not attempt to put the update site in the code repository.  

@@ -1,5 +1,3 @@
-# Building, Testing, and Running #
-
 If you downloaded binary snapshots, you don't have anything to build (except of creating/updating you [site.properties](./site-properties) file). 
 
 ## Building JPF ##

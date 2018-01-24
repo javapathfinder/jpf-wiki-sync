@@ -1,5 +1,3 @@
-# Configuring JPF #
-
 JPF configuration can be intimidating. It is worth to think about why we need such a heavy mechanism before we dive into its details. Little in JPF is hardwired. Since JPF is such an open system that can be parameterized and extended in a variety of ways, there is a strong need for a general, uniform configuration mechanism. The challenge for this mechanism is that many of the parts which are subject to parameterization are configured themselves (i.e. options for optional JPF components like listeners). This effectively prohibits the use of a configuration object that contains concrete fields to hold configuration data, since this class would be a central "design bottleneck" for a potentially open number of JPF components like Searches, Instruction sets and Listeners.
 
 The goal is to have a configuration object that

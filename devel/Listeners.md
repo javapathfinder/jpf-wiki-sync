@@ -1,4 +1,3 @@
-# Listeners #
 Listeners are perhaps the most important extension mechanism of JPF. They provide a way to observe, interact with and extend JPF execution with your own classes. Since listeners are dynamically configured at runtime, they do not require any modification to the JPF core. Listeners are executed at the same level like JPF, so there is hardly any limit of what you can do with them.
 
 ![Figure 1: JPF Listeners](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/listener-overview.svg){align=center width=800}

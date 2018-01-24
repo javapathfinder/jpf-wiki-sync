@@ -1,5 +1,3 @@
-# Creating  a site.properties file #
-
 The site.properties file tells JPF at startup time where to look for installed projects, so that it can add classpaths accordingly without you having to type off your fingers. It is a normal [Java properties](http://en.wikipedia.org/wiki/.properties) file, which supports a few additional things like key expansion.
 
 While you can tell JPF at startup time where to look for `site.properties`, we recommend using the default location, which is **`<user.home>/.jpf/site.properties`**. If you don't know what value the standard Java system property `user.home` has on your machine, please run the attached Java program. On Unix systems, this is your home directory.

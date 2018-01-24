@@ -1,4 +1,3 @@
-# Running JPF #
 There are five general ways to run JPF, depending on your execution environment (command prompt or IDE) and desired level of configuration support. This page has to cover quite some ground, so bear with us
 
  1. [from a command prompt (operating system shell)](#command-line)

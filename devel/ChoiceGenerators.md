@@ -1,5 +1,3 @@
-# ChoiceGenerators #
-
 The goal of every model checker is to check if certain properties hold in states of the system under test. The way that choices are computed is a fundamental part of model checking, since they determine which states are checked. We refer to the mechanism used by JPF to capture choices as ChoiceGenerators.
 
 ChoiceGenerators can be approached from an application perspective, or from the JPF implementation perspective. In this section, we cover both perspectives.

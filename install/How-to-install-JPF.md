@@ -1,5 +1,3 @@
-# How to Obtain and Install JPF #
-
 The JPF core and most of its extensions are pure Java applications, so they are not many platform requirements other than sufficient memory and a reasonably fast machine. Use of IDEs is optional, but most JPF modules include out-of-the-box configuration files for both Eclipse and Netbeans.
 
 You can obtain JPF sources from the [Mercurial](http://mercurial.selenic.com/wiki/) repositories, but it is not recommended to clone this directory itself (you most likely would get old sub-repository revisions). You need at least the core of JPF, [jpf-core](../jpf-core/index) which can be built with [Ant](http://ant.apache.org) from the command line, or directly opened as a [NetBeans](http://www.netbeans.org) or [Eclipse](http://www.eclipse.org) project.

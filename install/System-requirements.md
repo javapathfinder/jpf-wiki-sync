@@ -1,5 +1,3 @@
-# System Requirements #
-
 ## Java ##
 Most of the JPF components, including the [jpf-core](../jpf-core/index), are pure Java applications. The minimal version is Java SE 8 (if you have to use JDK 1.7 or JDK 1.6 you have to check out the 'java-7' and 'java-1.6' branches of our repository, respectively), we generally advise to use the latest stable Java version that is available for your platform. You can find out about your java by running the following statement from the command line.
 
