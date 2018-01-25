@@ -1,5 +1,3 @@
-# JPF and Google Summer of Code 2010
-
 First things first - **we are go for GSoC 2010**, JPF has been accepted by Google as a mentoring organization. If you are new to the [<span class="icon">​</span>Google Summer of Code (SoC) program](http://socghop.appspot.com/), this is an annual event where Google sponsors students to work on selected open source projects, each student being supported by an experienced mentor. Projects have about 3 month scope, carry a relatively low administrative overhead, can be done remotely, and are generally fun. You also get a cool t-shirt, so what's not to like.
 
 A word of caution though - JPF seems to stick. Although spread over the whole world, many of the original contributors are still around (and actually mentors). Several students of our last SoC continue to work on JPF, got subsequent internships and even jobs based on that work. We fully expect you to fall for the CS micro-cosmos that is JPF.
