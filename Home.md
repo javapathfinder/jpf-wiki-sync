@@ -1,6 +1,10 @@
 # <img src="https://ti.arc.nasa.gov/m/events/jpf-workshop-2012/swissarmy.png" width="84" height="84"> Java Pathfinder 
 This is the main page for Java™ Pathfinder (JPF). JPF is an extensible software model checking framework for Java™ bytecode programs. The system was developed at the [NASA Ames Research Center](http://arc.nasa.gov), open sourced in 2005, and is freely available on this server under the [Apache-2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
+<details close>
+<summary>...</summary>
+</details>
+
 #### Latest JPF News
 *  23/01/2018 The JPF team is applying to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2018. To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2018) page.
 *  05/01/2017 JPF Workshop 2017 will be co-located with [ASE 2017](http://ase2017.org) in Champaign, IL. Please consider submitting a paper.
@@ -15,24 +19,46 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 *  06/20/2013 [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013/) will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.  
 *  05/27/2013 JPF student proposals accepted for GSoC 2013 [announced](http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder) - Congratulations to the students! 
 *  04/08/2013 The show is on - JPF got accepted for GSoC 2013. Please visit the [GSoC project ideas page](https://sites.google.com/site/jpfgsoc2013/) or let us know about your own project suggestions. 
-*  06/07/2012 [JPF Workshop 2012](http://ti.arc.nasa.gov/events/jpf-workshop-2012/) is co-located with [FSE 2012](http://www.sigsoft.org/fse20/), November 11 and 12. We solicit submissions for the [JPF Workshop 2012](http://ti.arc.nasa.gov/events/jpf-workshop-2012/). 
-*  04/23/2012 JPF student proposals accepted for GSoC 2012 [announced](http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder) - Congratulations to the students! 
-*  03/26/2012 GSoC Student Applications period is open until April 6. Please submit your proposal at [JPF GSoC page](http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder). 
-*  03/16/2012 JPF has been accepted as mentoring org. for GSoC 2012. Visit [our ideas page](JPF-Google-Summer-of-Code-2012). 
-*  10/14/2011 A hands-on JPF tutorial will be held on Nov 7th at Lawrence, Kansas co-located with [ASE 2011](http://www.continuinged.ku.edu/programs/ase). 
-*  05/26/2011 [JPF Workshop](http://ti.arc.nasa.gov/events/jpf-workshop-2011/) is co-located with [ASE 2011, Lawrence, Kansas](http://www.continuinged.ku.edu/programs/ase) - Submit papers on your work. 
-*  03/25/2011 JPF student proposals accepted for GSoC 2011 [announced](http://www.google-melange.com/gsoc/org/google/gsoc2011/javapathfinder) - Congratulations to the students! 
-*  03/18/2011 JPF has been accepted as mentoring org. for GSoC 2011. Visit [our ideas page](JPF-and-Google-Summer-of-Code-2011). 
-*  11/30/2010[JPF version 6 released](JPF-Version-6-released) - update your [jpf-core](https://github.com/javapathfinder/jpf-core).
-*  09/20/2010[ASE 2010 Tutorial on Automated Component-Based Verification](https://github.com/javapathfinder/jpf-core) [Slides](http://babelfish.arc.nasa.gov/trac/jpf/attachment/wiki/WikiStart/CV-ASE10-final.pdf).
-*  08/02/2010 Summer project presentations set for 08/13/2010 - see [summer summit event page](Summer-Project-Summit-2010).
-*  04/29/2010 Selected summer projects announced
-*  02/14/2010 [ISSTA 2010 Tutorial on Automated Testing with Java PathFinder](http://selab.fbk.eu/issta2010/index.php?p=tutorials) announced.
-*  02/12/2010 Call for Google Summer of Code 2010 project proposals out - visit [our SoC page](JPF-and-Google-Summer-of-Code-2010).
-*  01/30/2010 [JPF Google group](http://groups.google.com/group/java-pathfinder) replaces old mailing lists.
-*  01/12/2010 [Fujitsu press announcement](http://www.fujitsu.com/global/news/pr/archives/month/2010/20100112-02.html) released about using and extending [Symbolic PathFinder](https://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) for comprehensive testing of Java web applications.
-*  09/02/2009 JPF server on [](http://babelfish.arc.nasa.gov/trac/jpf) goes live, featuring the JPFWiki and separate Mercurial repositories for JPF core and extension projects.
-*  07/22/2009 JPF wins the 2009 "Outstanding Technology Development Award" of the Federal Laboratory Consortium (FLC), Far West Division.
+<details close>
+<summary>...</summary>
+<ul>
+<li>06/07/2012 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a> is co-located with <a href="http://www.sigsoft.org/fse20/">FSE 2012</a>, November 11 and 12. We solicit submissions for the <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a>. </li>
+
+<li>04/23/2012 JPF student proposals accepted for GSoC 2012 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder">announced</a> - Congratulations to the students! </li>
+
+<li>03/26/2012 GSoC Student Applications period is open until April 6. Please submit your proposal at <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder">JPF GSoC page</a>. </li>
+
+<li>03/16/2012 JPF has been accepted as mentoring org. for GSoC 2012. Visit <a href="JPF-Google-Summer-of-Code-2012">our ideas page</a>. </li>
+
+<li>10/14/2011 A hands-on JPF tutorial will be held on Nov 7th at Lawrence, Kansas co-located with <a href="http://www.continuinged.ku.edu/programs/ase">ASE 2011</a>. </li>
+
+<li>05/26/2011 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2011/">JPF Workshop</a> is co-located with <a href="http://www.continuinged.ku.edu/programs/ase">ASE 2011, Lawrence, Kansas</a> - Submit papers on your work. </li>
+
+<li>03/25/2011 JPF student proposals accepted for GSoC 2011 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2011/javapathfinder">announced</a> - Congratulations to the students! </li>
+
+<li>03/18/2011 JPF has been accepted as mentoring org. for GSoC 2011. Visit <a href="JPF-and-Google-Summer-of-Code-2011">our ideas page</a>. </li>
+
+<li>11/30/2010<a href="JPF-Version-6-released">JPF version 6 released</a> - update your <a href="https://github.com/javapathfinder/jpf-core">jpf-core</a>.</li>
+
+<li>09/20/2010<a href="https://github.com/javapathfinder/jpf-core">ASE 2010 Tutorial on Automated Component-Based Verification</a> <a href="http://babelfish.arc.nasa.gov/trac/jpf/attachment/wiki/WikiStart/CV-ASE10-final.pdf">Slides</a>.</li>
+
+<li>08/02/2010 Summer project presentations set for 08/13/2010 - see <a href="Summer-Project-Summit-2010">summer summit event page</a>.</li>
+
+<li>04/29/2010 Selected summer projects announced</li>
+
+<li>02/14/2010 <a href="http://selab.fbk.eu/issta2010/index.php?p=tutorials">ISSTA 2010 Tutorial on Automated Testing with Java PathFinder</a> announced.</li>
+
+<li>02/12/2010 Call for Google Summer of Code 2010 project proposals out - visit <a href="JPF-and-Google-Summer-of-Code-2010">our SoC page</a>.</li>
+
+<li>01/30/2010 <a href="http://groups.google.com/group/java-pathfinder">JPF Google group</a> replaces old mailing lists.</li>
+
+<li>01/12/2010 <a href="http://www.fujitsu.com/global/news/pr/archives/month/2010/20100112-02.html">Fujitsu press announcement</a> released about using and extending <a href="https://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc">Symbolic PathFinder</a> for comprehensive testing of Java web applications.</li>
+
+<li>09/02/2009 JPF server on <a href="http://babelfish.arc.nasa.gov/trac/jpf"></a> goes live, featuring the JPFWiki and separate Mercurial repositories for JPF core and extension projects.</li>
+
+<li>07/22/2009 JPF wins the 2009 "Outstanding Technology Development Award" of the Federal Laboratory Consortium (FLC), Far West Division.</li>
+</ul>
+</details>
 
 
 
