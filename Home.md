@@ -66,7 +66,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 
 This page is our primary source of documentation, and is divided into the following sections
   
-* [Introduction](Introduction) - a brief introduction into model checking and JPF
+* [Introduction](Introduction) -- a brief introduction into model checking and JPF
     <!--* [What is JPF?](What-is-JPF)
     * [Testing vs. Model Checking](Testing-vs.-Model-Checking)
          - [Random value example](Random-Example)
