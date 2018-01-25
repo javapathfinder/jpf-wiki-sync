@@ -60,9 +60,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 </ul>
 </details>
 
-
-
-This page is our primary source of documentation, and is divided into the following sections.
+<!-- This page is our primary source of documentation, and is divided into the following sections. -->
 
    ---
 
