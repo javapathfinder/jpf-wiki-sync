@@ -24,7 +24,7 @@
     - [Using JPF's Verify API in the system under test](Verify-API-of-JPF)
   * [Developer guide](Developer-guide)
     * [Top-level design](Search-Strategies)
-    * Key mechanisms, such as 
+    * Key mechanisms 
         - [ChoiceGenerators](ChoiceGenerators)
         - [Partial order reduction](Partial-Order-Reduction)
         - [Slot and field attributes](Slot-and-field-attributes)
