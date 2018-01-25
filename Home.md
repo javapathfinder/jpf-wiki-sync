@@ -16,27 +16,27 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 <ul>
 <li>10/01/2013 JPF Workshop 2013 <a href="JPF-Workshop-2013-Accepted-Papers">Accepted Papers</a>. Please note <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013">JPF Workshop 2013</a> website is down due to the shutdown, please visit <a href="http://ase2013.org">ASE 2013</a> for registration, date and venue information.</li>
 
-<li>06/20/2013 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013/">JPF Workshop 2013</a> will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.<\li>
+<li>06/20/2013 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013/">JPF Workshop 2013</a> will be co-located with <a href="http://ase2013.org">ASE 2013</a> Please submit papers.<\li>
 
-<li>05/27/2013 JPF student proposals accepted for GSoC 2013 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder">announced</a> - Congratulations to the students!</li>
+<li>05/27/2013 JPF student proposals accepted for GSoC 2013 <a href="https://www.google-melange.com/archive/gsoc/2013/orgs/javapathfinder">announced</a> - Congratulations to the students!</li>
 
 <li>04/08/2013 The show is on - JPF got accepted for GSoC 2013. Please visit the <a href="https://sites.google.com/site/jpfgsoc2013/">GSoC project ideas page</a> or let us know about your own project suggestions. </li>
  
 <li>06/07/2012 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a> is co-located with <a href="http://www.sigsoft.org/fse20/">FSE 2012</a>, November 11 and 12. We solicit submissions for the <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a>. </li>
 
-<li>04/23/2012 JPF student proposals accepted for GSoC 2012 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder">announced</a> - Congratulations to the students! </li>
+<li>04/23/2012 JPF student proposals accepted for GSoC 2012 <a href="https://www.google-melange.com/archive/gsoc/2012/orgs/javapathfinder">announced</a> - Congratulations to the students! </li>
 
-<li>03/26/2012 GSoC Student Applications period is open until April 6. Please submit your proposal at <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder">JPF GSoC page</a>. </li>
+<li>03/26/2012 GSoC Student Applications period is open until April 6. Please submit your proposal at <a href="https://www.google-melange.com/archive/gsoc/2012/orgs/javapathfinder">JPF GSoC page</a>. </li>
 
-<li>03/16/2012 JPF has been accepted as mentoring org. for GSoC 2012. Visit <a href="JPF-Google-Summer-of-Code-2012">our ideas page</a>. </li>
+<li>03/16/2012 JPF has been accepted as mentoring org. for GSoC 2012. Visit <a href="https://github.com/javapathfinder/jpf-core/wiki/JPF-and-Google-Summer-of-Code-2012">our ideas page</a>. </li>
 
 <li>10/14/2011 A hands-on JPF tutorial will be held on Nov 7th at Lawrence, Kansas co-located with <a href="http://www.continuinged.ku.edu/programs/ase">ASE 2011</a>. </li>
 
 <li>05/26/2011 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2011/">JPF Workshop</a> is co-located with <a href="http://www.continuinged.ku.edu/programs/ase">ASE 2011, Lawrence, Kansas</a> - Submit papers on your work. </li>
 
-<li>03/25/2011 JPF student proposals accepted for GSoC 2011 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2011/javapathfinder">announced</a> - Congratulations to the students! </li>
+<li>03/25/2011 JPF student proposals accepted for GSoC 2011 <a href="https://www.google-melange.com/archive/gsoc/2011/orgs/javapathfinder">announced</a> - Congratulations to the students! </li>
 
-<li>03/18/2011 JPF has been accepted as mentoring org. for GSoC 2011. Visit <a href="JPF-and-Google-Summer-of-Code-2011">our ideas page</a>. </li>
+<li>03/18/2011 JPF has been accepted as mentoring org. for GSoC 2011. Visit <a href="https://github.com/javapathfinder/jpf-core/wiki/JPF-and-Google-Summer-of-Code-2011">our ideas page</a>. </li>
 
 <li>11/30/2010<a href="JPF-Version-6-released">JPF version 6 released</a> - update your <a href="https://github.com/javapathfinder/jpf-core">jpf-core</a>.</li>
 
@@ -48,7 +48,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 
 <li>02/14/2010 <a href="http://selab.fbk.eu/issta2010/index.php?p=tutorials">ISSTA 2010 Tutorial on Automated Testing with Java PathFinder</a> announced.</li>
 
-<li>02/12/2010 Call for Google Summer of Code 2010 project proposals out - visit <a href="JPF-and-Google-Summer-of-Code-2010">our SoC page</a>.</li>
+<li>02/12/2010 Call for Google Summer of Code 2010 project proposals out - visit <a href="https://github.com/javapathfinder/jpf-core/wiki/JPF-and-Google-Summer-of-Code-2010">our SoC page</a>.</li>
 
 <li>01/30/2010 <a href="http://groups.google.com/group/java-pathfinder">JPF Google group</a> replaces old mailing lists.</li>
 
