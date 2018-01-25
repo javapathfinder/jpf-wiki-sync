@@ -5,7 +5,8 @@
          - [Random value example](Random-Example)
          - [Data race example](Race-Example)
     * [JPF key features](Classification)
-  * [How to obtain and install JPF](How-to-install-JPF)
+
+* [How to obtain and install JPF](How-to-install-JPF)
     - [System requirements](System-requirements)
     - Downloading
          - [binary snapshots](Downloading-binary-snapshots)
