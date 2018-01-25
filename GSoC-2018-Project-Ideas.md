@@ -18,15 +18,17 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Verification of Multi Agent Systems](#verification-of-multi-agent-systems) <Franco><Eric><CheckWithNeha>
 
-* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <QuangLocLe>
-
-* [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <QuangLocLe>
-
 <!--* [Verification of Actor-based Systems](#verification-of-actor-based-systems)--> <Nastaran>
 
 * [Verification of Event-Driven Applications](#verification-of-event-driven-applications) <Oksana>
 
 <!-- * [Verification of epistemic properties of Java programs](#verification-of-epistemic-properties-of-java-programs)--> <Franco><Nikos>
+
+### Separation Logic
+
+* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc>
+
+* [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <Loc>
 
 ### Symbolic Execution
 
@@ -46,7 +48,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Improving Sampling of Symbolic Paths](#improving-sampling-of-symbolic-paths) <Kasper>
 
-* [Verification and Testing Heap-based Programs with Symbolic PathFinder](#verification-and-testing-heap-based-programs-with-symbolic-pathfinder) <Sang> -->
+-->
 
 ### Android
 
@@ -107,7 +109,7 @@ The goal of this project is to develop techniques that analyze key properties in
 Synthesis to repair heap-manipulating programs
 
 #### Verification of unbounded heap-manipulating programs via learning
-Verification of unbounded heap-manipulating programs via learning.
+The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, where the program *P* contains unbound loops, and loop invariants are not available. We will use [Java StarFinder](https://github.com/star-finder/jpf-star) with the precondition *{Pre}* to generate test inputs for the program. We then execute the program with these inputs, and synthesize loop invariants from program executions using machine learning techniques. The resulted loop invariants will be validated by verification.
 
 <!--#### Verification of Actor-based Systems
 The goal of this project is verifying actor-based systems using the model checking technique. This can be achieved through extending the [jpf-actor](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-actor) extension of JPF. jpf-actor is a framework that can be used to systematically test actor programs that compile to bytecode. It requires making the codebase of jpf-actor up-to-date with the current version of [jpf-core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which is compatible with Java 8. It also includes extending the project towards an actor-based Scala library, called [Akka](http://akka.io).-->
