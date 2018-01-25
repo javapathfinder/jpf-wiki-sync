@@ -91,13 +91,13 @@ JPF is able to find notorious concurrency bugs such as deadlocks. Although findi
 This project is concerned with extending [jpf-visual, a visual analytics tool from GSoC 2017](https://bitbucket.org/qiyitang71/jpf-visual/overview). The web site has about a dozen possible enhancements listed as [open issues](https://bitbucket.org/qiyitang71/jpf-visual/issues?status=new&status=open) Some of these may be feasible to implement as a GSoC project. Other ideas for enhancements are of course also welcome.
 
 
-#### Procedure Summaries
+<!--#### Procedure Summaries
 Implement construction of procedure summaries and their usage during the state space traversal. An important part of the project will be a survey of existing literature on the topic of generating summaries, and identification of an approach that is suitable in the context of the JPF code base. Key aspects of the solution include 
 
 1. designing representation of the summaries that captures all side effects of the given procedure; and 
 2. implementing modifications of the program state. 
 
-The actual summary of a method will be computed during its first execution, and then reused within traversal of other state paths. Another possible feature is the support for externally defined summaries that would be useful for library methods.
+The actual summary of a method will be computed during its first execution, and then reused within traversal of other state paths. Another possible feature is the support for externally defined summaries that would be useful for library methods.-->
 
 #### Model Checking Distributed Java Applications
 [jpf-nas](http://babelfish.arc.nasa.gov/hg/jpf/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the [JPF core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/net-iocache), etc.
