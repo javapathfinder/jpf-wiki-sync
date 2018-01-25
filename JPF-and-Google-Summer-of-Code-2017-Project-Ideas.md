@@ -1,5 +1,3 @@
-# Project Ideas
-
 Please note that this list is not exclusive. If you have other ideas and topics related to JPF, please let us know on \<jpf.gsoc [at] gmail.com\> or the [JPF Google group](https://groups.google.com/forum/#!forum/java-pathfinder).
 
 ### JPF Infrastructure
