@@ -12,12 +12,14 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 *  17/08/2015 JPF Workshop 2015 Accepted Papers are announced. Please visit [ASE 2015](http://ase2015.unl.edu) for registration, date and venue information. 
 *  10/03/2014 JPF Workshop 2014 [Accepted Papers](JPF-Workshop-2014-Accepted-Papers). Please visit [SOAR Lab](JPF-Workshop-2014-Accepted-Papers) for registration, date and venue information. 
 *  10/01/2013 JPF Workshop 2013 [Accepted Papers](JPF-Workshop-2013-Accepted-Papers). Please note [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013) website is down due to the shutdown, please visit [ASE 2013](http://ase2013.org) for registration, date and venue information. 
-*  06/20/2013 [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013/) will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.  
-*  05/27/2013 JPF student proposals accepted for GSoC 2013 [announced](http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder) - Congratulations to the students! 
-*  04/08/2013 The show is on - JPF got accepted for GSoC 2013. Please visit the [GSoC project ideas page](https://sites.google.com/site/jpfgsoc2013/) or let us know about your own project suggestions. 
+*  06/20/2013 [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013/) will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.
 <details close>
 <summary>...</summary>
 <ul>
+<li>05/27/2013 JPF student proposals accepted for GSoC 2013 <a href=http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder>announced</a> - Congratulations to the students!</li>
+
+<li>04/08/2013 The show is on - JPF got accepted for GSoC 2013. Please visit the <a href="https://sites.google.com/site/jpfgsoc2013/">GSoC project ideas page</a> or let us know about your own project suggestions. </li>
+ 
 <li>06/07/2012 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a> is co-located with <a href="http://www.sigsoft.org/fse20/">FSE 2012</a>, November 11 and 12. We solicit submissions for the <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2012/">JPF Workshop 2012</a>. </li>
 
 <li>04/23/2012 JPF student proposals accepted for GSoC 2012 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/javapathfinder">announced</a> - Congratulations to the students! </li>
@@ -118,4 +120,3 @@ This page is our primary source of documentation, and is divided into the follow
     ---
       
   * [Related research and publications](Related-publications)    
-
