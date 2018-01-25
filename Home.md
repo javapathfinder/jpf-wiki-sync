@@ -11,12 +11,14 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 *  02/29/2016 JPF got accepted for [GSoC 2016](https://summerofcode.withgoogle.com/organizations/5791763432210432/). Please visit our [ideas page](https://jpf.byu.edu/gsoc16/projects/projects.html), and let us know if you would like to propose a project.
 *  17/08/2015 JPF Workshop 2015 Accepted Papers are announced. Please visit [ASE 2015](http://ase2015.unl.edu) for registration, date and venue information. 
 *  10/03/2014 JPF Workshop 2014 [Accepted Papers](JPF-Workshop-2014-Accepted-Papers). Please visit [SOAR Lab](JPF-Workshop-2014-Accepted-Papers) for registration, date and venue information. 
-*  10/01/2013 JPF Workshop 2013 [Accepted Papers](JPF-Workshop-2013-Accepted-Papers). Please note [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013) website is down due to the shutdown, please visit [ASE 2013](http://ase2013.org) for registration, date and venue information. 
-*  06/20/2013 [JPF Workshop 2013](http://ti.arc.nasa.gov/events/jpf-workshop-2013/) will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.
 <details close>
 <summary>...</summary>
 <ul>
-<li>05/27/2013 JPF student proposals accepted for GSoC 2013 <a href=http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder>announced</a> - Congratulations to the students!</li>
+<li>10/01/2013 JPF Workshop 2013 <a href="JPF-Workshop-2013-Accepted-Papers">Accepted Papers</a>. Please note <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013">JPF Workshop 2013</a> website is down due to the shutdown, please visit <a href="http://ase2013.org">ASE 2013</a> for registration, date and venue information.</li>
+
+<li>06/20/2013 <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013/">JPF Workshop 2013</a> will be co-located with [ASE 2013](http://ase2013.org) Please submit papers.<\li>
+
+<li>05/27/2013 JPF student proposals accepted for GSoC 2013 <a href="http://www.google-melange.com/gsoc/org/google/gsoc2013/javapathfinder">announced</a> - Congratulations to the students!</li>
 
 <li>04/08/2013 The show is on - JPF got accepted for GSoC 2013. Please visit the <a href="https://sites.google.com/site/jpfgsoc2013/">GSoC project ideas page</a> or let us know about your own project suggestions. </li>
  
