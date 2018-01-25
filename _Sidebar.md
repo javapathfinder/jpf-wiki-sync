@@ -5,6 +5,7 @@
          - [Random value example](Random-Example)
          - [Data race example](Race-Example)
     * [JPF key features](Classification)
+---
 * [How to obtain and install JPF](How-to-install-JPF)
     - [System requirements](System-requirements)
     - Downloading
@@ -15,6 +16,7 @@
     - JPF plugins
          - [Eclipse](Eclipse-Plugin) 
          - [NetBeans](NetBeans-Plugin)
+---
 * [How to use JPF](How-to-use-JPF)
     - [Different applications of JPF](Different-applications-of-JPF)
     - [JPF's runtime components](Runtime-components-of-JPF)
@@ -22,6 +24,7 @@
     - [Configuring JPF](Configuring-JPF)
     - [Understanding JPF output](Understanding-JPF-output)
     - [Using JPF's Verify API in the system under test](Verify-API-of-JPF)
+---
 * [Developer guide](Developer-guide)
     * [Top-level design](Search-Strategies)
     * Key mechanisms 
@@ -40,5 +43,7 @@
     * [Writing JPF tests](Writing-JPF-tests)
     * [Coding conventions](Coding-Convention)
     * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site) 
+---
 * [JPF core project](JPF-core)
+---
 * [Related research and publications](Related-publications)    
