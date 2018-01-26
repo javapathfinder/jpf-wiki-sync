@@ -26,9 +26,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Separation Logic
 
-* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc>
+* [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <Loc><Sang>
 
-* [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <Loc>
+* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang>
 
 ### Symbolic Execution
 
@@ -84,7 +84,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 The goal of this project is to improve the JPF build system. Currently, JPF uses Ant, and this project includes changing the JPF build system to [sbt](http://www.scala-sbt.org/). This also includes bringing the configuration mechanism of JPF under sbt. Currently, the configuration mechanism is part of the core of JPF, [jpf-core](https://github.com/javapathfinder/jpf-core). The goal is to make this functionally as part of the build system.
 
 #### Support Java 9 for jpf-core
-Support Java 9 for jpf-core
+jpf-core is essentially a JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 9.
 
 #### Visualization of Execution Traces v.2
 JPF is able to find notorious concurrency bugs such as deadlocks. Although finding bugs is one of the major strengths of JPF, providing feedback to the programmer is one of its main weaknesses. For example, for a deadlock JPF provides the programmer at which line each thread is stuck. Although this is of some use, what is much more valuable is to report how each thread got to that point.
@@ -106,7 +106,10 @@ The actual summary of a method will be computed during its first execution, and 
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
 
 #### Synthesis to repair heap-manipulating programs
-Synthesis to repair heap-manipulating programs
+This project aims to automatically repair a data structure if it is implemented incorrectly, given its specification in separation logic. This project is based on a GSoC project in 2017: [Java StarFinder](https://github.com/star-finder/jpf-star). Reference:
+
+  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025)
+  - [Assertion-based repair of complex data structures](https://dl.acm.org/citation.cfm?id=1321643)
 
 #### Verification of unbounded heap-manipulating programs via learning
 The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, where the program *P* contains unbound loops, and loop invariants are not available. We will use [Java StarFinder](https://github.com/star-finder/jpf-star) with the precondition *{Pre}* to generate test inputs for the program. We then execute the program with these inputs, and synthesize loop invariants from program executions using machine learning techniques. The resulted loop invariants will be validated by verification. If an invariant is invalid, we will obtain a counter-example, which is then used as a new test input, and the process repeats.
