@@ -108,7 +108,7 @@ The goal of this project is to develop techniques that analyze key properties in
 #### Synthesis to repair heap-manipulating programs
 This project aims to automatically repair a data structure if it is implemented incorrectly, given its specification in separation logic. This project is based on [Java StarFinder](https://github.com/star-finder/jpf-star), a new symbolic execution engine developed in GSoC 2017. Reference:
 
-  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation].(https://arxiv.org/abs/1712.06025)
+  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
   - [Assertion-based repair of complex data structures](https://dl.acm.org/citation.cfm?id=1321643).
 
 #### Verification of unbounded heap-manipulating programs via learning
