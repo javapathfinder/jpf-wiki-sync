@@ -106,7 +106,7 @@ The actual summary of a method will be computed during its first execution, and 
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
 
 #### Synthesis to repair heap-manipulating programs
-This project aims to automatically repair a data structure if it is implemented incorrectly, given its specification in separation logic. This project is based on a GSoC project in 2017: [Java StarFinder](https://github.com/star-finder/jpf-star). Reference:
+This project aims to automatically repair a data structure if it is implemented incorrectly, given its specification in separation logic. This project is based on [Java StarFinder](https://github.com/star-finder/jpf-star), a new symbolic execution engined developed in GSoC 2017. Reference:
 
   - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025)
   - [Assertion-based repair of complex data structures](https://dl.acm.org/citation.cfm?id=1321643)
