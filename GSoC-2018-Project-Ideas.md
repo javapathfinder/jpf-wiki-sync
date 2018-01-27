@@ -10,8 +10,6 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Visualization of Execution Traces v2](#visualization-of-execution-traces-v2)
 
-* [Procedure Summaries](#procedure-summaries) <Pavel>
-
 ### JPF Application Domains
 
 * [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Nastaran><Cyrille>
