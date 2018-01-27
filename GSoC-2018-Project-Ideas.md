@@ -62,6 +62,8 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Concolic Execution for Android Apps](#concolic-execution-for-android-apps) <Kasper>
 
+* [Support for parallel\/distributed exploration in JDart and Regression tests for JDart](#support-for-parallel\/distributed-exploration-in-jdart-and-regression-tests-for-jdart)
+
 ### Environment and Test Case Generation
 
 * [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana>
@@ -197,6 +199,21 @@ We have many ideas for improving JDart and welcome additional ideas too:
 
 #### Concolic Execution for Android Apps
 [JDart](https://github.com/psycopaths/jdart) is an open-source, dynamic symbolic analysis framework built on Java PathFinder. It has been applied to industrial scale software, including complex NASA systems. This project seeks to extend this capability to Android applications by supporting the Dalvik instruction set, e.g., by using [jpf-pathdroid](http://babelfish.arc.nasa.gov/hg/jpf/jpf-pathdroid). This would enable analyses build on JDart to also work for Android, e.g., automated test case generation, finding bugs, and program understanding. 
+
+#### Support for parallel\/distributed exploration in JDart and Regression tests for JDart
+Here is an incomplete list of ideas and projects for extending and improving JDart. If you would like to work on any of the projects or have your own ideas (or just want to contribute to JDart), let us know and we can talk more.
+
+* Add regression test suite
+* Add visualization capabilities to JDart. This could be really useful -- especially for program understanding and debugging. It could be as simple as translating the constraints tree to DOT, but it would be a great feature to have more powerful, interactive visualizations, e.g., browser-based with d3, or using Gephi, yEd, jung, prefuse, or jgraph.
+* Finish (or re-implement) [JConstraints](https://github.com/psycopaths/jconstraints) SMTLib interface and experiment with other solvers. dReal is (partly) integrated using this, but it would be interesting to experiment more
+* Add more search heuristics and evaluate
+* Make support for [PathDroid](http://ti.arc.nasa.gov/opensource/projects/pathdroid/). This would allow JDart to analyze Dalvik bytecode programs
+* Work on constraints caching in a similar fashion as [Green](http://www.cs.sun.ac.za/~jaco/PUBS/vgd12.pdf) (or make support for Green)
+* Add support for parallel/distributed exploration
+* Add support for symbolic data structures. Maybe ala [Lazy Initialization](http://users.ece.utexas.edu/~khurshid/testera/GSE.pdf)
+* Improve test suite generation from symbolic analysis. Currently, static target methods are fully supported while instance methods are only partly supported
+* General refactoring and code improvement
+
 
 #### Environment and Test Case Generation for Specific Domains
 When model checking applications belonging to specific domains (e.g., Swing, Android), 
