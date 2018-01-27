@@ -62,7 +62,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Concolic Execution for Android Apps](#concolic-execution-for-android-apps) <Kasper>
 
-* [Support for parallel\/distributed exploration in JDart and Regression tests for JDart](#support-for-parallel\/distributed-exploration-in-jdart-and-regression-tests-for-jdart)
+* [Support for parallel or distributed exploration in JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)
+
+* [Regression tests for JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)
 
 ### Environment and Test Case Generation
 
@@ -200,7 +202,7 @@ We have many ideas for improving JDart and welcome additional ideas too:
 #### Concolic Execution for Android Apps
 [JDart](https://github.com/psycopaths/jdart) is an open-source, dynamic symbolic analysis framework built on Java PathFinder. It has been applied to industrial scale software, including complex NASA systems. This project seeks to extend this capability to Android applications by supporting the Dalvik instruction set, e.g., by using [jpf-pathdroid](http://babelfish.arc.nasa.gov/hg/jpf/jpf-pathdroid). This would enable analyses build on JDart to also work for Android, e.g., automated test case generation, finding bugs, and program understanding. 
 
-#### Support for parallel\/distributed exploration in JDart and Regression tests for JDart
+#### Support for parallel or distributed exploration in JDart and Regression tests for JDart
 Here is an incomplete list of ideas and projects for extending and improving JDart. If you would like to work on any of the projects or have your own ideas (or just want to contribute to JDart), let us know and we can talk more.
 
 * Add regression test suite
