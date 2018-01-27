@@ -6,9 +6,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Upgrading the Build System from Ant to sbt](#upgrading-the-build-system-from-ant-to-sbt)
 
-* [Support Java 9 for jpf-core](#support-java9-for-jpf-core) <quocsangphan>
+* [Support Java 9 for jpf-core](#support-java-9-for-jpf-core) <quocsangphan>
 
-* [Visualization of Execution Traces v.2](#visualization-of-execution-traces)
+* [Visualization of Execution Traces v2](#visualization-of-execution-traces-v2)
 
 * [Procedure Summaries](#procedure-summaries) <Pavel>
 
@@ -80,13 +80,13 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 ### Projects Descriptions
 
 
-#### Upgrading the Build System
+#### Upgrading the Build System from Ant to sbt
 The goal of this project is to improve the JPF build system. Currently, JPF uses Ant, and this project includes changing the JPF build system to [sbt](http://www.scala-sbt.org/). This also includes bringing the configuration mechanism of JPF under sbt. Currently, the configuration mechanism is part of the core of JPF, [jpf-core](https://github.com/javapathfinder/jpf-core). The goal is to make this functionally as part of the build system.
 
 #### Support Java 9 for jpf-core
 jpf-core is essentially a JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 9.
 
-#### Visualization of Execution Traces v.2
+#### Visualization of Execution Traces v2
 JPF is able to find notorious concurrency bugs such as deadlocks. Although finding bugs is one of the major strengths of JPF, providing feedback to the programmer is one of its main weaknesses. For example, for a deadlock JPF provides the programmer at which line each thread is stuck. Although this is of some use, what is much more valuable is to report how each thread got to that point.
 This project is concerned with extending [jpf-visual, a visual analytics tool from GSoC 2017](https://bitbucket.org/qiyitang71/jpf-visual/overview). The web site has about a dozen possible enhancements listed as [open issues](https://bitbucket.org/qiyitang71/jpf-visual/issues?status=new&status=open) Some of these may be feasible to implement as a GSoC project. Other ideas for enhancements are of course also welcome.
 
