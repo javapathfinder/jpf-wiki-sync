@@ -1,7 +1,4 @@
 * [Wiki Home](Home)
----
-* [JPF core project](JPF-core)
----
 * [Introduction](Introduction)
     * [What is JPF?](What-is-JPF)
     * [Testing vs. Model Checking](Testing-vs.-Model-Checking)
@@ -46,5 +43,7 @@
     * [Writing JPF tests](Writing-JPF-tests)
     * [Coding conventions](Coding-Convention)
     * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site) 
+---
+* [JPF core project](JPF-core)
 ---
 <!--* [Related research and publications](Related-publications)-->
