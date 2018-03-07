@@ -106,4 +106,4 @@ This wiki is our primary source of documentation, and is divided into the follow
     * [Coding conventions](Coding-Convention)
     * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site)-->
 * [JPF core project](JPF-core) - description and link to jpf-core
-* [Related research and publications](Related-publications)    
+<!--* [Related research and publications](Related-publications)-->
