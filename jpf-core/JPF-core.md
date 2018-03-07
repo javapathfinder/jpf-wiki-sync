@@ -3,7 +3,7 @@ This is the basis for all JPF projects, i.e. you always need to install it. jpf-
 
 
 ## Repository ##
-The Mercurial repository is on http://babelfish.arc.nasa.gov/hg/jpf/jpf-core
+The Git repository is on https://github.com/javapathfinder/jpf-core
 
 ## Properties ##
 jpf-core supports two rather generic properties, which are configured by default:
