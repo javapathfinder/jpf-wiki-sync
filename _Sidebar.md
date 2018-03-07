@@ -46,4 +46,4 @@
 ---
 * [JPF core project](JPF-core)
 ---
-* [Related research and publications](Related-publications)    
+<!--* [Related research and publications](Related-publications)-->
