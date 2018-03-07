@@ -8,8 +8,8 @@ The Git repository is on https://github.com/javapathfinder/jpf-core
 ## Properties ##
 jpf-core supports two rather generic properties, which are configured by default:
 
- * `gov.nasa.jpf.jvm.NoUncaughtExceptionsProperty`
- * `gov.nasa.jpf.jvm.NotDeadlockedProperty`
+ * `gov.nasa.jpf.vm.NoUncaughtExceptionsProperty`
+ * `gov.nasa.jpf.vm.NotDeadlockedProperty`
 
 There is no need to parameterize any of them. `NoUncaughtExceptionsProperty` covers all `Throwable` objects that are not handled within the application, i.e. would terminate the process.
 
