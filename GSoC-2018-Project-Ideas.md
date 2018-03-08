@@ -36,8 +36,6 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
-* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem><Kasper>
-
 * [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution) <Willem>
 
 <!-- * [Generic GREEN](#generic-green) <Willem> -->
@@ -47,6 +45,16 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 * [Improving Sampling of Symbolic Paths](#improving-sampling-of-symbolic-paths) <Kasper>
 
 -->
+
+### Fuzzing
+
+* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
+
+* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem>
+
+### Smart Contract
+
+* [Smart Contract Analysis](#smart-contract-analysis) <Willem>
 
 ### Android
 
@@ -154,6 +162,9 @@ The goal of this project is to handle native calls in the context of symbolic ex
 #### Whitebox Fuzzer and Grammar Learner
 Build a whitebox fuzzing tool on top of Symbolic PathFinder, that can learn the input grammar of a piece of code in an iterative fashion. The idea would be to first run the code on symbolic input of a fixed length and then learn a possible grammar for this length, at that point extend the length and generalise the grammar. The main research goal behind this project is to see if one can do whitebox fuzzing without a pre-determined seed file (which is the way most whitebox fuzzers work at the moment). 
 
+#### Fuzzing and Symbolic Execution
+Develop a fuzzer for Java that can be integrated with SPF (or another Java based symbolic execution engine). The idea would be that when fuzzing gets stuck and makes no progress that the symbolic analysis can create a new seed file to allow analysis to progress.
+
 #### Comparison between concolic and classical symbolic execution
 Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical symbolic execution, e.g. SPF.
 
@@ -178,6 +189,9 @@ Various ideas are welcome here. Here are a couple of possible subprojects:
 
 
 2. This project includes using [JPF-Android](https://heila.bitbucket.io/jpf-android/) to generated test sequences for android applications, and implementing a tool to convert these sequences into tests that can be run on the emulator. JPF-Android verifies Android applications outside of the Android software stack on JPF using a model environment to improve coverage and efficiency. It generates event sequences to drive the execution of the application during exploration. Each sequence also includes the configuration of the environment (device) for which the sequence was executed. This project uses the AndroidViewClient API in Python to run the set of event sequences as detected by JPF-Android on  an emulator to find the number of valid sequences and the code coverage they obtain compared to JPF-Android.
+
+#### Smart Contract Analysis
+Develop a mechanism to allow the analysis of Ethereum Virtual Machine (EVM) bytecode by replacing the JVM bytecodes with EVM bytecodes within JPF. The second part of the project would be to extend the bytecodes further to allow symbolic execution as well. 
 
 #### JDart for Dynamic Taint Analysis
 JDart is a dynamic symbolic execution engine Java based on Java PathFinder (JPF). The tool executes Java programs with concrete and symbolic values at the same time and records symbolic constraints describing all the decisions along a particular path of the execution. These path constraints are then used to find new paths in the program. Concrete data values for exercising these paths are generated using a constraint solver.
