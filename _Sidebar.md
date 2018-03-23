@@ -51,6 +51,10 @@
     * [Accepted Papers](JPF-Workshop-2017-Accepted-Papers)
     * [Program](JPF-Workshop-2017-Program)
 ---
+* [Google Summer of Code 2017](Google-Summer-of-Code-2017)
+    * [Project Ideas](JPF-and-Google-Summer-of-Code-2017-Project-Ideas)
+    * [Accepted Projects](Google-Summer-of-Code-2017-Accepted-Projects)
+---
 * [Java Pathfinder Workshop 2016](JPF-Workshop-2016)
     * [Call For Papers](JPF-Workshop-2016-Call-For-Papers)
     * [Organization](JPF-Workshop-2016-Organization)
@@ -58,10 +62,6 @@
     * [Program](JPF-Workshop-2016-Program)
     * [Travel](JPF-Workshop-2016-Travel)
     * [Registration](JPF-Workshop-2016-Registration)
----
-* [Google Summer of Code 2017](Google-Summer-of-Code-2017)
-    * [Project Ideas](JPF-and-Google-Summer-of-Code-2017-Project-Ideas)
-    * [Accepted Projects](Google-Summer-of-Code-2017-Accepted-Projects)
 ---
 * [Google Summer of Code 2016](Google-Summer-of-Code-2016)
     * [Project Ideas](Google-Summer-of-Code-2016-Project-Ideas)
