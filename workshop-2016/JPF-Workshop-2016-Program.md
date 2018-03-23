@@ -1,4 +1,3 @@
-## Program
 
 | **09:00-09:15** Opening
 
