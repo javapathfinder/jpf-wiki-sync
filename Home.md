@@ -43,6 +43,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
     * [Coding conventions](Coding-Convention)
     * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site)-->
 * [JPF core project](JPF-core) - description and link to jpf-core
+* [Projects](Projects) - link to currently active and legacy extensions of JPF
 <!--* [Related research and publications](Related-publications)-->
 
 ---
