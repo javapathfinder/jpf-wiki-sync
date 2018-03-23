@@ -61,5 +61,5 @@
 ---
 * [Google Summer of Code 2017](Google-Summer-of-Code-2017)
     * [Project Ideas](JPF-and-Google-Summer-of-Code-2017-Project-Ideas)
-    * [Accepted Ideas](Google-Summer-of-Code-2017-Accepted-Ideas)
+    * [Accepted Projects](Google-Summer-of-Code-2017-Accepted-Projects)
 <!--* [Related research and publications](Related-publications)-->
