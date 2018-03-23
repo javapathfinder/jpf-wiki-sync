@@ -58,4 +58,8 @@
     * [Program](JPF-Workshop-2016-Program)
     * [Travel](JPF-Workshop-2016-Travel)
     * [Registration](JPF-Workshop-2016-Registration)
+---
+* [Google Summer of Code 2017](Google-Summer-of-Code-2017)
+    * [Project Ideas](Google-Summer-of-Code-2017-Project-Ideas)
+    * [Accepted Papers](JPF-and-Google-Summer-of-Code-2017-Accepted-Papers)
 <!--* [Related research and publications](Related-publications)-->
