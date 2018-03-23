@@ -54,7 +54,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 *  19/01/2017 The JPF team is applying to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2017. To learn more, please visit the [JPF/GSoC](Google-Summer-of-Code-2017) page.
 *  06/01/2016 [JPF Workshop 2016](JPF-Workshop-2016) will be co-located with [FSE 2016](http://www.cs.ucdavis.edu/fse2016/) in Seattle, WA, on November 18, 2016. Please consider submitting a paper.
 *  04/22/2016 JPF student proposals accepted for GSoC 2016 [announced](https://summerofcode.withgoogle.com/organizations/5791763432210432/#projects) - Congratulations to the students!
-*  02/29/2016 JPF got accepted for [GSoC 2016](https://summerofcode.withgoogle.com/organizations/5791763432210432/). Please visit our [ideas page](https://jpf.byu.edu/gsoc16/projects/projects.html), and let us know if you would like to propose a project.
+*  02/29/2016 JPF got accepted for [GSoC 2016](https://summerofcode.withgoogle.com/organizations/5791763432210432/). Please visit our [ideas page](Google-Summer-of-Code-2016-Project-Ideas), and let us know if you would like to propose a project.
 *  17/08/2015 JPF Workshop 2015 Accepted Papers are announced. Please visit [ASE 2015](http://ase2015.unl.edu) for registration, date and venue information. 
 *  10/03/2014 JPF Workshop 2014 [Accepted Papers](JPF-Workshop-2014-Accepted-Papers). Please visit [SOAR Lab](http://soarlab.org/events/jpf2014/) for registration, date and venue information. 
 <details close>
