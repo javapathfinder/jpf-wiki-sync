@@ -44,6 +44,8 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
     * [Hosting an Eclipse plugin update site](Host-Eclipse-plugin-update-site)-->
 * [JPF core project](JPF-core) - description and link to jpf-core
 * [Projects](Projects) - link to currently active and legacy extensions of JPF
+* [Workshops](JPF-Workshops) - link to annual workshops on JPF
+* [Google Summer of Code](Google-Summer-of-Code) - link to JPF's participation in the Google Summer of Code program
 <!--* [Related research and publications](Related-publications)-->
 
 ---
