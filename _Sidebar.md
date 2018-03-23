@@ -50,4 +50,12 @@
     * [Committee](JPF-Workshop-2017-Committee)
     * [Accepted Papers](JPF-Workshop-2017-Accepted-Papers)
     * [Program](JPF-Workshop-2017-Program)
+---
+* [Java Pathfinder Workshop 2016](JPF-Workshop-2016)
+    * [Call For Papers](JPF-Workshop-2016-Call-For-Papers)
+    * [Organization](JPF-Workshop-2016-Organization)
+    * [Submission](JPF-Workshop-2016-Submission)
+    * [Program](JPF-Workshop-2016-Program)
+    * [Travel](JPF-Workshop-2016-Travel)
+    * [Registration](JPF-Workshop-2016-Registration)
 <!--* [Related research and publications](Related-publications)-->
