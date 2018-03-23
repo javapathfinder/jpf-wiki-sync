@@ -14,7 +14,7 @@ is to use the workshop to grow the community of researchers
 investigating Java, Android, and JPF in an effort to foster
 collaboration and define future needs for Java program analysis.
 
-###Important Dates
+### Important Dates
 
 * **Submission**: August 5, 2016 ~~July 1, 2016~~
 
