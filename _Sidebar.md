@@ -60,6 +60,6 @@
     * [Registration](JPF-Workshop-2016-Registration)
 ---
 * [Google Summer of Code 2017](Google-Summer-of-Code-2017)
-    * [Project Ideas](Google-Summer-of-Code-2017-Project-Ideas)
-    * [Accepted Papers](JPF-and-Google-Summer-of-Code-2017-Accepted-Papers)
+    * [Project Ideas](JPF-and-Google-Summer-of-Code-2017-Project-Ideas)
+    * [Accepted Papers](Google-Summer-of-Code-2017-Accepted-Papers)
 <!--* [Related research and publications](Related-publications)-->
