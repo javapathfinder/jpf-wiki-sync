@@ -1,12 +1,11 @@
 ## CALL FOR PAPERS
 
-| **Java Pathfinder Workshop 2016**
-| Satellite Workshop with FSE 2016 
-| Seattle, WA, USA
-| November 2016
-| [http://jpf.byu.edu/jpf-workshop-2016](http://jpf.byu.edu/jpf-workshop-2016)
+**Java Pathfinder Workshop 2016**  
+Satellite Workshop with FSE 2016  
+Seattle, WA, USA  
+November 2016
 
-###IMPORTANT DATES
+### IMPORTANT DATES
 
 - **Submission**: August 5, 2016 ~~July 1, 2016~~
 - **Notification**: September 7, 2016
