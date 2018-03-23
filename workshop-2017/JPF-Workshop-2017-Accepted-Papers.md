@@ -1,5 +1,3 @@
-## Accepted Papers
-
 - **Veritesting Challenges in Symbolic Execution of Java**,
 Vaibhav Sharma, Michael Whalen, Stephen McCamant, and Willem Visser.
 
