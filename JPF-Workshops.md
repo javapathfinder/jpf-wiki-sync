@@ -4,9 +4,9 @@ The JPF workshop is an annual conference for the presentation of existing resear
 
 ### History ###
 
-[2017 JPF Workshop](https://jpf.byu.edu/jpf-workshop-2017/) in Urbana-Champaign, IL.
+[2017 JPF Workshop](JPF-Workshop-2017) in Urbana-Champaign, IL.
 
-[2016 JPF Workshop](http://jpf.byu.edu/jpf-workshop-2016/) in Seattle, WA.
+[2016 JPF Workshop](JPF-Workshop-2016) in Seattle, WA.
 
 [2015 JPF Workshop](http://jpf.byu.edu/jpf-workshop-2015) in Lincoln, NE.
 
