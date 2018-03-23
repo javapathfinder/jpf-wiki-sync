@@ -1,1 +1,1 @@
-Maintained by Vaibhav Sharma (vaibhav@umn.edu)
+Wiki admin: Vaibhav Sharma ([email](mailto:vaibhav@umn.edu))
