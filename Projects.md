@@ -2,7 +2,7 @@
 There are a number of currently active projects, as well as legacy code.
 
 # Active Projects #
-* [jpf-core](https://jpf.byu.edu/hg/jpf-core) - the VM and core mechanisms used by all other projects - explicit state model checking for Java bytecode
+* [jpf-core](https://github.com/javapathfinder/jpf-core/) - the VM and core mechanisms used by all other projects - explicit state model checking for Java bytecode
 * [jpf-hj](https://jpf.byu.edu/jpf-hj) - Custom Habanero Java Runtime that allows for verification of Habanero Java programs -- Eric Mercer <egm@byu.edu> and Peter Anderson <anderson.peter@byu.edu>
 * [jpf-mango](https://jpf.byu.edu/hg/jpf-mango) - specification and proof artifact generation
 * [net-iocache](https://jpf.byu.edu/net-iocache) - I/O cache extension to handle network communication
