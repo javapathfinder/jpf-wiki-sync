@@ -46,4 +46,8 @@
 ---
 * [JPF core project](JPF-core)
 ---
+* [Java Pathfinder Workshop 2017](JPF-Workshop-2017)
+    * [Committee](JPF-Workshop-2017-Committee)
+    * [Accepted Papers](JPF-Workshop-2017-Accepted-Papers)
+    * [Program](JPF-Workshop-2017-Program)
 <!--* [Related research and publications](Related-publications)-->

@@ -1,5 +1,3 @@
-## Welcome to the Java Pathfinder Workshop
-
 This year, the workshop is co-located with [ASE](http://ase2017.org) in Urbana-Champaign, IL, USA on November 3, 2017. The goal of the workshop is to highlight research and tools for Java/Android program verification and analysis. Although there is a particular emphasis on the JPF tool, and on projects that use JPF to support basic research, tool development, or verification case studies, the workshop also welcomes contributions related to general program analysis of Java/Android programs. The hope is to use the workshop to grow the community of researchers investigating Java, Android, and JPF in an effort to foster collaboration and define future needs for program analysis of Java/Android.
 
 ## Call for Papers
