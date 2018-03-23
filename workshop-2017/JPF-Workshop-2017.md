@@ -37,3 +37,8 @@ Regular papers should describe research and applications related to JPF and its 
 This year, we are providing stipend for students who are going to present their work at JPF Workshop. Please note that the fund is limited, it can provide partial support, and the amount depends on the number of student applicants.
 
 To apply, please send an email to \<nastaran.shafiei [at] gmail.com\> after the workshop. The email should include your name, expenses towards attending the workshop, and the title of the paper to be presented at JPF Workshop 2017.
+
+## Additional information
+   * [Committee](JPF-Workshop-2017-Committee)
+   * [Accepted Papers](JPF-Workshop-2017-Accepted-Papers)
+   * [Program](JPF-Workshop-2017-Program)
