@@ -24,6 +24,8 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Separation Logic
 
+* [Concolic execution with separation logic](#concolic-execution-with-separation-logic) <Loc><Sang>
+
 * [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <Loc><Sang>
 
 * [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang>
@@ -126,6 +128,12 @@ The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, 
 
   - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
   - [Learning Shape Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/veriml.pdf).
+  
+#### Concolic execution with separation logic
+[Java StarFinder](https://github.com/star-finder/jpf-star) (JSF) currently performs classical symbolic execution on heap-based programs. This project aims to extends JSF with concolic execution. Reference:
+
+  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
+  - [JDart: A Dynamic Symbolic Analysis Framework](https://github.com/psycopaths/jdart).
 
 <!--#### Verification of Actor-based Systems
 The goal of this project is verifying actor-based systems using the model checking technique. This can be achieved through extending the [jpf-actor](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-actor) extension of JPF. jpf-actor is a framework that can be used to systematically test actor programs that compile to bytecode. It requires making the codebase of jpf-actor up-to-date with the current version of [jpf-core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which is compatible with Java 8. It also includes extending the project towards an actor-based Scala library, called [Akka](http://akka.io).-->
