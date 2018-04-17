@@ -1,5 +1,5 @@
 # Installing the NetBeans JPF plugin #
- 1. Download and install [jpf-core](../jpf-core/index), e.g. from the [Mercurial repository](../install/repositories)
+ 1. Download and install [jpf-core](../Home)
  2. -------------- take a break ---------------
  3. Download the `gov-nasa-jpf-netbeans-runjpf.nbm` file from [here](http://babelfish.arc.nasa.gov/trac/jpf/attachment/wiki/install/netbeans-plugin/gov-nasa-jpf-netbeans-runjpf.nbm).
  4. From within Netbeans go to **Tools**->**Plugins** (Alt+T followed by Alt+g)
