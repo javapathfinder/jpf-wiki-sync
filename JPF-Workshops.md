@@ -4,6 +4,8 @@ The JPF workshop is an annual conference for the presentation of existing resear
 
 ### History ###
 
+[2018 JPF Workshop](JPF-Workshop-2018) in Lake Buena Vista, FL.
+
 [2017 JPF Workshop](JPF-Workshop-2017) in Urbana-Champaign, IL.
 
 [2016 JPF Workshop](JPF-Workshop-2016) in Seattle, WA.
