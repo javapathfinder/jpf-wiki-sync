@@ -13,13 +13,13 @@ There are a number of currently active projects that use JPF, as well as legacy 
 * [Symbolic PathFinder](https://github.com/SymbolicPathFinder) - combines symbolic execution with model checking and constraint solving for test case generation. In this tool, programs are executed on symbolic inputs representing multiple concrete inputs. Values of variables are represented as numeric constraints, generated from analysis of the code structure. These constraints are then solved to generate test inputs guaranteed to reach that part of code. Essentially SPF performs symbolic execution for Java programs at the bytecode level. Symbolic PathFinder uses the analysis engine of the Ames JPF model checking tool (i.e. jpf-core).
 
 # Inactive Projects #
-* [jpf-actor](https://babelfish.arc.nasa.gov/hg/jpf/jpf-actor) - Tool and framework for systematic testing of actor programs (e.g. Scala) -- Steven Lauterburg <steven.lauterburg@gmail.com>
+* [Basset](https://babelfish.arc.nasa.gov/hg/jpf/jpf-actor) - Tool and framework for systematic testing of actor programs (e.g. Scala) -- Steven Lauterburg <steven.lauterburg@gmail.com>
 * [jpf-concurrent](https://babelfish.arc.nasa.gov/hg/jpf/jpf-concurrent/summary) - optimized java.util.concurrent library implementation for JPF
 * [jpf-delayed](https://babelfish.arc.nasa.gov/hg/jpf/jpf-delayed) - postpones non-deterministic choice of values until they are used
 * [jpf-guided-test](https://jpf.byu.edu/hg/jpf-guided-test) - Framework for guiding the search using heuristics and static analysis
 * [jpf-racefinder](https://babelfish.arc.nasa.gov/hg/jpf/jpf-racefinder) - a precise data race detector in a relaxed Java memory model
 * [jpf-rtembed](https://babelfish.arc.nasa.gov/hg/jpf/jpf-rtembed) - programs for real-time and embedded platforms (e.g., RTSJ and SCJ)
-* [jpf-extended-test-gen](https://babelfish.arc.nasa.gov/hg/jpf/jpf-extended-test-gen) - Using JPF and SPF for generating tests with respect to MC/DC coverage
+* [Extended-Test-Gen](https://babelfish.arc.nasa.gov/hg/jpf/jpf-extended-test-gen) - Using JPF and SPF for generating tests with respect to MC/DC coverage
 
 # Offsite Projects #
 * jpf-awt - JPF specific library implementations for java.awt and javax.swing -- Peter Mehlitz <Peter.C.Mehlitz@nasa.gov>
