@@ -46,6 +46,8 @@
 ---
 * [JPF core project](JPF-core)
 ---
+* [Java Pathfinder Workshop 2018](JPF-Workshop-2018)
+---
 * [Java Pathfinder Workshop 2017](JPF-Workshop-2017)
     * [Committee](JPF-Workshop-2017-Committee)
     * [Accepted Papers](JPF-Workshop-2017-Accepted-Papers)
