@@ -22,7 +22,6 @@ There are a number of currently active projects that use JPF, as well as legacy 
 * [jpf-extended-test-gen](https://babelfish.arc.nasa.gov/hg/jpf/jpf-extended-test-gen) - Using JPF and SPF for generating tests with respect to MC/DC coverage
 
 # Offsite Projects #
-* jpf-symbc - Symbolic Pathfinder - symbolic execution for Java bytecode -- Corina Pasareanu <corina.s.pasareanu@nasa.gov>
 * jpf-awt - JPF specific library implementations for java.awt and javax.swing -- Peter Mehlitz <Peter.C.Mehlitz@nasa.gov>
 * jpf-awt-shell - specialized JPF shell for model checking java.awt and javax.swing applications -- Peter Mehlitz <Peter.C.Mehlitz@nasa.gov>
 * jpf-aprop - Java annotation based properties and their corresponding checkers
