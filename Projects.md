@@ -34,6 +34,6 @@ There are a number of currently active projects that use JPF, as well as legacy 
 * Unit Checking for Java IDE](http://aiya.ms.mff.cuni.cz/unitchecking/dist) - JPF extension that allows to run JUnit tests under JPF -- Michal Kebrt <michal.kebrt@gmail.com>
 * LTL Listener - Extension which enables the verification of temporal properties for sequential and concurrency Java programs -- Nguyen Anh Cuong <anhcuong@nus.edu.sg>
 * [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) - Extension of JPF that automatically delegates the execution of the system under test methods from JPF to the host JVM -- Nastaran Shafiei <nastaran.shafiei@gmail.com> and Franck van Breugel <franck@cse.yorku.ca>
-* [jpf-inspector](https://github.com/d3sformal/jpf-inspector/) - a GDB-like debugger for programs running under JPF
+* [JPF-Inspector](https://github.com/d3sformal/jpf-inspector/) - a GDB-like debugger for programs running under JPF
 
 
