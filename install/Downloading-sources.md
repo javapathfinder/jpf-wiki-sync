@@ -1,68 +1,87 @@
+<!-- This version of "Downloading sources" came from https://github.com/jeandersonbc/jpf-core/wiki/Downloading-sources-->
 # JPF Source Repository Access #
 
-JPF sources are kept as [Mercurial](http://www.selenic.com/mercurial) repositories within the http://babelfish.arc.nasa.gov/hg/jpf directory. You need to clone the subrepositories (e.g. http://babelfish.arc.nasa.gov/hg/jpf/jpf-core) that you are interested in, **not** the root directory ../hg/jpf itself (which most likely will give you old subrepo revisions).
+JPF sources are kept as [Git](https://git-scm.com/) repositories on GitHub within the [Java Pathfinder organization](https://github.com/javapathfinder/). You need to clone the repository (e.g. https://github.com/javapathfinder/jpf-core) that you are interested in.
 
-We provide anonymous, public read access. If you want to push your changes back to the repository, and you are not a NASA Ames employee, you need to [obtain a JPF contributor account](wiki:about/account).
+Feel free to fork the desired repository. Contributions are welcome, and we invite you to subscribe in our mailing list: java-pathfinder@googlegroups.com
 
-Mercurial is a [Distributed Version Control System](http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/) (DVCS), like Git. If you are not familiar with this, it means "all repositories are created equal", and you have to read up a bit. The foremost authority is ["Mercurial: The Definite Guide"](http://hgbook.red-bean.com/).
+Git is a [Distributed Version Control System](http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/) (DVCS), like Mercurial. If you are not familiar with this, it means "all repositories are created equal", and you have to read up a bit. The foremost authority is ["PRO Git Book"](https://git-scm.com/book/en).
 
-For the inpatient, we also provide a short [Mercurial primer](../devel/mercurial).
+We also encourage you to check the following GitHub guides to familiarize yourself with the GitHub development workflow:
+
+1. [Fork a Repo](https://help.github.com/articles/fork-a-repo/)
+2. [About Pull Requests](https://help.github.com/articles/about-pull-requests/)
 
 ## Command Line Access ##
 
-To check out the jpf-core use the mercurial command `clone`:
+
+#### Getting the source files
+
+To check out the jpf-core, it is recommended to fork the repository.
+
+
+> If you only want to download the project, you can just download the repository content as a zip file.
+> On the repository page, click on the `Clone or Download` button, and proceed with `Download as ZIP`.
+
+
+When you fork a GitHub repository, you create a copy of the project in your GitHub account.
+Then, use the git command `clone` to check out your forked repository in your local machine.
+
+> In the following example, we use SSH but you can also use HTTPS. Note that you will have to use your
+> username and password when using HTTPS. See the [Connecting to GitHub with SSH](https://help.github.com/articles/connecting-to-github-with-ssh/) guide for more info.
 
 ~~~~~~~~ {.bash}
 > cd ~/projects
 
-> hg clone http://babelfish.arc.nasa.gov/hg/jpf/jpf-core
-destination directory: jpf-core
-requesting all changes
-...
-added 71 changesets with 2045 changes to 1694 files
-updating working directory
-683 files updated, 0 files merged, 0 files removed, 0 files unresolved
+> git clone git@github.com:<your_username>/jpf-core.git
+Cloning into 'jpf-core'...
+remote: Counting objects: 2036, done.
+remote: Compressing objects: 100% (63/63), done.
+remote: Total 2036 (delta 33), reused 54 (delta 19), pack-reused 1941
+Receiving objects: 100% (2036/2036), 1.75 MiB | 1.57 MiB/s, done.
+Resolving deltas: 100% (903/903), done.
 ~~~~~~~~
 
-The same process can be repeating by substituting `jpf-core` with the [project](../projects/index) you are interested in. You can install the projects wherever you want, but you have to remember where you installed them for the subsequent [site.properties](../install/site-properties) configuration.
+The same process can be repeating by substituting `jpf-core` with other projects within the [Java Pathfinder organization](https://github.com/javapathfinder/) you are interested in. You can install the projects wherever you want, but you have to remember where you installed them for the subsequent [site.properties](../install/site-properties) configuration.
 
-To update your local repository, change to its directory and do `pull` (don't forget the `-u` option, or your working directories will not get updated) 
+
+#### Synchronizing your forked repository with our main repository
+
+When you have a forked repository, it will not update automatically when the original repository updates.
+To keep your forked repository synchronized, proceed with the following steps:
+
+1. Add a reference to our main repository
 
 ~~~~~~~~ {.bash}
 > cd ~/projects/jpf-core
-> hg pull -u
+> git remote add upstream http://github.com/javapathfinder/jpf-core
 ~~~~~~~~
 
-If you want - and are allowed - to push back your changes, you use **`https://`**`babelfish.arc.nasa.gov/hg/jpf/<project>` as the URL, which will require entering your user-name and password. Before pushing the changes you have to commit the changes from your working directory to your local repository. 
+2. Use the git command `pull` to fetch and merge the changes from `upstream` into your local repository
 
 ~~~~~~~~ {.bash}
-> cd ~/projects/jpf-core
-> hg commit -m "this commits to the local repository"
+> git pull upstream master
+From https://github.com/javapathfinder/jpf-core
+ * branch            master     -> FETCH_HEAD
+Updating 9a10635..18a0c42
+Fast-forward
+ .gitignore                                           | 63 ++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ .travis.yml                                          | 17 +++++++++++++++++
+ README.md                                            |  3 ++-
+ src/main/gov/nasa/jpf/vm/ClassInfo.java              |  2 +-
+ src/tests/gov/nasa/jpf/test/vm/basic/MethodTest.java | 20 ++++++++++++++++++++
+ 5 files changed, 94 insertions(+), 11 deletions(-)
+ create mode 100644 .travis.yml
 ~~~~~~~~
 
-The changes now can be pushed to the central repository using the following command
+Now, your local repostory is synchronized, but you need to update your remote (forked repository on GitHub) repository.
+
+3. Use the git command `push` to submit the local changes:
+
 
 ~~~~~~~~ {.bash}
-> hg push https://babelfish.arc.nasa.gov/hg/jpf/jpf-core
+> git push origin master
 ~~~~~~~~
 
-## Mercurial Support within NetBeans ##
+If you want to contribute to the project, you must make changes in your local repository and push them to your forked remote repository. In this situation, your remote repository is ahead of ours, and you must **create a pull request**. For more info, please, check the [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/) guide.
 
-There is no need to install any plugins, NetBeans is distributed with Mercurial support.
-
-
-## Mercurial Plugin for Eclipse ##
-
-To work within Eclipse
-
-* Download and install the [MercurialEclipse](http://javaforge.com/project/HGE) plugin, which at the time of this writing is available from the update site: http://cbes.javaforge.com/update (the usual Eclipse spiel: **Help** -> **Install New Software...** -> **add site**, enter the update URL above) 
-
-* In the eclipse menu: **File** -> **Import** -> **Mercurial** -> **Clone repository using Mercurial** -> **Next**
-
-* In the repository location, URL, specify http://babelfish.arc.nasa.gov/hg/jpf/jpf-core
-
-* Check the box for 'Search for .project files in clone and use them to create projects'
-
-* Click on **Finish** 
-
-The steps listed above will clone the repository in your workspace. Right clicking on the project will show a 'Team' option that allows to perform all the version control operations. 
