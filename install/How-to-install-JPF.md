@@ -10,7 +10,7 @@ Here are the details:
 
   - [System requirements](System-requirements)
   - [Downloading binary snapshots](Downloading-binary-snapshots)
-  - [Downloading sources from the Mercurial repositories](Downloading-sources)
+  - [Downloading sources from the GitHub repositories](Downloading-sources)
   - [Creating a site properties file](Creating-site-properties-file)
   - [Building, testing, and running](Build,-Test,-Run)
   - [Installing the Eclipse plugin](Eclipse-Plugin)
