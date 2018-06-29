@@ -45,7 +45,8 @@ For more information about Git and how to use it to clone the repository, refer 
 
 ***
 
-That's all you need! We build JPF with the Gradle Build System, and we provide a wrapper in our repository.
+That's all you need! We build JPF with the Gradle Build System, and we provide a wrapper in our repository that requires you nothing but Java. Check the [Build, Test, and Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run) page for more information.
+
 If you are checking our `java-8` branch, you will need to use Ant and manage some dependencies manually.
 <details close>
 <summary>Click here for more details if you are using Ant.</summary>
