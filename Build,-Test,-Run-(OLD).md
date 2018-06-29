@@ -1,6 +1,6 @@
 
 ***
-**This is out-dated content. Please, refer to the page [Build, Test, Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run) for an updated version.**
+**This page contains instructions about building, testing, and running JPF with Ant (branch `java-8`). Please, refer to the page [Build, Test, Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run) for an updated version with Gradle support.**
 ***
 
 If you downloaded binary snapshots, you don't have anything to build (except of creating/updating you [site.properties](./site-properties) file). 
