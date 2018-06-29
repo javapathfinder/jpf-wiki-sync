@@ -1,5 +1,11 @@
 ## Java ##
-Most of the JPF components, including the [jpf-core](../jpf-core/index), are pure Java applications. The minimal version is Java SE 8 (if you have to use JDK 1.7 or JDK 1.6 you have to check out the 'java-7' and 'java-1.6' branches of our repository, respectively), we generally advise to use the latest stable Java version that is available for your platform. You can find out about your java by running the following statement from the command line.
+Most of the JPF components, including the [jpf-core](../jpf-core/index), are pure Java applications. The minimal version is Java SE 8. We generally advise using the latest stable Java version that is available for your platform.
+
+> If you have to use JDK 1.7 or JDK 1.6, please, get in touch with us through our [mailing list](java-pathfinder@googlegroups.com).
+> Keep in mind that JDK 1.7 and JDK 1.6 have reached their end-of-life cycle and Oracle does not support them anymore.
+
+
+You can find out about your java by running the following statement from the command line.
 
 ~~~~~~~~ {.bash}
 > java -version
@@ -7,14 +13,14 @@ java version "1.8.0_20"
 ...
 ~~~~~~~~
 
-JPF is a resource hungry application. We recommend at least 2Gb of memory, and generally use a `-Xmx1024m` setting when launching Java. The disk footprint for most JPF projects is fairly small, the jpf-core takes about 40M when fully expanded with sources, compiled classes and jar files. The binary distribution (jar files) takes less than 1.5M.
+JPF is a resource hungry application. We recommend at least 2Gb of memory, and generally, use a `-Xmx1024m` setting when launching Java. The disk footprint for most JPF projects is fairly small, the jpf-core takes about 40M when fully expanded with sources, compiled classes and jar files. The binary distribution (jar files) takes less than 1.5M.
 
 Some JPF projects do require 3rd party native executables (like DLLs) that are platform specific. Please refer to the specific project pages for details.
 
 ### Java specifics for Windows ###
 Make sure you have the JDK installed, otherwise there is no javac compiler available.
 
-In order to build JPF from a Windows Command Prompt (executing `ant.bat` from inside the respective JPF project directory), you have to set the `JAVA_HOME` environment variable. 
+In order to build JPF from a Windows Command Prompt, you have to set the `JAVA_HOME` environment variable. 
 
 ### Java specifics for OS X ###
 On Mac OS X 10.10, Java 1.7 is default, but `/Applications/Utilities/Java Preferences.app` can change the setting. In some cases, it may be necessary to manually change the symlink that determines which version is default:
@@ -24,30 +30,23 @@ sudo rm /System/Library/Frameworks/JavaVM.framework/Versions/Current
 sudo ln -s 1.8 /System/Library/Frameworks/JavaVM.framework/Versions/Current
 ~~~~~~~~
 
-## Mercurial (Version Control System) ##
-If you want to download the JPF source repositories, you need to install the [Mercurial](http://mercurial.selenic.com/wiki/) distributed version control system on your machine, which requires [Python](http://www.python.org). If you are using a Windows machine, you can install [TortoiseHg](http://tortoisehg.bitbucket.org/), which provides a Windows Explorer extension and includes Python.
+## Git (Version Control System) ##
 
-On some Mac OS X systems, it may be necessary to set the `LC_ALL` and `LANG` environment variables for Mercurial to work correctly.
+If you want to download the JPF source repositories, you need to install the [Git](https://git-scm.com/downloads) distributed version control system on your machine. Most Unix platforms come with Git installed. You can check if you have Git on your machine with the following command:
 
-in `~/.bashrc`:
+```{bash}
+> git --version
+```
 
-~~~~~~~~ {.bash}
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8 
-~~~~~~~~
+If you are new to Git, check the [official website](https://git-scm.com/) to learn the basics. You can also find some GUI Clients for different platforms.
+Note that all major IDEs (e.g., Netbeans, Eclipse, IntelliJ) comes with Git support by default.
 
-in `~/.cshrc`:
+***
 
-~~~~~~~~ {.bash}
-setenv LC_ALL en_US.UTF-8
-setenv LANG en_US.UTF-8 
-~~~~~~~~
-
-
-If you already have Eclipse installed, and want to download the source repositories from within the IDE, you need the [MercurialEclipse](http://javaforge.com/project/HGE) plugin, which you can install from this update-site: http://cbes.javaforge.com/update
-
-Note that NetBeans comes with Mercurial support by default.
-
+That's all you need! We build JPF with the Gradle Build System, and we provide a wrapper in our repository.
+If you are checking our `java-8` branch, you will need to use Ant and manage some dependencies manually.
+<details close>
+<summary>Click here for more details if you are using Ant.</summary>
 
 ## Apache Ant ##
 
@@ -75,3 +74,5 @@ If you want to install the [Eclipse plugin](./eclipse-jpf), you need an Eclipse 
 If you want to go with Eclipse and have to rebuild the JPF [Eclipse plugin](./eclipse-jpf), make sure you install the Eclipse Plugin Development Environment (PDE) from the respective Eclipse server.
 
 If you want to use the [NetBeans plugin](./netbeans-jpf), the minimal NetBeans version is 6.5.
+
+</details>
