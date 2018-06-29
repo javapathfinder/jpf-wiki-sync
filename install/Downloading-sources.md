@@ -3,7 +3,13 @@
 
 JPF sources are kept as [Git](https://git-scm.com/) repositories on GitHub within the [Java Pathfinder organization](https://github.com/javapathfinder/). You need to clone the repository (e.g. https://github.com/javapathfinder/jpf-core) that you are interested in.
 
-Feel free to fork the desired repository. Contributions are welcome, and we invite you to subscribe in our mailing list: java-pathfinder@googlegroups.com
+There are two stable branches in our repository:
+1. `java-8`: It provides Java 8 support using the Ant Build system.
+2. `master`: Contains the latest stable version of our repository.
+
+If you want to keep using Ant, consider using the `java-8` branch. The branch `master` will drop Ant support to switch to Gradle.
+
+Feel free to fork the desired repository. Contributions are welcome, and we invite you to subscribe to our mailing list: java-pathfinder@googlegroups.com
 
 Git is a [Distributed Version Control System](http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/) (DVCS), like Mercurial. If you are not familiar with this, it means "all repositories are created equal", and you have to read up a bit. The foremost authority is ["PRO Git Book"](https://git-scm.com/book/en).
 
