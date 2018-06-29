@@ -41,6 +41,8 @@ If you want to download the JPF source repositories, you need to install the [Gi
 If you are new to Git, check the [official website](https://git-scm.com/) to learn the basics. You can also find some GUI Clients for different platforms.
 Note that all major IDEs (e.g., Netbeans, Eclipse, IntelliJ) comes with Git support by default.
 
+For more information about Git and how to use it to clone the repository, refer to the [Downloading Sources](https://github.com/javapathfinder/jpf-core/wiki/Downloading-sources) page.
+
 ***
 
 That's all you need! We build JPF with the Gradle Build System, and we provide a wrapper in our repository.
