@@ -1,10 +1,18 @@
-***
-**This page contains instructions about building, testing and running JPF with Gradle. If you are considering using Ant and the `java-8` branch, please, refer to the page [Build, Test, Run (Ant)](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run-(Ant)).**
+As of July 2018, we are migrating our build workflow to `Gradle`, and we will use it as our standard builder after merging the `Gradle` support to our main branch.
+However, our existing `Ant` support is still available in the branch `java-8`.
+In the following, we provide instructions for your, according to the builder you are using:
+
+
+<details close>
+<summary>Click here if you are using <b>Gradle</b> (to appear).</summary>
+
 ***
 **This page is under maintenance.**
 ***
 
-If you downloaded binary snapshots, you don't have anything to build (except of creating/updating you [site.properties](./site-properties) file). 
+</details>
+<details close>
+<summary>Click here if you are using <b>Ant</b> (<code>java-8</code> legacy branch).</summary>
 
 ## Building JPF ##
 
@@ -114,3 +122,5 @@ Exception in thread "main"
 ~~~~~~~~
 
 In this particular case, the error was generated after the initial build after the clone had completed.  To resolve the issue, **refresh the Eclipse workspace** (F5 or right click Refresh).  After the refresh, the Run-jpf-core configuration should work as described above.
+
+</details>
