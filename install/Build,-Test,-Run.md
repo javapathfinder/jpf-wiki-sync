@@ -6,9 +6,92 @@ In the following, we provide instructions for your, according to the builder you
 <details close>
 <summary>Click here if you are using <b>Gradle</b> (to appear).</summary>
 
+## Building JPF
+
+### Using the command line
+
+The JPF repository includes a Gradle wrapper that requires nothing except Java to execute. It ensures that all JPF developers and environments use the same builder to avoid any kind of configuration issue.
+
+> If you are using Windows, consider the `gradlew.bat` script.
+
+```{bash}
+> cd jpf-core
+> ./gradlew buildJars
+
+...
+BUILD SUCCESSFUL in 13s
+16 actionable tasks: 16 executed
+```
+
+If you want to have some help about what build tasks are available, check the command `./gradlew tasks --all`.
+
+
+### Within Eclipse
+
+Eclipse comes with Gradle support by default since the Neon release. If you use an older version for some reason, consider installing the [Buildship Plugin](https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md) for Gradle support.
+
+To import the project into Eclipse, proceed with the following steps:
+
+1. Start by generating Eclipse configuration files:
+
+```{bash}
+> ./gradlew eclipse
+
+BUILD SUCCESSFUL in 0s
+3 actionable tasks: 3 executed
+```
+
+2. Select **File > Import** on the drop-down menu
+3. Select **Existing Gradle Project**
+4. Choose the root project directory and click **Finish**
+
+#### Handling "Access Restriction" errors in the workspace
+
+After importing, you may face some *Access Restriction* errors. To get rid of them, proceed with the following steps:
+
+1. In the **Package Explorer**, right-click on the project name and select **Properties** on the drop-down menu
+2. Navigate to **Java Compiler > Errors/Warning** and expand **Deprecated and restricted API**
+3. On **Forbidden Reference (access rules)**, select **Ignore** from the drop-down menu and click **Apply and Close**.
+4. A pop-up may appear. Click ok to perform a full rebuild.
+
 ***
-**This page is under maintenance.**
+**We avoid adding IDE-related files on the repository as many of them are user-dependent and may change over different versions of the same IDE.**
 ***
+
+### Within IntelliJ Idea
+
+Importing `jpf-core` on IntelliJ should be straightforward due to its Gradle support.
+
+1. Launch the **New Project** wizard. If no project is currently opened in IntelliJ IDEA, click **Import Project** on the welcome screen. Otherwise, select **File > New > Project** from **Existing Sources** from the main menu.
+2. Choose the project root directory containing the build.gradle file. Click OK.
+3. On the first page of the Import Project wizard, **in Import Project from External model, select Gradle** and click Next.
+4. On the next page of the Import Project wizard, specify Gradle project settings:
+  4.1. Check **Use auto-import**
+  4.2. Check **Create separate module per source set
+  4.3. Make sure that **Use default gradle wrapper (recommended)** is checked
+5. Click Finish.
+
+## Running JPF ##
+
+### Using the command line ###
+
+~~~~~~~~ {.bash}
+> cd jpf-core
+> java -jar build/RunJPF.jar src/examples/Racer.jpf
+JavaPathfinder v5.0 - (C) 1999-2007 RIACS/NASA Ames Research Center
+.....
+====================================================== statistics
+elapsed time:       0:00:00
+states:             new=9, visited=1, backtracked=4, end=2
+search:             maxDepth=5, constraints=0
+choice generators:  thread=8, data=0
+heap:               gc=8, new=291, free=32
+instructions:       3112
+max memory:         79MB
+loaded code:        classes=73, methods=1010
+
+====================================================== search finished: 1/12/10 2:30 PM
+~~~~~~~~
 
 </details>
 <details close>
