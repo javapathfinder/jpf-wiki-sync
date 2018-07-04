@@ -8,7 +8,7 @@ In the following, we provide instructions for your, according to the builder you
 ***
 
 <details close>
-<summary>Click here if you are using <b>Gradle</b> (to appear).</summary>
+<summary>Click here if you are using <b>Gradle</b>.</summary>
 
 ## Building JPF
 
