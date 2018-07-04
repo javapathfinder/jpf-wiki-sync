@@ -2,6 +2,10 @@ As of July 2018, we are migrating our build workflow to `Gradle`, and we will us
 However, our existing `Ant` support is still available in the branch `java-8`.
 In the following, we provide instructions for your, according to the builder you are using:
 
+***
+### Important
+**Some Java releases (e.g., `jdk1.8.0_101`, `_102`, `_111`) does not include `sun.misc.JavaOISAccess`. This will cause compilation errors during the build execution. Consider building JPF with an updated Java version to avoid such errors.**
+***
 
 <details close>
 <summary>Click here if you are using <b>Gradle</b> (to appear).</summary>
