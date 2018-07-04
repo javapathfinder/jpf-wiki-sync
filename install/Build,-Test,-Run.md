@@ -4,7 +4,7 @@ In the following, we provide instructions for your, according to the builder you
 
 ***
 ### Important
-**Some Java releases (e.g., `jdk1.8.0_101`, `_102`, `_111`) does not include `sun.misc.JavaOISAccess`. This will cause compilation errors during the build execution. Consider building JPF with an updated Java version to avoid such errors.**
+**Some Java releases (e.g., `jdk1.8.0_101`, `_102`, `_111`) do not include `sun.misc.JavaOISAccess`. This will cause compilation errors during the build execution. Consider building JPF with an updated Java version to avoid such errors.**
 ***
 
 <details close>
