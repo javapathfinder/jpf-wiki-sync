@@ -47,8 +47,8 @@ BUILD SUCCESSFUL in 0s
 
 2. Select **File > Import** on the drop-down menu
 3. Select **Existing Gradle Project**
-4. Choose the root project directory and click **Finish**
-
+4. Choose the root project directory and click **Next**
+5. Check the checkbox **Override workspace settings**, then check the option **Gradle wrapper** and click **Finish**.
 #### Handling "Access Restriction" errors in the workspace
 
 After importing, you may face some *Access Restriction* errors. To get rid of them, proceed with the following steps:
