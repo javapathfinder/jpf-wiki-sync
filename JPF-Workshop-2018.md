@@ -15,7 +15,7 @@ Topics of interest include the following:
   * Android program analysis or verification
   * General software verification techniques or tools
 
-We solicit two types of submissions to be uploaded on [EasyChair/JPF2018](linkme):
+We solicit two types of submissions to be uploaded on [EasyChair/JPF2018](https://easychair.org/conferences/?conf=jpf2018):
 
 1. Regular papers: At most 5-page long papers in the [ACM SIG Proceedings](http://www.acm.org/publications/proceedings-template) format will be reviewed by the organizing committee. Accepted regular papers will be presented at the workshop and published in the [ACM SIGSOFT Software Engineering Notes](https://www.sigsoft.org/SEN) and the ACM Digital Library, as in previous years.
 
