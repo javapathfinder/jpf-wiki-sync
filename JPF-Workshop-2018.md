@@ -32,5 +32,6 @@ We solicit two types of submissions to be uploaded on [EasyChair/JPF2018](linkme
 * Please see ESEC/FSE 2018 Registration (check back soon!).
 
 ## Additional information
-   * [Committee](JPF-Workshop-2018-Committee)
+   * [Organizing Committee](https://2018.fseconference.org/committee/jpf-2018-papers-organizing-committee)
+   * [Program Committee](https://2018.fseconference.org/committee/jpf-2018-papers-program-committee)
 
