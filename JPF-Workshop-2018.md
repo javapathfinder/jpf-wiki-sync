@@ -23,7 +23,7 @@ We solicit two types of submissions to be uploaded on [EasyChair/JPF2018](linkme
 
 ## Important Dates
 
-  * **Submission**: July 22nd, 2018 (23:59:59pm [AoE]). Submit on [EasyChair/JPF2018](linkme).
+  * **Submission**: July 29, 2018 (23:59:59pm [AoE]). Submit on [EasyChair/JPF2018](linkme).
   * **Notification**: August 24th, 2018
   * **Camera Ready Version**: September 15th, 2018
   * **Workshop Date**: November 5th, 2018
