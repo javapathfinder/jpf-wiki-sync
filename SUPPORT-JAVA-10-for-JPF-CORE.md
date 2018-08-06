@@ -163,11 +163,13 @@ To access caller information, StackWalking API is used instead of the non-standa
 
 JPF is yet to support indified String concatenation which was introduced in JEP 280. It will fail to handle invokedynamic calls to methods in StringConcatFactory which are typically used as bootstrap methods for invokedynamic call sites to support the string concatenation.
 
-Issue: [#53][issue-53] VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException  [Work-in-progress]
+**[Work-in-progress]**
+
+Issue: VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException  [#53][issue-53] 
 
 | Summary                                                                     | PR(s)                         |
 | --------------------------------------------------------------------------- |:-----------------------------:|
-| Add a new constructor BootstrapMethodInfo(enclosingClass, cpArgs            | [#101][101]                   | 
+| Add a new constructor BootstrapMethodInfo(enclosingClass, cpArgs)           | [#101][101]                   | 
 
 [classes-dir]: https://github.com/javapathfinder/jpf-core/tree/c81801bd98c485b9bbe5cd0e711ac0bf242b100b/src/classes
 
