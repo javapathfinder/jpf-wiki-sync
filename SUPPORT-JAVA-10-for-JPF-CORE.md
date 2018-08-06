@@ -173,7 +173,7 @@ Issue: VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException
 
 [classes-dir]: https://github.com/javapathfinder/jpf-core/tree/c81801bd98c485b9bbe5cd0e711ac0bf242b100b/src/classes
 
-[28]: https://github.com/javapathfinder/jpf-core/pull/39
+[28]: https://github.com/javapathfinder/jpf-core/pull/28
 [39]: https://github.com/javapathfinder/jpf-core/pull/39
 [119]: https://github.com/javapathfinder/jpf-core/pull/119
 [129]: https://github.com/javapathfinder/jpf-core/pull/129
@@ -211,9 +211,9 @@ Issue: VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException
 [36]: https://github.com/javapathfinder/jpf-core/pull/36
 [4]: https://github.com/javapathfinder/jpf-core/pull/4
 [92]: https://github.com/javapathfinder/jpf-core/pull/92
-[40]: https://github.com/javapathfinder/jpf-core/pull/83
-[86]: https://github.com/javapathfinder/jpf-core/pull/23
-[63]: https://github.com/javapathfinder/jpf-core/pull/26
+[40]: https://github.com/javapathfinder/jpf-core/pull/40
+[86]: https://github.com/javapathfinder/jpf-core/pull/86
+[63]: https://github.com/javapathfinder/jpf-core/pull/63
 
 [101]: https://github.com/javapathfinder/jpf-core/pull/101
 [issue-53]: https://github.com/javapathfinder/jpf-core/issues/53
