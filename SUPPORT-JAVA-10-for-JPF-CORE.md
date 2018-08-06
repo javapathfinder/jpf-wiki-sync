@@ -1,6 +1,6 @@
 JPF-CORE currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like the modularity, strong encapsulation, while also handling the deprecates and removes. 
 
-## Compiling MJI model classes
+### Compiling MJI model classes
 
 Split packages are not allowed since Java 9's Project Jigsaw (packages having the same name exist in different modules). So in order to compile a model class we need to patch them. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
 
@@ -33,7 +33,7 @@ javac --patch-module java.base=src/classes/modules/java.base
 | Changes made to be able to successfully compile MJI model classes     | [#28][28]     |
 
 
-## Update MJI model class for java.lang.String to comply with JEP 254
+### Update MJI model class for java.lang.String to comply with JEP 254
 
 String model class is modified, to follow a structure similar to the standard String class in JDK 9 and later which uses a byte array plus an encoding-flag instead of UTF-16 char array to represent the String.
 
@@ -53,7 +53,7 @@ Implementation changes were also made to some of the methods that construct Elem
 | Refactor other String related classes and methods to comply with JEP 254    | [#133][133]          |
 
 
-## Update NativePeer class for java.lang.String to comply with JEP 254
+### Update NativePeer class for java.lang.String to comply with JEP 254
 
 Most methods in JPF_java_lang_String had failed as the `value` field have changed from char[] to a byte[] since JEP 254. So instead of retrieving the value field, and performing operations on that value field to return a result (which is now complex as the value field now being a byte[] and having a coder which specifies different encodings), we turn JPF String object into a VM String object using `MJIEnv.getStringObject` and then delegates the method call to that VM object.
 
@@ -61,7 +61,7 @@ Most methods in JPF_java_lang_String had failed as the `value` field have change
 | --------------------------------------------------------------------------- |:------------------------:|
 |  Refactor JPF_java_lang_String to fix invalid casting of value field        | [1ccefdf][1ccefdf]       |
 
-## Changes to class URI(s)
+### Changes to class URI(s)
 
 Accessor methods that are being used to retrieve class URIs were modified to comply with the new URI structure introduced by the new Module System. The new path entry also includes a path segment that specifies the module name of that class.
 
@@ -79,7 +79,7 @@ After:
 | Update JVMClassFileContainer#getClassURL to comply with Module System       | [#100][100]          |
 | Update JVMClassFileContainer#getModuleName                                  | [#121][121]          |
 
-## New JRTClassFileContainer to load classes from the run-time image
+### New JRTClassFileContainer to load classes from the run-time image
 
 As stated in the JDK 9 Release Notes the system property `sun.boot.class.path` has been removed. Moreover, rt.jar has been removed since JEP 220 and is replaced by the new runtime. This causes JPF to fail resolve standard Java classes (classes that we don't have model classes for).
 
@@ -89,7 +89,7 @@ So if a class is not found in the classpath, now we try to load that class from 
 | --------------------------------------------------------------------------- |:--------------------:|
 | Add gov.nasa.jpf.jvm.JRTClassFileContainer                                  | [#102][102]          |
 
-## Changes to NativePeer classes
+### Changes to NativePeer classes
 
 Following PRs address UnsatisfiedLinkError(s) that appears due to missing NativePeer classes and NativePeer methods.
 
@@ -104,7 +104,7 @@ Following PRs address UnsatisfiedLinkError(s) that appears due to missing Native
 | Rename JPF_sun_reflect_Reflection to JPF_jdk_internal_reflect_Reflection    | [#104][104]          |
 | Rename JPF_sun_misc_VM to JPF_jdk_internal_misc_VM                          | [#116][116]          |
 
-## Changes to MJI model classes
+### Changes to MJI model classes
 
 Changes made to MJI model classes, primarily to prevent NoSuchMethodError(s):
 
@@ -115,7 +115,7 @@ Changes made to MJI model classes, primarily to prevent NoSuchMethodError(s):
 | Add accessor methods for SharedSecrets#javaLangInvokeAccess                 | [#131][131]          |
 | Add java.lang.Class#getModule to MJI model class                            | [#125][125]          |
 
-## Handling Access Warnings 
+### Handling Access Warnings 
 
 JEP 260 encapsulates most of the JDK's internal APIs so that they are inaccessible by default. So to break the encapsulation, and to access them in non-modular context, `--add-reads`, `--add-exports`, or `--add-opens` command-line options are being passed to relevant ant compile and run targets.
 
@@ -130,7 +130,7 @@ JEP 260 encapsulates most of the JDK's internal APIs so that they are inaccessib
 | --------------------------------------------------------------------------- |:--------------------:|
 | Modify ant target -compile-classes                                          | [880b4ca][880b4ca]   |
 
-## Deprecations in the JDK
+### Deprecations in the JDK
 
 JEP 277: Enhanced Deprecation had introduced several new compiler warnings. We were able to fix these warnings that had appeared in the build logs.
 
@@ -144,7 +144,7 @@ JEP 277: Enhanced Deprecation had introduced several new compiler warnings. We w
 | Replaces all the occurrences of clazz.newInstance()                         | [#66][66]            | 
 | Refactor URLClassLoaderTest.testGetPackage to testGetDefinedPackage         | [#80][80]            | 
 
-## Miscellaneous
+### Miscellaneous
 
 To access caller information, StackWalking API is used instead of the non-standard sun.misc.SharedSecrets.
 
@@ -159,7 +159,7 @@ To access caller information, StackWalking API is used instead of the non-standa
 | Override hashCode where equals are overridden                               | [#86][86]                     | 
 | Other                                                                       | [#63][63]                     | 
 
-## Currently unsupported features
+### Currently unsupported features
 
 JPF is yet to support indified String concatenation which was introduced in JEP 280. It will fail to handle invokedynamic calls to methods in StringConcatFactory which are typically used as bootstrap methods for invokedynamic call sites to support the string concatenation.
 
