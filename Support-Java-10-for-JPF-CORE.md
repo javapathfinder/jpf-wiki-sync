@@ -1,8 +1,8 @@
-JPF-CORE currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like the modularity, strong encapsulation, while also handling the deprecates and removes. 
+jpf-core currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like the modularity, strong encapsulation, while also handling the deprecates and removes. 
 
 ### Compiling MJI model classes
 
-Split packages are not allowed since Java 9's Project Jigsaw (packages having the same name exist in different modules). So in order to compile a model class we need to patch them. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
+Split packages are not allowed since Java 9's Project Jigsaw (packages having the same name exist in different modules). So in order to compile a model class we need to patch it. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
 
 The new directory structure looks like the following:
 ```
