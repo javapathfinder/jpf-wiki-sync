@@ -10,7 +10,7 @@ JEPs that introduce internal changes to JPF include, but not limited to:
 * [JEP 277: Enhanced Deprecation](#deprecations-in-the-jdk)
 * [JEP 280: Indify String Concatenation](#currently-unsupported-features)
 
-**JDK Release Notes - Important Changes and Information from Oracle**
+**JDK Release Notes**
 
 * [JDK 9 Release Notes](http://www.oracle.com/technetwork/java/javase/9-relnote-issues-3704069.html)
 * [JDK 10 Release Notes](http://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html)
