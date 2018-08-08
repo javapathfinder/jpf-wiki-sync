@@ -1,8 +1,30 @@
 jpf-core currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like the modularity, strong encapsulation, while also handling the deprecates and removes. 
 
+JEPs that introduce internal changes to JPF include, but not limited to:
+
+* [Project Jigsaw](#compiling-mji-model-classes)
+* [JEP 220: Modular Run-Time Images](#new-jrtclassfilecontainer-to-load-classes-from-the-run-time-image)
+* [JEP 254: Compact Strings](#update-mji-model-class-for-javalangstring-to-comply-with-jep-254)
+* [JEP 259: Stack-Walking API](#miscellaneous)
+* [JEP 260: Encapsulate Most Internal APIs](#handling-access-warnings)
+* [JEP 277: Enhanced Deprecation](#deprecations-in-the-jdk)
+* [JEP 280: Indify String Concatenation](#currently-unsupported-features)
+
+**JDK Release Notes - Important Changes and Information from Oracle**
+
+* [JDK 9 Release Notes](http://www.oracle.com/technetwork/java/javase/9-relnote-issues-3704069.html)
+* [JDK 10 Release Notes](http://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html)
+
+[jep-220]: http://openjdk.java.net/jeps/220
+[jep-254]: http://openjdk.java.net/jeps/254
+[jep-259]: http://openjdk.java.net/jeps/259
+[jep-260]: http://openjdk.java.net/jeps/260
+[jep-277]: http://openjdk.java.net/jeps/277
+[jep-280]: http://openjdk.java.net/jeps/280
+
 ### Compiling MJI model classes
 
-Split packages are not allowed since Java 9's Project Jigsaw (packages having the same name exist in different modules). So in order to compile a model class we need to patch it. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
+Split packages are not allowed since Java 9's [Project Jigsaw](http://openjdk.java.net/projects/jigsaw/quick-start) (packages having the same name exist in different modules). So in order to compile a model class we need to patch it. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
 
 The new directory structure looks like the following:
 ```
@@ -55,7 +77,7 @@ Implementation changes were also made to some of the methods that construct Elem
 
 ### Update NativePeer class for java.lang.String to comply with JEP 254
 
-Most methods in JPF_java_lang_String had failed as the `value` field have changed from char[] to a byte[] since JEP 254. So instead of retrieving the value field, and performing operations on that value field to return a result (which is now complex as the value field now being a byte[] and having a coder which specifies different encodings), we turn JPF String object into a VM String object using `MJIEnv.getStringObject` and then delegates the method call to that VM object.
+Most methods in JPF_java_lang_String had failed as the `value` field have changed from char[] to a byte[] since [JEP 254][jep-254]. So instead of retrieving the value field, and performing operations on that value field to return a result (which is now complex as the value field now being a byte[] and having a coder which specifies different encodings), we turn JPF String object into a VM String object using `MJIEnv.getStringObject` and then delegates the method call to that VM object.
 
 | Summary                                                                     | Commit(s)                |
 | --------------------------------------------------------------------------- |:------------------------:|
@@ -81,7 +103,7 @@ After:
 
 ### New JRTClassFileContainer to load classes from the run-time image
 
-As stated in the JDK 9 Release Notes the system property `sun.boot.class.path` has been removed. Moreover, rt.jar has been removed since JEP 220 and is replaced by the new runtime. This causes JPF to fail resolve standard Java classes (classes that we don't have model classes for).
+As stated in the JDK 9 Release Notes the system property `sun.boot.class.path` has been removed. Moreover, rt.jar has been removed since [JEP 220][jep-220] and is replaced by the new runtime. This causes JPF to fail resolve standard Java classes (classes that we don't have model classes for).
 
 So if a class is not found in the classpath, now we try to load that class from the run-time image.
 
@@ -117,7 +139,7 @@ Changes made to MJI model classes, primarily to prevent NoSuchMethodError(s):
 
 ### Handling Access Warnings 
 
-JEP 260 encapsulates most of the JDK's internal APIs so that they are inaccessible by default. So to break the encapsulation, and to access them in non-modular context, `--add-reads`, `--add-exports`, or `--add-opens` command-line options are being passed to relevant ant compile and run targets.
+[JEP 260][jep-260] encapsulates most of the JDK's internal APIs so that they are inaccessible by default. So to break the encapsulation, and to access them in non-modular context, `--add-reads`, `--add-exports`, or `--add-opens` command-line options are being passed to relevant ant compile and run targets.
 
     <compilerarg value="--add-exports"/>
     <compilerarg value="java.base/jdk.internal.misc=ALL-UNNAMED"/>
@@ -161,9 +183,9 @@ To access caller information, StackWalking API is used instead of the non-standa
 
 ### Currently unsupported features
 
-JPF is yet to support indified String concatenation which was introduced in JEP 280. It will fail to handle invokedynamic calls to methods in StringConcatFactory which are typically used as bootstrap methods for invokedynamic call sites to support the string concatenation.
+JPF is yet to support indified String concatenation which was introduced in [JEP 280][jep-280]. It will fail to handle invokedynamic calls to methods in StringConcatFactory which are typically used as bootstrap methods for invokedynamic call sites to support the string concatenation.
 
-**[Work-in-progress]**
+**Work-in-progress**
 
 Issue: VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException  [#53][issue-53] 
 
