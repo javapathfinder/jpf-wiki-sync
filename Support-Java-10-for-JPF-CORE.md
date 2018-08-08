@@ -1,4 +1,4 @@
-jpf-core currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like the modularity, strong encapsulation, while also handling the deprecates and removes. 
+jpf-core currently builds and runs on Java 8. In this work, we introduced partial support for Java 10, leveraging the new features like modularity, strong encapsulation, while also handling the deprecates and removes. 
 
 JEPs that introduce internal changes to JPF include, but not limited to:
 
@@ -26,7 +26,7 @@ JEPs that introduce internal changes to JPF include, but not limited to:
 
 Split packages are not allowed since Java 9's [Project Jigsaw](http://openjdk.java.net/projects/jigsaw/quick-start) (packages having the same name exist in different modules). So in order to compile a model class we need to patch it. But since we had sources for multiple modules in the same tree in [src/classes][classes-dir], we first separated them into directories based on their respective modules, for ease of compilation.
 
-The new directory structure looks like the following:
+The new directory structure looks as follows:
 ```
 ├── classes
 │   ├── gov
@@ -44,7 +44,7 @@ The new directory structure looks like the following:
 │               └── util
 ```
 
-These are then compiled, like:
+These are then compiled, as follows:
 ```
 javac --patch-module java.base=src/classes/modules/java.base
                      java.logging=src/classes/modules/java.logging src/classes
