@@ -35,6 +35,10 @@ test - Runs core regression tests.
 3. [Downloading sources](https://github.com/javapathfinder/jpf-core/wiki/Downloading-sources)
 4. [Build, Test, Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run)
 
+### Summary of Changes
+
+> TODO
+
 ### Pending Tasks
 
 In parallel to this project, there is work in progress related to Java 10 support in a dedicated (check [here](https://github.com/javapathfinder/jpf-core/wiki/Support-Java-10-for-JPF-CORE) for more details).
