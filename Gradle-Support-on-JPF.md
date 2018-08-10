@@ -28,16 +28,32 @@ Verification tasks
 test - Runs core regression tests.
 ```
 
+### Summary of Changes
+
+
+In the following, we summarize the changes in reverse chronological ordered.
+
+|Summary| PR(s) |
+|---|---|
+|Support to Gradle Build and Repository Cleanup | [#98](https://github.com/javapathfinder/jpf-core/pull/98) |
+|Added missing packaging tasks on Gradle build | [#84](https://github.com/javapathfinder/jpf-core/pull/84) |
+|Created buildinfo task (#78) | [#79](https://github.com/javapathfinder/jpf-core/pull/79) |
+|Added tests to verify if resources exist in classpath | [#76](https://github.com/javapathfinder/jpf-core/pull/76) |
+|Added ignored tests (Fixes #56) | [#74](https://github.com/javapathfinder/jpf-core/pull/74) |
+|Adds support to Jar tasks on Gradle build | [#70](https://github.com/javapathfinder/jpf-core/pull/70) |
+|Copying build.properties to output dir | [#65](https://github.com/javapathfinder/jpf-core/pull/75) |
+|Implemented log summary and updated log configurations | [#55](https://github.com/javapathfinder/jpf-core/pull/55) |
+|Added Java Plugin to the Gradle build | [#52](https://github.com/javapathfinder/jpf-core/pull/52) |
+|Added minimal Gradle support to jpf-core | [#45](https://github.com/javapathfinder/jpf-core/pull/45) |
+
+
+
 ### Updated Wiki pages
 
 1. [How to install JPF](https://github.com/javapathfinder/jpf-core/wiki/How-to-install-JPF)
 2. [System requirements](https://github.com/javapathfinder/jpf-core/wiki/System-requirements)
 3. [Downloading sources](https://github.com/javapathfinder/jpf-core/wiki/Downloading-sources)
 4. [Build, Test, Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run)
-
-### Summary of Changes
-
-> TODO
 
 ### Pending Tasks
 
