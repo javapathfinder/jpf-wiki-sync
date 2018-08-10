@@ -27,8 +27,24 @@ BUILD SUCCESSFUL in 13s
 16 actionable tasks: 16 executed
 ```
 
-If you want to have some help about what build tasks are available, check the command `./gradlew tasks --all`.
+In the following, there is a summary of the main build tasks.
+If you want to have some help about what other tasks are available, check the command `./gradlew tasks --all`.
 
+```
+JPF Build tasks
+---------------
+buildJars - Generates all core JPF jar files.
+compile - Compiles all JPF core sources.
+
+JPF Distribution tasks
+----------------------
+dist - Builds binary distribution.
+srcDist - Builds the source distribution.
+
+Verification tasks
+------------------
+test - Runs core regression tests.
+```
 
 ### Within Eclipse
 
