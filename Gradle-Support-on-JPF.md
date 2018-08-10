@@ -35,6 +35,15 @@ test - Runs core regression tests.
 3. [Downloading sources](https://github.com/javapathfinder/jpf-core/wiki/Downloading-sources)
 4. [Build, Test, Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run)
 
+### Pending Tasks
+
+In parallel to this project, there is work in progress related to Java 10 support in a dedicated (check [here](https://github.com/javapathfinder/jpf-core/wiki/Support-Java-10-for-JPF-CORE) for more details).
+Therefore, it is also important to migrate the Java 10 support to use Gradle, as well.
+The work to support Gradle in the Java 10 branch is still in the beginning.
+The `gradle` branch is in synchronization with the `java-10` branch, and the idea is to merge the `gradle` branch to the `java-10` branch in a later moment. Check the following links for more details on the current state of the Gradle support on Java 10:
+
+* [Bring Gradle to Java 10](https://github.com/javapathfinder/jpf-core/issues/138)
+* [Add support to compile tasks on Gradle with Java 10](https://github.com/javapathfinder/jpf-core/issues/139)
 
 ## Gradle Support to JPF-nhandler
 
