@@ -31,7 +31,7 @@ test - Runs core regression tests.
 ### Summary of Changes
 
 
-In the following, we summarize the changes in reverse chronological ordered.
+In the following, we summarize the changes in reverse chronological order.
 
 |Summary| PR(s) |
 |---|---|
