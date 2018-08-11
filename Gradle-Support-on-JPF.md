@@ -1,4 +1,4 @@
-The JPF project has been using Ant to automate the build process since it was published. Although Ant is a popular build tool for Java project it has some drawbacks such as the lack of automatic dependency resolution and the large and verbose XML-based script file. Given the necessity to move to a more flexible alternative, we migrated to Gradle as the standard builder for JPF. In the following, we summarize what has been achieved and what is remaining.
+The JPF project has been using [Ant](https://ant.apache.org/) to automate the build process since it was published. Although Ant is a popular build tool for Java project it has some drawbacks such as the lack of automatic dependency resolution and the large and verbose XML-based script file. Given the necessity to move to a more flexible alternative, we migrated to [Gradle](https://gradle.org/) as the standard builder for JPF. In the following, we summarize what has been achieved and what is remaining.
 
 ## Gradle Support to JPF-core
 
@@ -57,7 +57,7 @@ In the following, we summarize the changes in reverse chronological order.
 
 ### Pending Tasks
 
-In parallel to this project, there is work in progress related to Java 10 support in a dedicated (check [here](https://github.com/javapathfinder/jpf-core/wiki/Support-Java-10-for-JPF-CORE) for more details).
+In parallel to this project, there is work in progress related to [Java 10 support](https://github.com/javapathfinder/jpf-core/wiki/Support-Java-10-for-JPF-CORE) in a dedicated project.
 Therefore, it is also important to migrate the Java 10 support to use Gradle, as well.
 The work to support Gradle in the Java 10 branch is still in the beginning.
 The `gradle` branch is in synchronization with the `java-10` branch, and the idea is to merge the `gradle` branch to the `java-10` branch in a later moment. Check the following links for more details on the current state of the Gradle support on Java 10:
