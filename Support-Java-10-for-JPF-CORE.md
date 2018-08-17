@@ -66,6 +66,7 @@ String model class is modified, to follow a structure similar to the standard St
 | Update `String#length` to comply with JEP 254                               | [#129][129]          |
 | Add package private constructor `java.lang.String#String(byte[], byte)`     | [#137][137]          |
 | Add method `java.lang.String.getBytes(byte[], int, byte)`                   | [#136][136]          |
+| Remove invalid assertion in `String#getBytes(byte[], int, byte)`            | [#144][144]          |
 
 Implementation changes were also made to some of the methods that construct ElementInfo(s) for String objects, in gov.nasa.jpf.vm.GenericHeap, since the `String#value` field, has changed from `char[]` to a `byte[]`
 
@@ -201,6 +202,7 @@ Issue: VMClassInfo$Initializer.setBootstrapMethod ArrayIndexOutOfBoundsException
 [129]: https://github.com/javapathfinder/jpf-core/pull/129
 [137]: https://github.com/javapathfinder/jpf-core/pull/137
 [136]: https://github.com/javapathfinder/jpf-core/pull/136
+[144]: https://github.com/javapathfinder/jpf-core/pull/144
 [133]: https://github.com/javapathfinder/jpf-core/pull/133
 [100]: https://github.com/javapathfinder/jpf-core/pull/100
 [121]: https://github.com/javapathfinder/jpf-core/pull/121
