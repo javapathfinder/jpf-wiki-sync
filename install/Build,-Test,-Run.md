@@ -15,6 +15,7 @@ In the following, we provide instructions for your, according to the builder you
 ### Using the command line
 
 The JPF repository includes a Gradle wrapper that requires nothing except Java to execute. It ensures that all JPF developers and environments use the same builder to avoid any kind of configuration issue.
+Note that we assume that `./gradle` is used below, which installs a local copy of version 4. If you use your own version of Gradle, make sure it is version 4 or newer.
 
 > If you are using Windows, consider the `gradlew.bat` script.
 
