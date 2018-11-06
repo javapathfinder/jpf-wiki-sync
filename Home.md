@@ -63,7 +63,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 *  17/08/2015 JPF Workshop 2015 Accepted Papers are announced. Please visit [ASE 2015](http://ase2015.unl.edu) for registration, date and venue information. 
 *  10/03/2014 JPF Workshop 2014 [Accepted Papers](JPF-Workshop-2014-Accepted-Papers). Please visit [SOAR Lab](http://soarlab.org/events/jpf2014/) for registration, date and venue information. 
 <details close>
-<summary>...</summary>
+<summary>Old news</summary>
 <ul>
 <li>10/01/2013 JPF Workshop 2013 <a href="JPF-Workshop-2013-Accepted-Papers">Accepted Papers</a>. Please note <a href="http://ti.arc.nasa.gov/events/jpf-workshop-2013">JPF Workshop 2013</a> website is down due to the shutdown, please visit <a href="http://ase2013.org">ASE 2013</a> for registration, date and venue information.</li>
 
