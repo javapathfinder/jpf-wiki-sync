@@ -5,6 +5,11 @@ This is the basis for all JPF projects, i.e. you always need to install it. jpf-
 ## Repository ##
 The Git repository is on https://github.com/javapathfinder/jpf-core
 
+There is also a repository for the wiki, to allow third-party contributors to provide pull requests.
+https://github.com/javapathfinder/jpf-wiki-sync
+
+The contents of the wiki repository automatically get merged into the JPF wiki (within minutes after each change).
+
 ## Properties ##
 jpf-core supports two rather generic properties, which are configured by default:
 
