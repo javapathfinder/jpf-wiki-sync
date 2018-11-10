@@ -34,15 +34,15 @@ The basic functionality of MJI consists of a mechanism to intercept method invoc
 
 As part of the JPF implementation, MJI automatically takes care of determining which method invocations have to be intercepted by looking up the corresponding native peer methods
 
-![Figure 2: MJI Functions](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-functions.svg){align=center width=600}
+![Figure 2: MJI Functions](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-functions.svg)
 
 This would not be very useful without being able to access the JPF object model (or other JPF intrinsics), from inside the native peer methods. Instead of requiring all native peers implementation to reside in a JPF internal package, there exists an interface class `MJIEnv` that provide access to the JPF internal structure in a controlled way. `NativePeer` classes  residing in `gov.nasa.jpf.vm` (i.e. the same package as `MJIEnv`) can reach all internal JPF features. Outside this package, the available API in `MJIEnv` is mostly restricted to the access JPF object (getting and setting values).
 
-![Figure 3: MJI Call Sequence](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-call.svg){align=center width=580}
+![Figure 3: MJI Call Sequence](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-call.svg)
 
 Before a native peer method can be used, JPF has to establish the correspondence between the model class and the native peer. This takes place at load time of the model class. MJI uses a special name mangling scheme to lookup native peers, using the model class package name and class name to deduce the native peer class name.
 
-![Figure 3: MJI name mangling](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-mangling.svg){align=center width=560}
+![Figure 3: MJI name mangling](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/mji-mangling.svg)
 
 Since the model class package is encoded in the native peer name, the package of the native peer can be chosen freely. In analogy to JNI, native peers methods names include the signature of the model method by encoding its parameter types. If there is no potential ambiguity, i.e. mapping from native peer methods to model class methods is unique, signature encoding is not required.
 
@@ -70,7 +70,7 @@ Even if it is not directly related to MJI, it should be mentioned that some JPF 
 
 To ease the tedious process of manually mangle method names, MJI includes a tool to automatically create skeletons of native peers from a given Model class, called `GenPeer`. The translation process uses Java reflection, i.e. the model class needs to be in the CLASSPATH and is specified in normal dot notation (i.e. not as a file).
 
-![Figure 4: The GenPeer tool](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/genpeer.svg){align=center width=470}
+![Figure 4: The GenPeer tool](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/genpeer.svg)
 
 There exist a number of command line options that can be displayed by calling `GenPeer` without arguments. `GenPeer` per default writes to stdout, i.e. the output has to be redirected into a file.
 
