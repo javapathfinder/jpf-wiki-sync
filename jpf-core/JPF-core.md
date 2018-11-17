@@ -39,9 +39,9 @@ jpf-core uses many JPF properties, you can find most of them in the `defaults.pr
  * `listener` - a comma separated list of class names representing listeners that should be automatically instantiated and registered during JPF startup
  * `listener.autoload` - a comma separated list of annotation types. If JPF encounters such an annotation in one of the analyzed classes at runtime, it automatically loads and registered the associated listener
  * `listener.<annotation-type>` - class name of the listener associated with `<annotation-type>`
- * `vm.insn_factory.class` - class name of a [`BytecodeInstructionFactory`](../devel/bytecode_factory), e.g. to switch to the symbolic execution mode or to use specific bytecode implementations for checking numeric properties 
+ * `vm.insn_factory.class` - class name of a [`BytecodeInstructionFactory`](Bytecode-Factories), e.g. to switch to the symbolic execution mode or to use specific bytecode implementations for checking numeric properties 
  * `vm.halt_on_throw (true|false)` - tells JPF if it should try to find a handler if it encounters an exception in the analyzed program (useful to avoid masking exceptions within handlers)
- * [`cg.randomize_choices`](../user/config/random) `(random|path|def)` - tells JPF if it should randomize the order of choices for each [`ChoiceGenerator`](../devel/choicegenerator), to avoid degenerated searches (e.g. always indexing with the main thread in scheduling choices).
+ * [`cg.randomize_choices`](Randomization-options-in-JPF) `(random|path|def)` - tells JPF if it should randomize the order of choices for each [`ChoiceGenerator`](ChoiceGenerators), to avoid degenerated searches (e.g. always indexing with the main thread in scheduling choices).
  * `report.console.property_violation` - comma separated list of topics that should be printed by JPF if it detects an error. Possible values include 
     - `error` error description
     - `snapshot` thread stacks 
