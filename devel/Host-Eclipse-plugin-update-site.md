@@ -4,12 +4,12 @@ The first step is to create the local version of the update site.  For example, 
 
 The plugin and feature files are treated like binaries and bad things will happen.  Here is a sample update site for the mango plugin.
 
-![Local Site](../graphics/localsite.jpg){align=center width=430}
+[JPF-Mango](https://jpf.byu.edu/hg/jpf-mango)
 
 Now you will re-create this directory structure within the wiki.  For the purpose of this discussion, let's pin down the jpf site:
 
 ~~~~~~~~ {.bash}
-JPFHOME=http://babelfish.arc.nasa.gov/trac/jpf
+JPFHOME=https://github.com/javapathfinder/jpf-core
 ~~~~~~~~
 
 Now chose a home directory, say `HOME`.  For the mango plugin, 
