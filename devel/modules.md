@@ -4,7 +4,7 @@ JPF is partitioned into separate projects that all follow the same directory lay
 
 ![Figure: JPF Modules](https://github.com/javapathfinder/jpf-core/blob/master/docs/graphics/jpf-project.svg){align=center width=750}
  
-The main artifacts are the *.jar files created and stored in the `build` directory. We can divide this into classes that are executed by the host VM (i.e. have to be in JPF's `native_classpath` setting), and classes that are executed by JPF itself (i.e. have to be in JPF's `classpath` setting). The first category includes [listeners](listener) and [native peers](mji), the second one model classes (compiled from `src/classes`) and annotations, i.e. the system under test code.
+The main artifacts are the *.jar files created and stored in the `build` directory. We can divide this into classes that are executed by the host VM (i.e. have to be in JPF's `native_classpath` setting), and classes that are executed by JPF itself (i.e. have to be in JPF's `classpath` setting). The first category includes [listeners](Listeners) and [native peers](Model-Java-Interface), the second one model classes (compiled from `src/classes`) and annotations, i.e. the system under test code.
 
 The build process is [Ant](http://ant.apache.org/) based, which means every source distribution comes with a build.xml script that implements the basic build targets `clean`, `compile`, `build` and `test`.
 

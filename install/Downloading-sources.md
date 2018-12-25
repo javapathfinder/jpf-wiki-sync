@@ -48,7 +48,7 @@ Receiving objects: 100% (2036/2036), 1.75 MiB | 1.57 MiB/s, done.
 Resolving deltas: 100% (903/903), done.
 ~~~~~~~~
 
-The same process can be repeating by substituting `jpf-core` with other projects within the [Java Pathfinder organization](https://github.com/javapathfinder/) you are interested in. You can install the projects wherever you want, but you have to remember where you installed them for the subsequent [site.properties](../install/site-properties) configuration.
+The same process can be repeating by substituting `jpf-core` with other projects within the [Java Pathfinder organization](https://github.com/javapathfinder/) you are interested in. You can install the projects wherever you want, but you have to remember where you installed them for the subsequent [site.properties](Creating-site-properties-file) configuration.
 
 
 #### Synchronizing your forked repository with our main repository

@@ -9,7 +9,7 @@ The trick is now that JPF uses a configurable [abstract factory](http://en.wikip
 
 ## Usages ##
 
-Why would it be useful to change the standard semantics? One reason is to extend normal semantics with additional checks. For example, this is performed by the JPF extension jpf-numeric which overrides numeric bytecode classes with versions that check for over-/underflow and silent NaN propagation (among other things). A much more involved example is the JPF extension jpf-symbc, which implements a symbolic execution mode for Java, e.g. to automatically generate test cases based on the program structure of an application. It does so by overriding branch instructions, turning them into state space branches represented by their own [ChoiceGenerators](choicegenerator), collecting the path conditions on the way, and feeding them to an external SAT solver.
+Why would it be useful to change the standard semantics? One reason is to extend normal semantics with additional checks. For example, this is performed by the JPF extension jpf-numeric which overrides numeric bytecode classes with versions that check for over-/underflow and silent NaN propagation (among other things). A much more involved example is the JPF extension jpf-symbc, which implements a symbolic execution mode for Java, e.g. to automatically generate test cases based on the program structure of an application. It does so by overriding branch instructions, turning them into state space branches represented by their own [ChoiceGenerators](ChoiceGenerators), collecting the path conditions on the way, and feeding them to an external SAT solver.
 
 ## Implementation ##
 
@@ -54,7 +54,7 @@ You can derive your overriding bytecode classes from the ones in `gov.nasa.jpf.j
 
 ### Attributes ###
 
-As your execution semantics get more complex, you probably need to store and restore additional information that is associated with variables. JPF provides an automatically managed [attribute system](attributes) for this purpose. You can attach objects to locals, operands and fields, and JPF takes care of propagating these attribute objects whenever it manipulates stackframes or heap objects.
+As your execution semantics get more complex, you probably need to store and restore additional information that is associated with variables. JPF provides an automatically managed [attribute system](Slot-and-field-attributes) for this purpose. You can attach objects to locals, operands and fields, and JPF takes care of propagating these attribute objects whenever it manipulates stackframes or heap objects.
 
 
 ## Configuration ##

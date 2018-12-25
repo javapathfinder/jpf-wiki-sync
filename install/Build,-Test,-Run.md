@@ -120,7 +120,7 @@ loaded code:        classes=73, methods=1010
 
 ## Building JPF ##
 
-If you have cloned the project repositories you are interested in (which at least includes [jpf-core](../jpf-core/index)), you can build and test each of them by means of their included [Ant](http://ant.apache.org) `build.xml` scripts. Note that you have to install Ant and JUnit separately, e.g. following directions [here](../install/requirements).
+If you have cloned the project repositories you are interested in (which at least includes [jpf-core](JPF-core)), you can build and test each of them by means of their included [Ant](http://ant.apache.org) `build.xml` scripts. Note that you have to install Ant and JUnit separately, e.g. following directions [here](System-requirements).
 
 
 ### Using the command line ###

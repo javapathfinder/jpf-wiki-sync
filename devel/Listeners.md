@@ -15,7 +15,7 @@ There are two basic listener interfaces, depending on corresponding event source
 The adapter classes are used for the majority of listener implementations, especially since they also support two other interfaces/extension mechanisms that are often used in conjunction with `Search` and `VMListeners`: 
 
  1. `Property` - to define program properties
- 2. `PublisherExtension` - to produce output within [the JPF reporting system](report)
+ 2. `PublisherExtension` - to produce output within [the JPF reporting system](Reporting-system)
 
 `ListenerAdapter` is the bare adapter implementation for `SearchListener`, `VMListener` and `PublisherExtension`. This is what is mostly used to collect information during JPF execution (e.g. `CoverageAnalyzer` and `DeadlockAnalyzer`).
 
