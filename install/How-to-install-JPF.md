@@ -2,7 +2,7 @@ The JPF core and most of its extensions are pure Java applications, so they are 
 
 You can obtain JPF sources from the Git or Mercurial repositories. You need at least the core of JPF, [jpf-core](https://github.com/javapathfinder/jpf-core) which can be built from the command line, or directly opened as a [NetBeans](http://www.netbeans.org) or [Eclipse](http://www.eclipse.org) project.
 
-The JPF core project already come with its configuration file, but you have to create a per-site [site.properties](site-properties) file.
+The JPF core project already come with its configuration file, but you have to create a per-site [site.properties](Creating-site-properties-file) file.
 
 If you use the JPF shells (graphical JPF front-ends), you might also want to install the corresponding NetBeans or Eclipse adapter plugins, although shells are standalone Java (swing) applications that can also be used without an IDE.
 

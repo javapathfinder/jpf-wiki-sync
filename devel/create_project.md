@@ -7,7 +7,7 @@ However, jpf-template cannot do everything for you, so see below for more inform
 Several steps are involved:
 
 ### 1. get familiar with the JPF configuration ###
-You need to understand how your project will be looked up and initialized during JPF startup, and the place to learn that is the [JPF configuration](../user/config) page. Once you know what *[site properties](../install/site-properties)* and *project properties* are, you can proceed.
+You need to understand how your project will be looked up and initialized during JPF startup, and the place to learn that is the [JPF configuration](Configuring-JPF) page. Once you know what *[site properties](Creating-site-properties-file)* and *project properties* are, you can proceed.
 
 ### 2. get familiar with the standard JPF project layout ###
 Although this is mostly convention, and you can deviate if you really need to, please try hard not to.
@@ -42,7 +42,7 @@ Within the root directory of each JPF module a project properties file is needed
 <module-name>.sourcepath = src/classes;...
 ~~~~~~~~
 
-You can add other JPF properties, but be aware of that this is always processed during JPF startup if you add your module to the `extensions` list in your [site.properties](../install/site-properties), and might conflict with other JPF modules. For this reason you should only add your module to `extensions` if you know it will always be used.
+You can add other JPF properties, but be aware of that this is always processed during JPF startup if you add your module to the `extensions` list in your [site.properties](Creating-site-properties-file), and might conflict with other JPF modules. For this reason you should only add your module to `extensions` if you know it will always be used.
 
 
 ### 4. create your build.xml ###
@@ -79,7 +79,7 @@ Please note how `site.properties` and `jpf.properties` can be used from within t
 ~~~~~~~~
 
 ### 5. add your module to your site.properties ###
-This is optional, you only need to do this if you want to be able to run your JPF module outside its own directory. If so, add an entry to your [site properties file](../install/site-properties) that looks like this:
+This is optional, you only need to do this if you want to be able to run your JPF module outside its own directory. If so, add an entry to your [site properties file](Creating-site-properties-file) that looks like this:
 
 ~~~~~~~~ {.bash}
 ...
