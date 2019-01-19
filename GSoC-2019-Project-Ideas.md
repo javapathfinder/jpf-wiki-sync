@@ -4,7 +4,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### JPF Infrastructure
 
-* [Support Java 11 for jpf-core](#support-java-11-for-jpf-core) <quocsangphan>
+* [Support Java 11 for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
+
+* [Support Java 11 for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic>
 
 * [Visualization of Execution Traces v2](#visualization-of-execution-traces-v2)
 
@@ -94,6 +96,10 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 #### Support Java 11 for jpf-core
 jpf-core is essentially a JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode and archives. Among new features of Java 11 are multi-version archives (JAR files) and the ability to link JAR files before they are used by the JVM, and bootstrap methods that are generated at load time.
+This is a high-priority project, as support for Java 8 is limited to the near future.
+
+#### Support Java 11 for jpf-core
+jpf-symbc is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
 #### Visualization of Execution Traces v2
