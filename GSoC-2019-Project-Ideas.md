@@ -20,13 +20,15 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 <!-- * [Verification of epistemic properties of Java programs](#verification-of-epistemic-properties-of-java-programs)--> <Franco><Nikos>
 
+<!--
 ### Separation Logic
 
-* [Concolic execution with separation logic](#concolic-execution-with-separation-logic) <Loc><Sang>
-
-* [Synthesis to repair heap-manipulating programs](#synthesis-to-repair-heap-manipulating-programs) <Loc><Sang>
-
 * [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang>
+-->
+
+### Automatic Program Repair
+
+* [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach>
 
 ### Symbolic Execution
 
@@ -113,27 +115,18 @@ The actual summary of a method will be computed during its first execution, and 
 #### Verification of Multi Agent Systems
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
 
-#### Synthesis to repair heap-manipulating programs
-This project aims to automatically repair a data structure if it is implemented incorrectly, given its specification in separation logic. This project is based on [Java StarFinder](https://github.com/star-finder/jpf-star), a new symbolic execution engine developed in GSoC 2017. Reference:
-
-  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
-  - [Assertion-based repair of complex data structures](https://dl.acm.org/citation.cfm?id=1321643).
-
+<!--
 #### Verification of unbounded heap-manipulating programs via learning
 The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, where the program *P* contains unbound loops, and loop invariants are not available. We will use [Java StarFinder](https://github.com/star-finder/jpf-star) with the precondition *{Pre}* to generate test inputs for the program. We then execute the program with these inputs, and synthesize loop invariants from program executions using machine learning techniques. The resulted loop invariants will be validated by verification. If an invariant is invalid, we will obtain a counter-example, which is then used as a new test input, and the process repeats. Reference:
 
   - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
   - [Learning Shape Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/veriml.pdf).
+-->
+
+#### Automatic program repair using annotations
+Automated program repair  (APR) techniques often generate overfitting patches due to the reliance on test cases for patch generation and validation. In this project, we propose to overcome the overffiting issue in APR by leveraging developer-provided partial annotations to aid semantic reasoning. Developer annotations can come in different forms, e.g., JPF annotation. The advantage of developer annotations is two-fold. First, in addition to test cases, it helps augment the specifications of the program under analysis and thus provides more complete specifications. These annotations, despite being simple, can help significantly in semantic reasoning, e.g., null pointer analysis. Second, these annotations are not required to be complex so that to reduce the burden of manual effort by developers. For example, to reason about null pointer exception errors, developers are only required to add a few Nullable or Non-Nullable annotations to class fields or method parameters, etc.
+We will use JPF and SPF for symbolically reasoning about the semantics of programs under analysis and generating repairs. We will also use JPF-Annotation as a way for developers to provide annotations.
   
-#### Concolic execution with separation logic
-[Java StarFinder](https://github.com/star-finder/jpf-star) (JSF) currently performs classical symbolic execution on heap-based programs. This project aims to extends JSF with concolic execution. Reference:
-
-  - [Enhancing Symbolic Execution of Heap-based Programs with Separation Logic for Test Input Generation](https://arxiv.org/abs/1712.06025).
-  - [JDart: A Dynamic Symbolic Analysis Framework](https://github.com/psycopaths/jdart).
-
-<!--#### Verification of Actor-based Systems
-The goal of this project is verifying actor-based systems using the model checking technique. This can be achieved through extending the [jpf-actor](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-actor) extension of JPF. jpf-actor is a framework that can be used to systematically test actor programs that compile to bytecode. It requires making the codebase of jpf-actor up-to-date with the current version of [jpf-core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which is compatible with Java 8. It also includes extending the project towards an actor-based Scala library, called [Akka](http://akka.io).-->
-
 #### Verification of Event-Driven Applications
 The goal of this project is to evaluate and/or advance existing state-of-the-art tools for analysis of event-driven applications, for example jpf-awt, jpf-android. Some of the issues that need to be addressed include event sequence generation, search heuristics, and scalability. Other related problems and solutions are welcome.
 
