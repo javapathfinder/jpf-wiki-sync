@@ -17,6 +17,8 @@ In the following, we provide instructions for your, according to the builder you
 The JPF repository includes a Gradle wrapper that requires nothing except Java to execute. It ensures that all JPF developers and environments use the same builder to avoid any kind of configuration issue.
 Note that we assume that `./gradle` is used below, which installs a local copy of version 4. If you use your own version of Gradle, make sure it is version 4 or newer.
 
+**Note:** On Ubuntu, the `command apt-get install gradle` seems to install an older version of gradle (version 2.x) which is incompatible with the project and causes unzipping errors. Hence, it is recommended to visit the [Official Gradle installation guide](https://gradle.org/install/) for installing the latest version of gradle.
+
 > If you are using Windows, consider the `gradlew.bat` script.
 
 ```{bash}
@@ -61,6 +63,7 @@ To import the project into Eclipse, proceed with the following steps:
 BUILD SUCCESSFUL in 0s
 3 actionable tasks: 3 executed
 ```
+**Note:** Some versions of Ubuntu provide an outdated version of gradle (see above); visit the [Official Gradle installation guide](https://gradle.org/install/) for the latest version.
 
 2. Select **File > Import** on the drop-down menu
 3. Select **Existing Gradle Project**
