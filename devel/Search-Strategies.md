@@ -44,7 +44,7 @@ src\
 
 * `src/annotations` contains the declarations of JPF annotations
 
-* `src/classes` contains the MJI (Model Java Interface) classes
+* `src/classes` contains the model (library) classes, including those accessing native code via the MJI (Model Java Interface)
 
 * `src/examples` contains some Java classes with corresponding jpf configuration files. These can be model checked by the JPF VM
 
