@@ -32,6 +32,28 @@ The object encapsulating this component includes a search method which implement
 
 ## Package Structure ##
 
+The structure of the GitHub repository looks as follows:
+
+src\
+|__annotations\
+|__classes\
+|__examples\
+|__main\
+|__peers\
+|__tests
+
+* `src/annotations` contains the declarations of JPF annotations
+
+* `src/classes` contains the model (library) classes, including those accessing native code via the MJI (Model Java Interface)
+
+* `src/examples` contains some Java classes with corresponding jpf configuration files. These can be model checked by the JPF VM
+
+* `src/main` contains the implementation of the JPF core
+
+* `src/peers` contains the peer classes corresponding to the native classes present in `src/classes`
+
+* `src/tests` contains Unit tests for the JPF core
+
 The implementation of the JPF core is partitioned into the following packages:
 
 ### `gov.nasa.jpf` ###
