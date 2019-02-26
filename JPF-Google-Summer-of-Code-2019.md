@@ -1,8 +1,6 @@
-This page is from 2018. In case you are looking for 2019:
+## Ideas: [[GSoC 2019 Project Ideas]]
 
-# [[JPF Google Summer of Code 2019]]
-
-The Java Pathfinder (JPF) team is applying to the [Google Summer of Code](https://developers.google.com/open-source/gsoc/) (GSoC) program for 2018. The GSoC program, is a program where Google sponsors university students to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The length of the program is about three month, and it can be done remotely, and are generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
+The Java Pathfinder (JPF) team is applying to the [Google Summer of Code](https://developers.google.com/open-source/gsoc/) (GSoC) program for 2019. The GSoC program, is a program where Google sponsors university students to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The length of the program is about three month, and it can be done remotely, and are generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
 
 ## Java Pathfinder ##
 
@@ -16,22 +14,18 @@ You can learn more about JPF at the [JPF wiki](https://github.com/javapathfinder
 
 ## Interested Students - Contact Us ##
 
-You can find existing project ideas [here](GSoC-2018-Project-Ideas). If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, email us at \<jpf.gsoc [at] gmail.com\>. Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects. Join our IRC channel #jpf on freenode to engage in a discussion about all things JPF.
+You can find existing project ideas on our [[GSoC 2019 Project Ideas] page. If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, email us at \<jpf.gsoc [at] gmail.com\>. Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects. Join our IRC channel #jpf on freenode to engage in a discussion about all things JPF.
 
-## Timeline ##
+## [Timeline](https://summerofcode.withgoogle.com/how-it-works/#timeline) ##
 
-* | 01/04 | Mentoring organizations can begin submitting applications to Google |
-* | 01/23 | Mentoring organization application deadline |
-* | 02/12 | Announcement of accepted mentoring organizations |
-* | 03/12 - 03/27 | Student application period |
-* | 04/23 | Announcement of accepted students |
-* | 04/23 - 05/13 | Community Bonding Period |
-* | 05/14 | Coding officially begins |
-* | 06/15 | Phase 1 Evaluation deadline |
-* | 07/13 | Phase 2 Evaluation deadline |
-* | 08/06 - 08/14 | Students submit their final work product |
-* | 08/21 | Final Evaluation deadline |
-* | 08/22 | Final results of Google Summer of Code 2017 announced |
+This list contains only the key deadlines; see above for the full timeline.
+
+* | 03/25 - 04/09 | Student application period |
+* | 05/06 | Announcement of accepted students |
+* | 05/06 - 05/27 | Community Bonding Period |
+* | 05/27 | Coding officially begins |
+* | 08/19 - 08/26 | Students submit their final work product |
+* | 09/03 | Final results of Google Summer of Code 2019 announced |
 
 ## Required Skills ##
 
@@ -43,4 +37,4 @@ JPF is a fairly complex system. The first step to start is to get JPF [running](
 
 ## Applying for GSoC ##
 
-You will need to submit a proposal to Google during the student application phase (03/12 - 03/27). Check out the [GSoC FAQ](https://developers.google.com/open-source/gsoc/faq) page for more information. 
+You will need to submit a proposal to Google during the student application phase. Check out the [GSoC FAQ](https://developers.google.com/open-source/gsoc/faq) page for more information. 
