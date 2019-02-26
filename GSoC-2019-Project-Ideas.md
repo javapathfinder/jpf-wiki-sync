@@ -89,6 +89,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 * [Evaluating jpf-psyco](#evaluating-jpf-psyco) <Kasper><CheckWithFalk>
 -->
 
+### Symbolic Data-race Detection
+
+* [Symbolic data-race detection for Habanera Java](#symbolic-data-race-detection-for-habanera-java) <Eric>
 
 
 ### Projects Descriptions
@@ -253,6 +256,9 @@ information, or other suitable techniques. Once generated, such drivers and stub
 be used to verify applications belonging to specific domains using appropriate jpf 
 extensions (e.g., [jpf-awt](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-awt), [jpf-android](https://bitbucket.org/heila/jpf-android)). The project can be implemented on top of 
 [OCSEGen](http://ti.arc.nasa.gov/publications/8752/download) or another suitable tool.
+
+#### Symbolic data-race detection for Habanera Java
+[Habanero Java](https://dl.acm.org/citation.cfm?id=2093TRUE65) is a Java implementation of the [Habanero Extreme-scale](http://vsarkar.rice.edu/research/publications/publi-habanero/) programming model for multithreaded applications. The model is based on X10 and supports fork/join semantics as well as futures, isolation, and phasers. The advantage of structured parallelism such as Habanero is that the language itself provides concurrency guarantees such as deadlock freedom and determinacy if and only the program is free of data-race. A data-race occurs when two or more threads of execution access the same memory location and at least one of those accesses is a write. An additional advantage of structured parallelism is that run-times and analysis can be optimized based on the language structure itself. Recent work adds to JPF the ability to model check Habanero Java programs using a verification specific runtime and an algorithm that constructs and analyzes a computation graph representing the happens-before relation of the program execution ([1](https://dl.acm.org/citation.cfm?doid=2693208.2693245), [2](https://link.springer.com/chapter/10.1007%2F978-3-319-77935-5_25). The analysis is predictive because it infers from the single observed schedule the presence or absence of data-race in other non-observed schedules and only needs to enumerate schedules around isolation. Enumeration schedules around isolation though is still expensive and leads to state explosion in JPF. The work in this project is to mitigate this state explosion in enumerating schedules around isolation by building a symbolic computation graph from the program execution that adds constraints on the graph edges indicating under what condition the edge is active, and then using an SMT solver to find a set of edges on which a data-race exists. A first step in the project is to add a dynamic partial order reduction to JPF that is able to inform the symbolic computation graph about dependencies. 
 
 <!-- #### Environment and Test Case Generation for Symbolic Execution
 When using Symbolic PathFinder (SPF), one needs to supply application environment, consisting of test drivers and models/stubs for libraries that are too complex for SPF to handle. The goal of this project is to evaluate the existing (or provide new) semi-automated support for generation of test drivers and library models/stubs, containing symbolic values, based on the results of domain-specific static analysis, specifications, run-time information, or other suitable techniques. Once generated, such drivers and stubs can be used to verify applications using SPF. The project can be implemented on top of [OCSEGen](http://ti.arc.nasa.gov/publications/8752/download) or another suitable tool.
