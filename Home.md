@@ -52,6 +52,7 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 ---
 
 #### Latest JPF News 
+*  02/26/2019 The JPF team is applying to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2019. To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2019) page.
 *  05/08/2018 [JPF Workshop 2018](https://2018.fseconference.org/track/jpf-2018-papers) will be co-located with [FSE 2018](https://conf.researchr.org/home/fse-2018) in Lake Buena Vista, FL. Please consider submitting a paper.
 *  01/23/2018 The JPF team is applying to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2018. To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2018) page.
 *  05/01/2017 [JPF Workshop 2017](JPF-Workshop-2017) will be co-located with [ASE 2017](http://ase2017.org) in Champaign, IL. Please consider submitting a paper.
