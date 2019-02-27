@@ -8,6 +8,8 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Support Java 11 for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic>
 
+* [Support gradle for jpf-core and extensions](#support-gradle) <Cyrille>
+
 * [Visualization of Execution Traces v2](#visualization-of-execution-traces-v2)
 
 ### JPF Application Domains
@@ -104,6 +106,9 @@ This is a high-priority project, as support for Java 8 is limited to the near fu
 #### Support Java 11 for jpf-symbc
 jpf-symbc is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
+
+#### Support for gradle for jpf-core and extensions
+We have recently moved the build for jpf-core from ant to gradle. However, gradle support for Java 11 is broken, and we have not migrated extension to gradle yet (or even the extension template). The goal of this project is to (1) fix gradle support for Java 11 (branch "java-10-gradle"), (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
 
 #### Visualization of Execution Traces v2
 JPF is able to find notorious concurrency bugs such as deadlocks. Although finding bugs is one of the major strengths of JPF, providing feedback to the programmer is one of its main weaknesses. For example, for a deadlock JPF provides the programmer at which line each thread is stuck. Although this is of some use, what is much more valuable is to report how each thread got to that point.
