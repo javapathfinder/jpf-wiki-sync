@@ -82,7 +82,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana>
 
-* [Model-based Testing with Modbat for JPF] <Cyrille>(#mbt-modbat)
+* [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
 
 <!-- * [Environment and Test Case Generation for Symbolic Execution](#environment-and-test-case-generation-for-symbolic-execution) <Oksana>
 
