@@ -38,3 +38,17 @@ JPF is a fairly complex system. The first step to start is to get JPF [running](
 ## Applying for GSoC ##
 
 You will need to submit a proposal to Google during the student application phase. Check out the [GSoC FAQ](https://developers.google.com/open-source/gsoc/faq) page for more information. 
+
+### Proposal outline
+
+A good proposal should contain the following:
+
+1. Title, summary (about 100 words).
+
+2. Goals. Have multiple, prioritized goals, so you have alternatives if something does not go as expected.
+
+3. Implementation plan. An initial plan of how to reach the first goal(s).
+
+4. Tentative timeline. Be detailed for the first three weeks, and outline the remainder. Leave open some extra time for unexpected problems.
+
+5. Self-introduction. This should include past contributions to open-source software (JPF or other). If you can submit a patch to JPF to fixes a small problem, this is the best proof that you can successfully use and modify JPF!
