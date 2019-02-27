@@ -86,6 +86,8 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Test Case Generation for Evolving Applications](#test-case-generation-for-evolving-applications) <Oksana>
 
+* [Model-based Testing with Modbat for JPF] <Cyrille>(#mbt-modbat)
+
 ### JPF Extensions and External Systems Interfacing
 
 * [Evaluating jpf-psyco](#evaluating-jpf-psyco) <Kasper><CheckWithFalk>
@@ -261,6 +263,17 @@ information, or other suitable techniques. Once generated, such drivers and stub
 be used to verify applications belonging to specific domains using appropriate jpf 
 extensions (e.g., [jpf-awt](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-awt), [jpf-android](https://bitbucket.org/heila/jpf-android)). The project can be implemented on top of 
 [OCSEGen](http://ti.arc.nasa.gov/publications/8752/download) or another suitable tool.
+
+#### Test Case Generation/Model-based Testing with Modbat for JPF
+
+JPF requires test cases as a starting point to explore a system. It is therefore suitable to use
+test case generation to create test cases automatically. [Modbat](https://github.com/cyrille-artho/modbat/) is an open-source tool for test case generation. For testing concurrent software,
+an obvious choice would be to combine Modbat (to generate tests) with JPF (to execute tests and
+find concurrency problems). This has been done once as a [proof of concept](https://people.kth.se/~artho/papers/ase-2013-preprint.pdf) but is not supported in the current version of Modbat.
+The main reason for this is that Modbat's reporting has to read and parse bytecode, which requires
+access to some native code that JPF does not support.
+The goal is to find all problems where Modbat requires native access, and to use jpf-nhandler
+to resolve as many of these cases as possible. Remaining cases can be handled with custom model/peer classes.
 
 #### Symbolic data-race detection for Habanera Java
 [Habanero Java](https://dl.acm.org/citation.cfm?id=2093TRUE65) is a Java implementation of the [Habanero Extreme-scale](http://vsarkar.rice.edu/research/publications/publi-habanero/) programming model for multithreaded applications. The model is based on X10 and supports fork/join semantics as well as futures, isolation, and phasers. The advantage of structured parallelism such as Habanero is that the language itself provides concurrency guarantees such as deadlock freedom and determinacy if and only the program is free of data-race. A data-race occurs when two or more threads of execution access the same memory location and at least one of those accesses is a write. An additional advantage of structured parallelism is that run-times and analysis can be optimized based on the language structure itself. Recent work adds to JPF the ability to model check Habanero Java programs using a verification specific runtime and an algorithm that constructs and analyzes a computation graph representing the happens-before relation of the program execution ([1](https://dl.acm.org/citation.cfm?doid=2693208.2693245), [2](https://link.springer.com/chapter/10.1007%2F978-3-319-77935-5_25). The analysis is predictive because it infers from the single observed schedule the presence or absence of data-race in other non-observed schedules and only needs to enumerate schedules around isolation. Enumeration schedules around isolation though is still expensive and leads to state explosion in JPF. The work in this project is to mitigate this state explosion in enumerating schedules around isolation by building a symbolic computation graph from the program execution that adds constraints on the graph edges indicating under what condition the edge is active, and then using an SMT solver to find a set of edges on which a data-race exists. A first step in the project is to add a dynamic partial order reduction to JPF that is able to inform the symbolic computation graph about dependencies. 
