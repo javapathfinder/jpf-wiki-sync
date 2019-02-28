@@ -203,6 +203,8 @@ Various ideas are welcome here. Here are a couple of possible subprojects:
 
 2. This project includes using [JPF-Android](https://heila.bitbucket.io/jpf-android/) to generated test sequences for android applications, and implementing a tool to convert these sequences into tests that can be run on the emulator. JPF-Android verifies Android applications outside of the Android software stack on JPF using a model environment to improve coverage and efficiency. It generates event sequences to drive the execution of the application during exploration. Each sequence also includes the configuration of the environment (device) for which the sequence was executed. This project uses the AndroidViewClient API in Python to run the set of event sequences as detected by JPF-Android on  an emulator to find the number of valid sequences and the code coverage they obtain compared to JPF-Android.
 
+3. An extension of [jpf-mobile-devices](https://bitbucket.org/matsurago/jpf-mobile-devices) to generate the right initialization sequence for applications running inside JPF on Android. This project is different from the ones above in the sense that JPF is run as an Android application that can use the underlying Android environment, not as a normal application that models the Android environment. Also see the [paper on jpf-mobile-devices](https://people.kth.se/~artho/papers/jpf-mobile.pdf).
+
 #### Smart Contract Analysis
 Develop a mechanism to allow the analysis of Ethereum Virtual Machine (EVM) bytecode by replacing the JVM bytecodes with EVM bytecodes within JPF. The second part of the project would be to extend the bytecodes further to allow symbolic execution as well. 
 
