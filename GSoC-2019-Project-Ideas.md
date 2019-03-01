@@ -86,6 +86,8 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Test Case Generation for Evolving Applications](#test-case-generation-for-evolving-applications) <Oksana>
 
+* [Method summaries, extended]<Cyrille>
+
 ### JPF Extensions and External Systems Interfacing
 
 * [Evaluating jpf-psyco](#evaluating-jpf-psyco) <Kasper><CheckWithFalk>
@@ -115,13 +117,15 @@ JPF is able to find notorious concurrency bugs such as deadlocks. Although findi
 This project is concerned with extending [jpf-visual, a visual analytics tool from GSoC 2017](https://bitbucket.org/qiyitang71/jpf-visual/overview). The web site has about a dozen possible enhancements listed as [open issues](https://bitbucket.org/qiyitang71/jpf-visual/issues?status=new&status=open) Some of these may be feasible to implement as a GSoC project. Other ideas for enhancements are of course also welcome.
 
 
-<!--#### Procedure Summaries
-Implement construction of procedure summaries and their usage during the state space traversal. An important part of the project will be a survey of existing literature on the topic of generating summaries, and identification of an approach that is suitable in the context of the JPF code base. Key aspects of the solution include 
+#### Method Summaries, extended
 
-1. designing representation of the summaries that captures all side effects of the given procedure; and 
-2. implementing modifications of the program state. 
+A thesis project implemented [Summaries of methods](https://github.com/lassebe/jpf-summary) when executing in JPF.
+It includes a representation of the summaries that captures all side effects of the given procedure; and 
+implements modifications of the program state. 
 
-The actual summary of a method will be computed during its first execution, and then reused within traversal of other state paths. Another possible feature is the support for externally defined summaries that would be useful for library methods.-->
+The actual summary of a method will be computed during its first execution, and then reused within traversal of other state paths. Another possible feature is the support for externally defined summaries that would be useful for library methods.
+
+Experiments have shown that without summarizing the effects of constructors, most methods cannot be summarized. This is because the construct new objects or throw an exception (which is also a new object). Summarizing the effect of constructors would therefore be a huge enhancement to this technique. Other enhancements may also be possible.
 
 #### Model Checking Distributed Java Applications
 [jpf-nas](http://babelfish.arc.nasa.gov/hg/jpf/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the [JPF core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/net-iocache), etc.
@@ -273,7 +277,6 @@ When using Symbolic PathFinder (SPF), one needs to supply application environmen
 
 #### Test Case Generation for Evolving Applications
 The goal of this project is to evaluate and/or advance existing state-of-the-art tools for test suite generation and augmentation based on software changes between versions. Tools like jpf-symbc, Randoop, Evosuite can be used to generate unit tests for an application under test. Other related tools and ideas are welcome.
-
 
 #### Evaluating jpf-psyco
 [jpf-psyco](https://github.com/psycopaths/psyco) is an open-source tool built on JPF for generating temporal component interfaces. A temporal interface is expressed as a finite-state automaton over the public methods of the component and captures safe ordering relationships of method invocations. jpf-psyco relies on a combination of symbolic execution and automata learning for generating interfaces. This project seeks to evaluate jpf-psyco with new examples (e.g. reactive systems) and experimenting with other learning algorithms.
