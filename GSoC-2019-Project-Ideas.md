@@ -38,8 +38,6 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
 
-* ["Higher order" veritesting](#higher-order-veritesting) <Mike>
-
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
 * [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution) <Willem>
@@ -158,16 +156,6 @@ This project may use components such as jpf-symbc, jpf-concolic and jpf-abstract
 #### Refactoring SPF constraint library 
 SPF constraints need to be refactored to allow different kinds of constraints to be combined during the construction of a path condition. An example of how it should be after the refactoring is the Abstract Syntax Tree constructed by [GREEN](http://dl.acm.org/citation.cfm?id=2393665).
 
-#### "Higher Order" veritesting 
-<!-- Bringing in runtime information to improve the performance of static regions as an improvement to the [veritesting implemented as a Google Summer of Code 2017 project](https://jpf.byu.edu/gsoc17/projects/projects.html#increasing-spf-performance-with-bounded-static-symbolic-execution). -->
-
-It is well known that one of the limiting factors in symbolic execution is the path explosion problem; complex programs have billions of paths that make exhaustive exploration computationally infeasible. Recently, an approach for dramatically reducing the number of paths was proposed by Brumley in the paper: Enhancing Symbolic Execution with Veritesting, which led to dramatic performance improvements for an x86-assembly-based symbolic execution engine. This engine, run against the Debian Linux distribution, found over 11000 crash bugs and 154 privilege escalation bugs in the distribution, and achieved far greater coverage than previous approaches.
-
-Last year, in Google Summer of Code 2017, we implemented initial support for static regions (similar to Veritesting) in JPF, and we have seen 100x - 1000x speedups on some models, such as the TCAS and the WBS benchmarks.  However, on other benchmarks we see little performance improvement because non-local control jumps and object creation limit the applicability of static regions, especially due to the JVM's use of exceptions and the nature of Java programs as opposed to C/C++ programs (e.g., small dynamically-dispatched methods).
-
-In this project, we would dramatically improve the applicability of static regions by examining "partial static regions" that contain most of the paths through a function, but skip paths involving exceptions or object creation.  These would be handled by coordinating with SPF by adding a path constraint to SPF to handle the remaining "exceptional" paths.  In addition, we will support for "higher order" static regions, in which we inject the region for a function into another region.  With these additions, we expect to achieve 100x to 1000x speedups for arbitrary Java programs for symbolic execution.
-
-In addition, we would like to examine the effect of static regions on other aspects of symbolic execution, such as test generation and probabilistic symbolic execution.
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
