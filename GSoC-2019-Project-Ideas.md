@@ -68,13 +68,14 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [JDart for Dynamic Taint Analysis](#jdart-for-dynamic-taint-analysis) <Falk>
 
+<!--
 * [New Features for JDart](#new-features-for-jdart) <Kasper>
 
 * [Concolic Execution for Android Apps](#concolic-execution-for-android-apps) <Kasper>
 
 * [Support for parallel or distributed exploration in JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)
 
-* [Regression tests for JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)
+* [Regression tests for JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)-->
 
 ### Environment and Test Case Generation
 
@@ -82,11 +83,12 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
 
+* [Method summaries, extended](#method-summaries)<Cyrille>
+
 <!-- * [Environment and Test Case Generation for Symbolic Execution](#environment-and-test-case-generation-for-symbolic-execution) <Oksana>
 
 * [Test Case Generation for Evolving Applications](#test-case-generation-for-evolving-applications) <Oksana>
 
-* [Method summaries, extended]<Cyrille>
 
 ### JPF Extensions and External Systems Interfacing
 
@@ -220,6 +222,7 @@ If the value of u is not properly analyzed and sanitized, an attacker can exploi
 Please note: For a full dynamic taint analysis, JDart would also have to be extended to analyze strings and arrays symbolically --- this is out of the scope of this project.
 
 
+<!--
 #### New Features for JDart
 [JDart](https://github.com/psycopaths/jdart) is an open-source, dynamic symbolic analysis framework built on Java PathFinder. It has been applied to industrial scale software, including complex NASA systems. 
 
@@ -236,7 +239,7 @@ We have many ideas for improving JDart and welcome additional ideas too:
 Here is an incomplete list of ideas and projects for extending and improving JDart. If you would like to work on any of the projects or have your own ideas (or just want to contribute to JDart), let us know and we can talk more.
 
 * Add regression test suite
-* Add visualization capabilities to JDart. This could be really useful -- especially for program understanding and debugging. It could be as simple as translating the constraints tree to DOT, but it would be a great feature to have more powerful, interactive visualizations, e.g., browser-based with d3, or using Gephi, yEd, jung, prefuse, or jgraph.
+* Add visualization capabilities to JDart. This could be really useful - especially for program understanding and debugging. It could be as simple as translating the constraints tree to DOT, but it would be a great feature to have more powerful, interactive visualizations, e.g., browser-based with d3, or using Gephi, yEd, jung, prefuse, or jgraph.
 * Finish (or re-implement) [JConstraints](https://github.com/psycopaths/jconstraints) SMTLib interface and experiment with other solvers. dReal is (partly) integrated using this, but it would be interesting to experiment more
 * Add more search heuristics and evaluate
 * Make support for [PathDroid](http://ti.arc.nasa.gov/opensource/projects/pathdroid/). This would allow JDart to analyze Dalvik bytecode programs
@@ -244,7 +247,7 @@ Here is an incomplete list of ideas and projects for extending and improving JDa
 * Add support for parallel/distributed exploration
 * Add support for symbolic data structures. Maybe ala [Lazy Initialization](http://users.ece.utexas.edu/~khurshid/testera/GSE.pdf)
 * Improve test suite generation from symbolic analysis. Currently, static target methods are fully supported while instance methods are only partly supported
-* General refactoring and code improvement
+* General refactoring and code improvement-->
 
 
 #### Environment and Test Case Generation for Specific Domains
