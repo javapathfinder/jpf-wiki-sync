@@ -20,7 +20,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 <!--* [Verification of Actor-based Systems](#verification-of-actor-based-systems)--> <Nastaran>
 
-* [Verification of Event-Driven Applications](#verification-of-event-driven-applications) <Oksana>
+<!--* [Verification of Event-Driven Applications](#verification-of-event-driven-applications) <Oksana>-->
 
 <!-- * [Verification of epistemic properties of Java programs](#verification-of-epistemic-properties-of-java-programs)--> <Franco><Nikos>
 
@@ -79,7 +79,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Environment and Test Case Generation
 
-* [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana>
+<!-- * [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana> -->
 
 * [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
 
@@ -147,8 +147,8 @@ The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, 
 Automated program repair  (APR) techniques often generate overfitting patches due to the reliance on test cases for patch generation and validation. In this project, we propose to overcome the overffiting issue in APR by leveraging developer-provided partial annotations to aid semantic reasoning. Developer annotations can come in different forms, e.g., JPF annotation. The advantage of developer annotations is two-fold. First, in addition to test cases, it helps augment the specifications of the program under analysis and thus provides more complete specifications. These annotations, despite being simple, can help significantly in semantic reasoning, e.g., null pointer analysis. Second, these annotations are not required to be complex so that to reduce the burden of manual effort by developers. For example, to reason about null pointer exception errors, developers are only required to add a few Nullable or Non-Nullable annotations to class fields or method parameters, etc.
 We will use JPF and SPF for symbolically reasoning about the semantics of programs under analysis and generating repairs. We will also use JPF-Annotation as a way for developers to provide annotations.
   
-#### Verification of Event-Driven Applications
-The goal of this project is to evaluate and/or advance existing state-of-the-art tools for analysis of event-driven applications, for example jpf-awt, jpf-android. Some of the issues that need to be addressed include event sequence generation, search heuristics, and scalability. Other related problems and solutions are welcome.
+<!-- #### Verification of Event-Driven Applications
+The goal of this project is to evaluate and/or advance existing state-of-the-art tools for analysis of event-driven applications, for example jpf-awt, jpf-android. Some of the issues that need to be addressed include event sequence generation, search heuristics, and scalability. Other related problems and solutions are welcome.-->
 
 <!-- #### Verification of epistemic properties of Java programs
 Epistemic properties allow to reason about the "knowledge" of an agent in a system. Epistemic properties have been employed for several years in the specification and verification of a range of scenarios, from security to communication protocols to mental states of human agents such as pilots. There is a solid theory for epistemic properties based on the notion of observable states, and this project will build upon this. In particular, this project's aim is to extend JPF so that one can: 
@@ -250,7 +250,7 @@ Here is an incomplete list of ideas and projects for extending and improving JDa
 * General refactoring and code improvement-->
 
 
-#### Environment and Test Case Generation for Specific Domains
+<!-- #### Environment and Test Case Generation for Specific Domains
 When model checking applications belonging to specific domains (e.g., Swing, Android), 
 JPF users have to provide application environment, consisting of test drivers and models 
 for libraries that are too complex for JPF to run. The goal of this project is to evaluate the
@@ -259,7 +259,7 @@ models/stubs based on the results of domain-specific static analysis, specificat
 information, or other suitable techniques. Once generated, such drivers and stubs can 
 be used to verify applications belonging to specific domains using appropriate jpf 
 extensions (e.g., [jpf-awt](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-awt), [jpf-android](https://bitbucket.org/heila/jpf-android)). The project can be implemented on top of 
-[OCSEGen](http://ti.arc.nasa.gov/publications/8752/download) or another suitable tool.
+[OCSEGen](http://ti.arc.nasa.gov/publications/8752/download) or another suitable tool.-->
 
 #### Test Case Generation/Model-based Testing with Modbat for JPF
 
