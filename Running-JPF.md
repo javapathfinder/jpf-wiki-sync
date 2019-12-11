@@ -58,7 +58,7 @@ This is the second group of options, which all start with a plus ("+") marker, a
 .. +cg.enumerate_random=true
 ~~~~~~~~
 
-All properties from the various JPF properties [configuration files](config) can be overridden from the command-line, which means there is no limit regarding number and values of options. If you want to extend an existing value, you can use any of the following notations
+All properties from the various JPF properties [configuration files](Configuring-JPF) can be overridden from the command-line, which means there is no limit regarding number and values of options. If you want to extend an existing value, you can use any of the following notations
 
  * `+<key>+=<value>` - which appends <value>
  * `++<key>=<value>` - which prepends <value>
