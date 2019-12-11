@@ -27,7 +27,7 @@ or preferably
 > java -jar <jpf-core-dir>/build/RunJPF.jar +classpath=. <application-main-class>
 ~~~~~~~~
 
-This makes use of the small RunJPF.jar startup jar that is part of the jpf-core distribution, which only includes the classes that are required to start the JPF bootstrapping process (esp. the JPF classloader). These classes automatically process the various [JPF configuration files](config). If your SUT is not trivial, it is also recommended to add a "-Xmx1024m" host VM option, to avoid running out of memory.
+This makes use of the small RunJPF.jar startup jar that is part of the jpf-core distribution, which only includes the classes that are required to start the JPF bootstrapping process (esp. the JPF classloader). These classes automatically process the various [JPF configuration files](Configuring-JPF). If your SUT is not trivial, it is also recommended to add a "-Xmx1024m" host VM option, to avoid running out of memory.
 
 Last (and probably most rarely), you can directly start JPF and give it an explicit classpath. This amounts to something like
 
