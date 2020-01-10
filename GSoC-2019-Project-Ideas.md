@@ -10,8 +10,6 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Support gradle for jpf-core and extensions](#support-gradle) <Cyrille>
 
-* [Visualization of Execution Traces v2](#visualization-of-execution-traces-v2)
-
 ### JPF Application Domains
 
 * [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Nastaran><Cyrille>
@@ -113,10 +111,6 @@ This is a high-priority project, as support for Java 8 is limited to the near fu
 
 #### Support for gradle for jpf-core and extensions
 We have recently moved the build for jpf-core from ant to gradle. However, gradle support for Java 11 is broken, and we have not migrated extension to gradle yet (or even the extension template). The goal of this project is to (1) fix gradle support for Java 11 (branch "java-10-gradle"), (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
-
-#### Visualization of Execution Traces v2
-JPF is able to find notorious concurrency bugs such as deadlocks. Although finding bugs is one of the major strengths of JPF, providing feedback to the programmer is one of its main weaknesses. For example, for a deadlock JPF provides the programmer at which line each thread is stuck. Although this is of some use, what is much more valuable is to report how each thread got to that point.
-This project is concerned with extending [jpf-visual, a visual analytics tool from GSoC 2017](https://bitbucket.org/qiyitang71/jpf-visual/overview). The web site has about a dozen possible enhancements listed as [open issues](https://bitbucket.org/qiyitang71/jpf-visual/issues?status=new&status=open) Some of these may be feasible to implement as a GSoC project. Other ideas for enhancements are of course also welcome.
 
 
 #### Method Summaries, extended
