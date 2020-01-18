@@ -4,9 +4,9 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### JPF Infrastructure
 
-* [Support Java 11 for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
+* [Support Java 11+ for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
 
-* [Support Java 11 for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic>
+* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic>
 
 * [Support gradle for jpf-core and extensions](#support-gradle) <Cyrille>
 
@@ -102,15 +102,16 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 
 #### Support Java 11 for jpf-core
-jpf-core is essentially a JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode and archives. Among new features of Java 11 are multi-version archives (JAR files) and the ability to link JAR files before they are used by the JVM, and bootstrap methods that are generated at load time.
+jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
+There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
 #### Support Java 11 for jpf-symbc
 jpf-symbc is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support for gradle for jpf-core and extensions
-We have recently moved the build for jpf-core from ant to gradle. However, gradle support for Java 11 is broken, and we have not migrated extension to gradle yet (or even the extension template). The goal of this project is to (1) fix gradle support for Java 11 (branch "java-10-gradle"), (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
+#### Support for gradle for jpf-symbc and extensions
+We have recently moved the build for jpf-core from ant to gradle. The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
 
 
 #### Method Summaries, extended
@@ -124,7 +125,7 @@ The actual summary of a method will be computed during its first execution, and 
 Experiments have shown that without summarizing the effects of constructors, most methods cannot be summarized. This is because the construct new objects or throw an exception (which is also a new object). Summarizing the effect of constructors would therefore be a huge enhancement to this technique. Other enhancements may also be possible.
 
 #### Model Checking Distributed Java Applications
-[jpf-nas](http://babelfish.arc.nasa.gov/hg/jpf/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the [JPF core](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-core) which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/net-iocache), etc.
+[jpf-nas](https://github.com/javapathfinder/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the jpf-core which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](https://bitbucket.org/cyrille.artho/net-iocache), etc.
 
 #### Verification of Multi Agent Systems
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
