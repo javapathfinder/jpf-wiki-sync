@@ -106,11 +106,11 @@ jpf-core is essentially a JVM that currently fully supports only Java 8. The goa
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support Java 11 for jpf-symbc
-jpf-symbc is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
+#### Support Java 11 for Symbolic PathFinder.
+Symbolic PathFinder (jpf-symbc) is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support for gradle for jpf-symbc and extensions
+#### Support for gradle for Symbolic PathFinder.
 We have recently moved the build for jpf-core from ant to gradle. The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
 
 
