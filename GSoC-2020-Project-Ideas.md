@@ -32,13 +32,13 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Symbolic Execution
 
-* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
-
 * [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina>
 
 * [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
 * [Improving String analysis in SPF](#improving-string-analysis-in-spf) <Yannic><Corina>
+
+* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
@@ -56,7 +56,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
 
-* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem>
+* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem><Corina>Yannic>
 
 ### Smart Contract
 
@@ -110,14 +110,14 @@ jpf-core is essentially a JVM that currently fully supports only Java 8. The goa
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support Java 11 for Symbolic PathFinder.
-Symbolic PathFinder (jpf-symbc) is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
+#### Support Java 11 for SPF.
+Symbolic PathFinder is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support for gradle for Symbolic PathFinder.
-We have recently moved the build for jpf-core from ant to gradle. The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
+#### Support for gradle for SPF.
+The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
 
-#### Testing String analysis for Symbolic PathFinder.
+#### Testing String analysis for SPF.
 Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
 
 #### Method Summaries, extended
