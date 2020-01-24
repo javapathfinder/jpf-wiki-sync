@@ -56,7 +56,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
 
-* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem><Corina>Yannic>
+* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem><Corina><Yannic>
 
 ### Smart Contract
 
