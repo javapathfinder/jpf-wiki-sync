@@ -52,6 +52,12 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 -->
 
+* [Hash-consing for SPF](#hash-consing-for-spf) <Vaibhav>
+
+* [Visualizing ChoiceGenerator tree for SPF](#visualizing-choicegenerator-tree-for-spf) <Vaibhav>
+
+* [Combinatorial testing of configuration options for SPF](#combinatorial-testing-of-configuration-options-for-SPF) <Vaibhav>
+
 ### Fuzzing
 
 * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
@@ -110,14 +116,14 @@ jpf-core is essentially a JVM that currently fully supports only Java 8. The goa
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support Java 11 for SPF.
+#### Support Java 11 for SPF
 Symbolic PathFinder is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-#### Support for gradle for SPF.
+#### Support for gradle for SPF
 The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
 
-#### Testing String analysis for SPF.
+#### Improving String Analysis in SPF
 Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
 
 #### Method Summaries, extended
@@ -163,6 +169,15 @@ This project may use components such as jpf-symbc, jpf-concolic and jpf-abstract
 #### Refactoring SPF constraint library 
 SPF constraints need to be refactored to allow different kinds of constraints to be combined during the construction of a path condition. An example of how it should be after the refactoring is the Abstract Syntax Tree constructed by [GREEN](http://dl.acm.org/citation.cfm?id=2393665).
 
+
+#### Hash-consing for SPF
+Hash-consing is a technique that reuses previously constructed expressions to avoid duplication during construction of larger expressions. It is a technique that has been extensively used for creating maximally-shared graphs (see Calysto by Babic et al.), reusing structurally equivalent expressions in KLEE (by Cadar et al.). Variants of this idea are also applied in other binary symbolic executors like FuzzBALL and built in to new binary analysis frameworks (see Jung et al). Symbolic PathFinder currently does not support hash-consing or sharing of subexpressions causing memory usage to blow-up in pathological examples. This project would be about implementing hash-consing or a variant of this idea in SPF. This would have a clear benefit in reducing SPF's memory usage.
+
+#### Visualizing ChoiceGenerator tree for SPF
+A symbolic executor explores feasible choices through a program. It can often be difficult to understand how a symbolic executor got to a particular program location in a given symbolic state. These difficulties arise from not being able to easily see all the previous choices the symbolic executor made to get to a certain point. To address this limitation, a symbolic executor can be asked to visually report its tree of exploration choices. An example of this is FuzzBALL's "-decision-tree-use-file" that reports FuzzBALL's tree of explored choices into a file that can be visualized. This project would be add a similar feature in SPF. Given a point of symbolic exploration, it would allow SPF to report its tree of explored ChoiceGenerator objects into a file that can be observed visually. 
+
+#### Combinatorial testing of configuration options for SPF
+SPF has a large number of diverse configuration options. Enabling some features require combinations of options (such as incremental solving) whereas other options are backed by a broken implementation. For example, during the recently concluded SV-COMP 2020 competition, the Java Ranger authors (which also includes me) turned off symbolic string support, while the SPF team chose to leave this option on. For this project, we would examine all of SPF's options and construct test cases to combinatorially cover all of them. The outcome of this project would be a regression test suite that combinatorially covers all of SPF's options and provides clear documentation on which options don't work. If there is still time available during the summer, we would also attempt to fix SPF's broken symbolic string solving. There have been many recent advances in string solving and it would be valuable to have support for powerful string solvers such as z3str3.
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
