@@ -32,13 +32,13 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Symbolic Execution
 
-* [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina>
+* [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina><Elena>
 
 * [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
 * [Improving String analysis in SPF](#improving-string-analysis-in-spf) <Yannic><Corina>
 
-* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
+* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike><Elena>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
