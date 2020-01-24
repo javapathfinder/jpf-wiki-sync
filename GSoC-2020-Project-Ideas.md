@@ -34,9 +34,11 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
 
-* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic,Corina>
+* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic><Corina>
 
-* [Support gradle for jpf-symbc](#support-gradle) <Yannic,Corina>
+* [Support gradle for jpf-symbc](#support-gradle) <Yannic><Corina>
+
+* [Testing and improving String analysis for jpf-symbc](#support-strings) <Yannic><Corina>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
@@ -113,8 +115,10 @@ Symbolic PathFinder (jpf-symbc) is essentially a (symbolic) JVM that currently s
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
 #### Support for gradle for Symbolic PathFinder.
-We have recently moved the build for jpf-core from ant to gradle. The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation, and (3) update widely used extensions with gradle support.
+We have recently moved the build for jpf-core from ant to gradle. The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
 
+#### Testing String analysis for Symbolic PathFinder.
+Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
 
 #### Method Summaries, extended
 
