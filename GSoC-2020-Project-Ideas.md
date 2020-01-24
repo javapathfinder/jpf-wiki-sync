@@ -6,9 +6,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Support Java 11+ for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
 
-* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic>
 
-* [Support gradle for jpf-core and extensions](#support-gradle) <Cyrille>
 
 ### JPF Application Domains
 
@@ -35,6 +33,10 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 ### Symbolic Execution
 
 * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
+
+* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic,Corina>
+
+* [Support gradle for jpf-symbc](#support-gradle) <Yannic,Corina>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
