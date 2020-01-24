@@ -34,11 +34,11 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike>
 
-* [Support Java 11+ for jpf-symbc](#support-java-11-for-jpf-symbc) <Yannic><Corina>
+* [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina>
 
-* [Support gradle for jpf-symbc](#support-gradle) <Yannic><Corina>
+* [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
-* [Testing and improving String analysis for jpf-symbc](#support-strings) <Yannic><Corina>
+* [Improving String analysis in SPF](#improving-string-analysis-in-spf) <Yannic><Corina>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
