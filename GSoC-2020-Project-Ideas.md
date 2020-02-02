@@ -91,7 +91,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 * [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
 
-* [Method summaries, extended](#method-summaries)<Cyrille>
+* [Method summaries, extended](#method-summaries)<Cyrille><Pavel>
 
 <!-- * [Environment and Test Case Generation for Symbolic Execution](#environment-and-test-case-generation-for-symbolic-execution) <Oksana>
 
@@ -105,7 +105,7 @@ Please note that this list is not exclusive. If you have other ideas and topics 
 
 ### Symbolic Data-race Detection
 
-* [Symbolic data-race detection for Habanera Java](#symbolic-data-race-detection-for-habanera-java) <Eric>
+* [Symbolic data-race detection for Habanero Java](#symbolic-data-race-detection-for-habanero-java) <Eric>
 
 
 ### Projects Descriptions
@@ -288,7 +288,7 @@ access to some native code that JPF does not support.
 The goal is to find all problems where Modbat requires native access, and to use jpf-nhandler
 to resolve as many of these cases as possible. Remaining cases can be handled with custom model/peer classes.
 
-#### Symbolic data-race detection for Habanera Java
+#### Symbolic data-race detection for Habanero Java
 [Habanero Java](https://dl.acm.org/citation.cfm?id=2093TRUE65) is a Java implementation of the [Habanero Extreme-scale](http://vsarkar.rice.edu/research/publications/publi-habanero/) programming model for multithreaded applications. The model is based on X10 and supports fork/join semantics as well as futures, isolation, and phasers. The advantage of structured parallelism such as Habanero is that the language itself provides concurrency guarantees such as deadlock freedom and determinacy if and only the program is free of data-race. A data-race occurs when two or more threads of execution access the same memory location and at least one of those accesses is a write. An additional advantage of structured parallelism is that run-times and analysis can be optimized based on the language structure itself. Recent work adds to JPF the ability to model check Habanero Java programs using a verification specific runtime and an algorithm that constructs and analyzes a computation graph representing the happens-before relation of the program execution ([1](https://dl.acm.org/citation.cfm?doid=2693208.2693245), [2](https://link.springer.com/chapter/10.1007%2F978-3-319-77935-5_25). The analysis is predictive because it infers from the single observed schedule the presence or absence of data-race in other non-observed schedules and only needs to enumerate schedules around isolation. Enumeration schedules around isolation though is still expensive and leads to state explosion in JPF. The work in this project is to mitigate this state explosion in enumerating schedules around isolation by building a symbolic computation graph from the program execution that adds constraints on the graph edges indicating under what condition the edge is active, and then using an SMT solver to find a set of edges on which a data-race exists. A first step in the project is to add a dynamic partial order reduction to JPF that is able to inform the symbolic computation graph about dependencies. 
 
 <!-- #### Environment and Test Case Generation for Symbolic Execution
