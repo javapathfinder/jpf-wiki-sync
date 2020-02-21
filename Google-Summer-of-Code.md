@@ -5,6 +5,6 @@ The JPF project has participated in the Google Summer of Code for a number of ye
 
 A list of ideas (not exhaustive); other ideas are welcome.
 
-# [[JPF Google Summer of Code 2019]]
+# [[JPF Google Summer of Code 2020]]
 
 An overview of GSoC and JPF's aims for this summer.
