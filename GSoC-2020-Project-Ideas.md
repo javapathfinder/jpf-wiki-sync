@@ -59,6 +59,8 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Combinatorial testing of configuration options for SPF](#combinatorial-testing-of-configuration-options-for-SPF) <Vaibhav>
 
+* [Beneficial path-merging for SPF](#beneficial-path-merging-for-SPF) <Vaibhav>
+
 ### Fuzzing
 
 * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
@@ -179,6 +181,9 @@ A symbolic executor explores feasible choices through a program. It can often be
 
 #### Combinatorial testing of configuration options for SPF
 SPF has a large number of diverse configuration options. Enabling some features require combinations of options (such as incremental solving) whereas other options are backed by a broken implementation. For example, during the recently concluded SV-COMP 2020 competition, the Java Ranger authors (which also includes me) turned off symbolic string support, while the SPF team chose to leave this option on. For this project, we would examine all of SPF's options and construct test cases to combinatorially cover all of them. The outcome of this project would be a regression test suite that combinatorially covers all of SPF's options and provides clear documentation on which options don't work. If there is still time available during the summer, we would also attempt to fix SPF's broken symbolic string solving. There have been many recent advances in string solving and it would be valuable to have support for powerful string solvers such as z3str3. This project can also be combined with the [improving string analysis](#improving-string-analysis-in-spf) project above. 
+
+### Beneficial path-merging for SPF
+Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, path-merging is not always beneficial because it can contribute to making the contents of the stack and/or the heap symbolic. Later branching on these symbolic contents can cause further branching. This project is about developing a heuristic similar to the one proposed by Kuznetsov et al.(https://dslab.epfl.ch/pubs/stateMerging.pdf) for symbolic execution of Java bytecode.
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
