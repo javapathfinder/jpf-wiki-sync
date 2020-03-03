@@ -360,7 +360,6 @@ to resolve as many of these cases as possible. Remaining cases can be handled wi
 
 **Difficulty:** Medium  
 **Required skills:** Java programming and knowledge of model checking  
-**Preferred skills:** Java programming and knowledge of model checking  
 **Expected outcomes:** SMT solution to data-race that avoids state exploration
 
 <!-- #### Environment and Test Case Generation for Symbolic Execution
