@@ -216,6 +216,11 @@ Hash-consing is a technique that reuses previously constructed expressions to av
 **Description:**
 A symbolic executor explores feasible choices through a program. It can often be difficult to understand how a symbolic executor got to a particular program location in a given symbolic state. These difficulties arise from not being able to easily see all the previous choices the symbolic executor made to get to a certain point. To address this limitation, a symbolic executor can be asked to visually report its tree of exploration choices. An example of this is FuzzBALL's "-decision-tree-use-file" that reports FuzzBALL's tree of explored choices into a file that can be visualized. This project would be add a similar feature in SPF. Given a point of symbolic exploration, it would allow SPF to report its tree of explored ChoiceGenerator objects into a file that can be observed visually. 
 
+**Difficulty:** Easy  
+**Required skills:** Java programming  
+**Preferred skills:** Some knowledge of symbolic execution  
+**Expected outcomes:** isualization of the choice generator tree when exploring a few benchmarks. Also, implementation of a few ideas to improve the usability of such trees when generated from a symbolic execution run with complex software
+
 #### Combinatorial testing of configuration options for SPF
 
 **Description:**
@@ -224,7 +229,7 @@ SPF has a large number of diverse configuration options. Enabling some features 
 #### Beneficial path-merging for SPF
 
 **Description:**
-Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, path-merging is not always beneficial because it can contribute to making the contents of the stack and/or the heap symbolic. Later branching on these symbolic contents can cause further branching. This project is about developing a heuristic similar to the one proposed by Kuznetsov et al.(https://dslab.epfl.ch/pubs/stateMerging.pdf) for symbolic execution of Java bytecode.
+Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, path-merging is not always beneficial because it can contribute to making the contents of the stack and/or the heap symbolic. Later branching on these symbolic contents can cause further branching. This project is about developing a heuristic similar to the one proposed by [Kuznetsov et al.](https://dslab.epfl.ch/pubs/stateMerging.pdf) for symbolic execution of Java bytecode.
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
