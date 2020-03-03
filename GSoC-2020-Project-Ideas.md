@@ -115,9 +115,14 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 
 #### Support Java 11 for jpf-core
+**Description:**
 jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
+
+**Difficulty:** hard
+**Required skills:** knowledge of Java bytecode
+**Preferred skills:** knowledge of bootstrap methods in Java bytecode
 
 #### Support Java 11 for SPF
 Symbolic PathFinder is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
