@@ -120,8 +120,8 @@ jpf-core is essentially a JVM that currently fully supports only Java 8. The goa
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-**Difficulty:** hard
-**Required skills:** knowledge of Java bytecode
+**Difficulty:** hard  
+**Required skills:** knowledge of Java bytecode  
 **Preferred skills:** knowledge of bootstrap methods in Java bytecode
 
 #### Support Java 11 for SPF
@@ -136,6 +136,7 @@ Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable an
 
 #### Method Summaries, extended
 
+**Description: **
 A thesis project implemented [Summaries of methods](https://github.com/lassebe/jpf-summary) when executing in JPF.
 It includes a representation of the summaries that captures all side effects of the given procedure; and 
 implements modifications of the program state. 
@@ -144,8 +145,18 @@ The actual summary of a method will be computed during its first execution, and 
 
 Experiments have shown that without summarizing the effects of constructors, most methods cannot be summarized. This is caused by the construction of new objects or throwing an exception (which also create a new object). Summarizing the effect of constructors would therefore be a huge enhancement to this technique. Other enhancements may also be possible.
 
+**Difficulty:** Medium  
+**Required skills:** Knowledge of Java bytecode  
+**Preferred skills:** Handling of weak references, garbage collection
+
 #### Model Checking Distributed Java Applications
+
+**Description:**
 [jpf-nas](https://github.com/javapathfinder/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the jpf-core which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](https://bitbucket.org/cyrille.artho/net-iocache), etc.
+
+**Difficulty:** Medium  
+**Required skills:** Knowledge of Java networking  
+**Preferred skills:** Knowledge of jpf-nas or net-iocache
 
 #### Verification of Multi Agent Systems
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
@@ -290,6 +301,7 @@ extensions (e.g., [jpf-awt](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects
 
 #### Test Case Generation/Model-based Testing with Modbat for JPF
 
+**Description:**
 JPF requires test cases as a starting point to explore a system. It is therefore suitable to use
 test case generation to create test cases automatically. [Modbat](https://github.com/cyrille-artho/modbat/) is an open-source tool for test case generation. For testing concurrent software,
 an obvious choice would be to combine Modbat (to generate tests) with JPF (to execute tests and
@@ -298,6 +310,10 @@ The main reason for this is that Modbat's reporting has to read and parse byteco
 access to some native code that JPF does not support.
 The goal is to find all problems where Modbat requires native access, and to use jpf-nhandler
 to resolve as many of these cases as possible. Remaining cases can be handled with custom model/peer classes.
+
+**Difficulty:** Easy  
+**Required skills:** Knowledge of Java Pathfinder  
+**Preferred skills:** Knowledge of test generation
 
 #### Symbolic data-race detection for Habanero Java
 [Habanero Java](http://faculty.knox.edu/dbunde/teaching/hj/) is a Java implementation of the [Habanero Extreme-scale](http://vsarkar.rice.edu/research/publications/publi-habanero/) programming model for multithreaded applications. The model is based on X10 and supports fork/join semantics as well as futures, isolation, and phasers. The advantage of structured parallelism such as Habanero is that the language itself provides concurrency guarantees such as deadlock freedom and determinacy if and only the program is free of data-race. A data-race occurs when two or more threads of execution access the same memory location and at least one of those accesses is a write. An additional advantage of structured parallelism is that run-times and analysis can be optimized based on the language structure itself. Recent work adds to JPF the ability to model check Habanero Java programs using a verification specific runtime and an algorithm that constructs and analyzes a computation graph representing the happens-before relation of the program execution ([1](https://dl.acm.org/citation.cfm?doid=2693208.2693245), [2](https://link.springer.com/chapter/10.1007%2F978-3-319-77935-5_25). The analysis is predictive because it infers from the single observed schedule the presence or absence of data-race in other non-observed schedules and only needs to enumerate schedules around isolation. Enumeration schedules around isolation though is still expensive and leads to state explosion in JPF. The work in this project is to mitigate this state explosion in enumerating schedules around isolation by building a symbolic computation graph from the program execution that adds constraints on the graph edges indicating under what condition the edge is active, and then using an SMT solver to find a set of edges on which a data-race exists. A first step in the project is to add a dynamic partial order reduction to JPF that is able to inform the symbolic computation graph about dependencies. 
