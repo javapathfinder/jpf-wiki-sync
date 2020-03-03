@@ -114,7 +114,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 ### Projects Descriptions
 
 
-#### Support Java 11 for jpf-core
+#### <a name="support-java-11-for-jpf-core"></a>Support Java 11 for jpf-core
 
 **Description:**
 jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
