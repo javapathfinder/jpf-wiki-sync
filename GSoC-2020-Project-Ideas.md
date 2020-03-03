@@ -47,9 +47,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 <!-- * [Improving Symbolic PathFinder](#improving-symbolic-pathfinder) <Kasper><Corina>
 
-* [Improving Sampling of Symbolic Paths](#improving-sampling-of-symbolic-paths) <Kasper>
-
--->
+* [Improving Sampling of Symbolic Paths](#improving-sampling-of-symbolic-paths) <Kasper> -->
 
 * [Hash-consing for SPF](#hash-consing-for-spf) <Vaibhav>
 
@@ -98,7 +96,6 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Test Case Generation for Evolving Applications](#test-case-generation-for-evolving-applications) <Oksana>
 
-
 ### JPF Extensions and External Systems Interfacing
 
 * [Evaluating jpf-psyco](#evaluating-jpf-psyco) <Kasper><CheckWithFalk>
@@ -108,11 +105,9 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Symbolic data-race detection for Habanero Java](#symbolic-data-race-detection-for-habanero-java) <Eric>
 
-
 ### Projects Descriptions
 
-
-#### <a name="support-java-11-for-jpf-core"></a>Support Java 11 for jpf-core
+#### Support Java 11 for jpf-core
 
 **Description:**
 jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
@@ -154,7 +149,7 @@ Experiments have shown that without summarizing the effects of constructors, mos
 **Required skills:** Knowledge of Java bytecode  
 **Preferred skills:** Handling of weak references, garbage collection
 
-#### <a name="model-checking-distributed-java-applications"></a>Model Checking Distributed Java Applications
+#### Model Checking Distributed Java Applications
 
 **Description:**
 [jpf-nas](https://github.com/javapathfinder/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the jpf-core which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](https://bitbucket.org/cyrille.artho/net-iocache), etc.
