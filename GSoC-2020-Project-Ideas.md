@@ -115,23 +115,30 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 
 #### Support Java 11 for jpf-core
+
 **Description:**
 jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
 There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
-**Difficulty:** hard  
-**Required skills:** knowledge of Java bytecode  
-**Preferred skills:** knowledge of bootstrap methods in Java bytecode
+**Difficulty:** Hard  
+**Required skills:** Knowledge of Java bytecode  
+**Preferred skills:** Knowledge of bootstrap methods in Java bytecode
 
 #### Support Java 11 for SPF
+
+**Description:**
 Symbolic PathFinder is essentially a (symbolic) JVM that currently supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11.
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
 #### Support for gradle for SPF
+
+**Description:**
 The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
 
 #### Improving String Analysis in SPF
+
+**Description:**
 Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
 
 #### Method Summaries, extended
@@ -159,6 +166,8 @@ Experiments have shown that without summarizing the effects of constructors, mos
 **Preferred skills:** Knowledge of jpf-nas or net-iocache
 
 #### Verification of Multi Agent Systems
+
+**Description:**
 The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
 
 <!--
@@ -170,6 +179,8 @@ The goal of this project is to prove (or refute) a Hoare triple *{Pre}P{Post}*, 
 -->
 
 #### Automatic program repair using annotations
+
+**Description:**
 Automated program repair  (APR) techniques often generate overfitting patches due to the reliance on test cases for patch generation and validation. In this project, we propose to overcome the overffiting issue in APR by leveraging developer-provided partial annotations to aid semantic reasoning. Developer annotations can come in different forms, e.g., JPF annotation. The advantage of developer annotations is two-fold. First, in addition to test cases, it helps augment the specifications of the program under analysis and thus provides more complete specifications. These annotations, despite being simple, can help significantly in semantic reasoning, e.g., null pointer analysis. Second, these annotations are not required to be complex so that to reduce the burden of manual effort by developers. For example, to reason about null pointer exception errors, developers are only required to add a few Nullable or Non-Nullable annotations to class fields or method parameters, etc.
 We will use JPF and SPF for symbolically reasoning about the semantics of programs under analysis and generating repairs. We will also use JPF-Annotation as a way for developers to provide annotations.
   
@@ -186,31 +197,46 @@ Epistemic properties allow to reason about the "knowledge" of an agent in a syst
 This project may use components such as jpf-symbc, jpf-concolic and jpf-abstraction and external tools such as SMT solvers. -->
 
 #### Refactoring SPF constraint library 
+
+**Description:**
 SPF constraints need to be refactored to allow different kinds of constraints to be combined during the construction of a path condition. An example of how it should be after the refactoring is the Abstract Syntax Tree constructed by [GREEN](http://dl.acm.org/citation.cfm?id=2393665).
 
-
 #### Hash-consing for SPF
+
+**Description:**
 Hash-consing is a technique that reuses previously constructed expressions to avoid duplication during construction of larger expressions. It is a technique that has been extensively used for creating maximally-shared graphs (see Calysto by Babic et al.), reusing structurally equivalent expressions in KLEE (by Cadar et al.). Variants of this idea are also applied in other binary symbolic executors like FuzzBALL and built in to new binary analysis frameworks (see Jung et al). Symbolic PathFinder currently does not support hash-consing or sharing of subexpressions causing memory usage to blow-up in pathological examples. This project would be about implementing hash-consing or a variant of this idea in SPF. This would have a clear benefit in reducing SPF's memory usage.
 
 #### Visualizing ChoiceGenerator tree for SPF
+
+**Description:**
 A symbolic executor explores feasible choices through a program. It can often be difficult to understand how a symbolic executor got to a particular program location in a given symbolic state. These difficulties arise from not being able to easily see all the previous choices the symbolic executor made to get to a certain point. To address this limitation, a symbolic executor can be asked to visually report its tree of exploration choices. An example of this is FuzzBALL's "-decision-tree-use-file" that reports FuzzBALL's tree of explored choices into a file that can be visualized. This project would be add a similar feature in SPF. Given a point of symbolic exploration, it would allow SPF to report its tree of explored ChoiceGenerator objects into a file that can be observed visually. 
 
 #### Combinatorial testing of configuration options for SPF
+
+**Description:**
 SPF has a large number of diverse configuration options. Enabling some features require combinations of options (such as incremental solving) whereas other options are backed by a broken implementation. For example, during the recently concluded SV-COMP 2020 competition, the Java Ranger authors (which also includes me) turned off symbolic string support, while the SPF team chose to leave this option on. For this project, we would examine all of SPF's options and construct test cases to combinatorially cover all of them. The outcome of this project would be a regression test suite that combinatorially covers all of SPF's options and provides clear documentation on which options don't work. If there is still time available during the summer, we would also attempt to fix SPF's broken symbolic string solving. There have been many recent advances in string solving and it would be valuable to have support for powerful string solvers such as z3str3. This project can also be combined with the [improving string analysis](#improving-string-analysis-in-spf) project above. 
 
 #### Beneficial path-merging for SPF
+
+**Description:**
 Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, path-merging is not always beneficial because it can contribute to making the contents of the stack and/or the heap symbolic. Later branching on these symbolic contents can cause further branching. This project is about developing a heuristic similar to the one proposed by Kuznetsov et al.(https://dslab.epfl.ch/pubs/stateMerging.pdf) for symbolic execution of Java bytecode.
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
 
 #### Whitebox Fuzzer and Grammar Learner
+
+**Description:**
 Build a whitebox fuzzing tool on top of Symbolic PathFinder, that can learn the input grammar of a piece of code in an iterative fashion. The idea would be to first run the code on symbolic input of a fixed length and then learn a possible grammar for this length, at that point extend the length and generalise the grammar. The main research goal behind this project is to see if one can do whitebox fuzzing without a pre-determined seed file (which is the way most whitebox fuzzers work at the moment). 
 
 #### Fuzzing and Symbolic Execution
+
+**Description:**
 Develop a fuzzer for Java that can be integrated with SPF (or another Java based symbolic execution engine). The idea would be that when fuzzing gets stuck and makes no progress that the symbolic analysis can create a new seed file to allow analysis to progress.
 
 #### Comparison between concolic and classical symbolic execution
+
+**Description:**
 Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical symbolic execution, e.g. SPF.
 
 <!-- #### Generic GREEN
@@ -220,11 +246,15 @@ Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical sym
 This project idea seeks to improve Symbolic PathFinder by adding unit tests and improving the quality of the code base.
 
 #### Improving Sampling of Symbolic Paths
+
+**Description:**
 We are working on a number of tools that use jpf-symbc for sampling symbolic paths in order to maximize some reward function. For example, [jpf-reliability](http://dl.acm.org/citation.cfm?id=2643011) is a probabilistic software analysis tool for programs with probabilistic and nondeterministic behavior. It synthesizes schedulers, i.e. resolutions of nondeterminism, that maximizes (or conversely minimizes) the probability of a property being satisfied.
 
 Common to these tools is that sampling is highly parallelizable and a possible direction of this project could be to design and implement a distributed infrastructure for these tools. Other improvements can also be experimented with, e.g., state pruning algorithms, constraints caching, and other algorithms for sampling paths.
 
 #### Verification and Testing Heap-based Programs with Symbolic PathFinder
+
+**Description:**
 The goal of this project is to extend Symbolic PathFinder to verify Separation Logic assertions, and to improve test-case generation for heap-based programs. Currently, SPF uses "lazy initialization", which is a brute-force enumeration of all heap objects that can bind to the structured inputs accessed by the program. This explicit enumeration may identify many invalid heap configurations that violate properties of the data structures in the heap, which leads to a huge amount of false alarms. -->
 
 <!-- #### Analysis of Android Applications
@@ -238,9 +268,13 @@ Various ideas are welcome here. Here are a couple of possible subprojects:
 3. An extension of [jpf-mobile-devices](https://bitbucket.org/matsurago/jpf-mobile-devices) to generate the right initialization sequence for applications running inside JPF on Android. This project is different from the ones above in the sense that JPF is run as an Android application that can use the underlying Android environment, not as a normal application that models the Android environment. Also see the [paper on jpf-mobile-devices](https://people.kth.se/~artho/papers/jpf-mobile.pdf). -->
 
 #### Smart Contract Analysis
+
+**Description:**
 Develop a mechanism to allow the analysis of Ethereum Virtual Machine (EVM) bytecode by replacing the JVM bytecodes with EVM bytecodes within JPF. The second part of the project would be to extend the bytecodes further to allow symbolic execution as well. 
 
 #### JDart for Dynamic Taint Analysis
+
+**Description:**
 JDart is a dynamic symbolic execution engine Java based on Java PathFinder (JPF). The tool executes Java programs with concrete and symbolic values at the same time and records symbolic constraints describing all the decisions along a particular path of the execution. These path constraints are then used to find new paths in the program. Concrete data values for exercising these paths are generated using a constraint solver.
 
 Currently JDart has two mechanisms for marking data values in a program for symbolic analysis. First, JDart analyzes methods during starting symbolic analysis. All parameters of an analyzed method are treated symbolically. Second, special annotations can be used to mark class members that should be analyzed symbolically. This mode of operation is geared towards generating test cases as well as the symbolic summaries of methods.
@@ -271,9 +305,13 @@ We have many ideas for improving JDart and welcome additional ideas too:
 3. [JConstraints](https://github.com/psycopaths/jconstraints) is a solver abstraction layer used by JDart to interact transparently with SMT solvers. JConstraints has support for some solvers, e.g., Z3 and SMTinterpol. Often, however, one needs to select a solver that is best suited for the constraints generated (e.g., linear, non-linear). It could be very useful adding additional solvers to JDart based on JConstraints and evaluate them to understand better their applicability. This could also comprise adding a general interface to solvers that support the SMTLib format.
 
 #### Concolic Execution for Android Apps
+
+**Description:**
 [JDart](https://github.com/psycopaths/jdart) is an open-source, dynamic symbolic analysis framework built on Java PathFinder. It has been applied to industrial scale software, including complex NASA systems. This project seeks to extend this capability to Android applications by supporting the Dalvik instruction set, e.g., by using [jpf-pathdroid](http://babelfish.arc.nasa.gov/hg/jpf/jpf-pathdroid). This would enable analyses build on JDart to also work for Android, e.g., automated test case generation, finding bugs, and program understanding. 
 
 #### Support for parallel or distributed exploration in JDart and Regression tests for JDart
+
+**Description:**
 Here is an incomplete list of ideas and projects for extending and improving JDart. If you would like to work on any of the projects or have your own ideas (or just want to contribute to JDart), let us know and we can talk more.
 
 * Add regression test suite
@@ -316,6 +354,8 @@ to resolve as many of these cases as possible. Remaining cases can be handled wi
 **Preferred skills:** Knowledge of test generation
 
 #### Symbolic data-race detection for Habanero Java
+
+**Description:**
 [Habanero Java](http://faculty.knox.edu/dbunde/teaching/hj/) is a Java implementation of the [Habanero Extreme-scale](http://vsarkar.rice.edu/research/publications/publi-habanero/) programming model for multithreaded applications. The model is based on X10 and supports fork/join semantics as well as futures, isolation, and phasers. The advantage of structured parallelism such as Habanero is that the language itself provides concurrency guarantees such as deadlock freedom and determinacy if and only the program is free of data-race. A data-race occurs when two or more threads of execution access the same memory location and at least one of those accesses is a write. An additional advantage of structured parallelism is that run-times and analysis can be optimized based on the language structure itself. Recent work adds to JPF the ability to model check Habanero Java programs using a verification specific runtime and an algorithm that constructs and analyzes a computation graph representing the happens-before relation of the program execution ([1](https://dl.acm.org/citation.cfm?doid=2693208.2693245), [2](https://link.springer.com/chapter/10.1007%2F978-3-319-77935-5_25). The analysis is predictive because it infers from the single observed schedule the presence or absence of data-race in other non-observed schedules and only needs to enumerate schedules around isolation. Enumeration schedules around isolation though is still expensive and leads to state explosion in JPF. The work in this project is to mitigate this state explosion in enumerating schedules around isolation by building a symbolic computation graph from the program execution that adds constraints on the graph edges indicating under what condition the edge is active, and then using an SMT solver to find a set of edges on which a data-race exists. A first step in the project is to add a dynamic partial order reduction to JPF that is able to inform the symbolic computation graph about dependencies. 
 
 <!-- #### Environment and Test Case Generation for Symbolic Execution
