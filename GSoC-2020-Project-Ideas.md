@@ -226,6 +226,11 @@ A symbolic executor explores feasible choices through a program. It can often be
 **Description:**
 SPF has a large number of diverse configuration options. Enabling some features require combinations of options (such as incremental solving) whereas other options are backed by a broken implementation. For example, during the recently concluded SV-COMP 2020 competition, the Java Ranger authors (which also includes me) turned off symbolic string support, while the SPF team chose to leave this option on. For this project, we would examine all of SPF's options and construct test cases to combinatorially cover all of them. The outcome of this project would be a regression test suite that combinatorially covers all of SPF's options and provides clear documentation on which options don't work. If there is still time available during the summer, we would also attempt to fix SPF's broken symbolic string solving. There have been many recent advances in string solving and it would be valuable to have support for powerful string solvers such as z3str3. This project can also be combined with the [improving string analysis](#improving-string-analysis-in-spf) project above. 
 
+**Difficulty:** Medium  
+**Required skills:** Java programming  
+**Preferred skills:** Some knowledge of SPF's configuration options  
+**Expected outcomes:** A clear list of SPF options that dont play well with each other; a list of test cases that tested the correct interactions between SPF options
+
 #### Beneficial path-merging for SPF
 
 **Description:**
