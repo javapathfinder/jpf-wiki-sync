@@ -71,9 +71,9 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Smart Contract Analysis](#smart-contract-analysis) <Willem>
 
-### Android
+<!-- ### Android
 
-* [Analysis of Android Applications](#analysis-of-android-applications)
+* [Analysis of Android Applications](#analysis-of-android-applications) -->
 
 ### Concolic Execution
 
@@ -227,7 +227,7 @@ Common to these tools is that sampling is highly parallelizable and a possible d
 #### Verification and Testing Heap-based Programs with Symbolic PathFinder
 The goal of this project is to extend Symbolic PathFinder to verify Separation Logic assertions, and to improve test-case generation for heap-based programs. Currently, SPF uses "lazy initialization", which is a brute-force enumeration of all heap objects that can bind to the structured inputs accessed by the program. This explicit enumeration may identify many invalid heap configurations that violate properties of the data structures in the heap, which leads to a huge amount of false alarms. -->
 
-#### Analysis of Android Applications
+<!-- #### Analysis of Android Applications
 Various ideas are welcome here. Here are a couple of possible subprojects:
 
 1. The goal of this project is collecting interesting Android applications, and evaluating and applying [JPF-Android](https://heila.bitbucket.io/jpf-android/) to analyze them. JPF-Android is an extension to JPF used to model check Android Applications. Android applications have many dependencies which make them hard to test and verify. They also require events to drive the execution of the applications.  The goal of this project is to identify interesting Android applications to run on ]JPF-Android and then  evaluate the efficiency and effectiveness of the tool  on these apps. You will be using/improving existing approaches to generate stubs and models for applications and then compare the coverage and runtime on JPF-Android to other dynamic analysis tools.
@@ -235,7 +235,7 @@ Various ideas are welcome here. Here are a couple of possible subprojects:
 
 2. This project includes using [JPF-Android](https://heila.bitbucket.io/jpf-android/) to generated test sequences for android applications, and implementing a tool to convert these sequences into tests that can be run on the emulator. JPF-Android verifies Android applications outside of the Android software stack on JPF using a model environment to improve coverage and efficiency. It generates event sequences to drive the execution of the application during exploration. Each sequence also includes the configuration of the environment (device) for which the sequence was executed. This project uses the AndroidViewClient API in Python to run the set of event sequences as detected by JPF-Android on  an emulator to find the number of valid sequences and the code coverage they obtain compared to JPF-Android.
 
-3. An extension of [jpf-mobile-devices](https://bitbucket.org/matsurago/jpf-mobile-devices) to generate the right initialization sequence for applications running inside JPF on Android. This project is different from the ones above in the sense that JPF is run as an Android application that can use the underlying Android environment, not as a normal application that models the Android environment. Also see the [paper on jpf-mobile-devices](https://people.kth.se/~artho/papers/jpf-mobile.pdf).
+3. An extension of [jpf-mobile-devices](https://bitbucket.org/matsurago/jpf-mobile-devices) to generate the right initialization sequence for applications running inside JPF on Android. This project is different from the ones above in the sense that JPF is run as an Android application that can use the underlying Android environment, not as a normal application that models the Android environment. Also see the [paper on jpf-mobile-devices](https://people.kth.se/~artho/papers/jpf-mobile.pdf). -->
 
 #### Smart Contract Analysis
 Develop a mechanism to allow the analysis of Ethereum Virtual Machine (EVM) bytecode by replacing the JVM bytecodes with EVM bytecodes within JPF. The second part of the project would be to extend the bytecodes further to allow symbolic execution as well. 
