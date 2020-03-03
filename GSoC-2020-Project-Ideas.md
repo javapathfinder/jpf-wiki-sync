@@ -236,6 +236,11 @@ SPF has a large number of diverse configuration options. Enabling some features 
 **Description:**
 Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, path-merging is not always beneficial because it can contribute to making the contents of the stack and/or the heap symbolic. Later branching on these symbolic contents can cause further branching. This project is about developing a heuristic similar to the one proposed by [Kuznetsov et al.](https://dslab.epfl.ch/pubs/stateMerging.pdf) for symbolic execution of Java bytecode.
 
+**Difficulty:** Hard  
+**Required skills:** Knowledge of path-merging in symbolic execution; examples include [dynamic state merging](https://dslab.epfl.ch/pubs/stateMerging.pdf) and/or [veritesting](https://dl.acm.org/doi/abs/10.1145/2568225.2568293?casa_token=WgY5X3ESR5AAAAAA:50nH1DsJ_YRg1Pyv4zNgz8a4RLfyj49eETxFH7OhuQmwr_4vjjS9u5h5_aSsJt54fvNIuBEc0mYdu2M)  
+**Preferred skills:** Knowledge of SPF's internals when it comes to its execution of conditional branches; knowledge of [Java Ranger](https://github.com/vaibhavbsharma/java-ranger) would be further beneficial  
+**Expected outcomes:** a heuristic that improves SPF's performance when it uses path-merging but avoids path-merging when it doesn't seem beneficial; the targeted heuristic is of the kind proposed in the state merging paper above by Kuznetsov et al.
+
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
 
