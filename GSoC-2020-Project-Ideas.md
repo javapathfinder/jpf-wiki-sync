@@ -219,7 +219,7 @@ A symbolic executor explores feasible choices through a program. It can often be
 **Difficulty:** Easy  
 **Required skills:** Java programming  
 **Preferred skills:** Some knowledge of symbolic execution  
-**Expected outcomes:** isualization of the choice generator tree when exploring a few benchmarks. Also, implementation of a few ideas to improve the usability of such trees when generated from a symbolic execution run with complex software
+**Expected outcomes:** Visualization of the choice generator tree when exploring a few benchmarks; implementation of a few ideas to improve the usability of such trees when generated from a symbolic execution run with complex software
 
 #### Combinatorial testing of configuration options for SPF
 
