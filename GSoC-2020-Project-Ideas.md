@@ -209,7 +209,7 @@ Hash-consing is a technique that reuses previously constructed expressions to av
 **Difficulty:** Medium  
 **Required skills:** Knowledge of symbolic execution and what it is useful for  
 **Preferred skills:** Prior experience of developing or maintaining a symbolic execution tool  
-**Expected outcomes:** Clear reduction in memory usage of SPF when we run benchmarks. The idea of hash-consing is being adapted from the veritesting paper by Avgerinos et al. (https://dl.acm.org/doi/abs/10.1145/2568225.2568293?casa_token=WgY5X3ESR5AAAAAA:50nH1DsJ_YRg1Pyv4zNgz8a4RLfyj49eETxFH7OhuQmwr_4vjjS9u5h5_aSsJt54fvNIuBEc0mYdu2M)
+**Expected outcomes:** Clear reduction in memory usage of SPF when we run benchmarks. The idea of hash-consing is being adapted from the veritesting paper by [Avgerinos et al.](https://dl.acm.org/doi/abs/10.1145/2568225.2568293?casa_token=WgY5X3ESR5AAAAAA:50nH1DsJ_YRg1Pyv4zNgz8a4RLfyj49eETxFH7OhuQmwr_4vjjS9u5h5_aSsJt54fvNIuBEc0mYdu2M)
 
 #### Visualizing ChoiceGenerator tree for SPF
 
