@@ -136,7 +136,7 @@ Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable an
 
 #### Method Summaries, extended
 
-**Description: **
+**Description:**
 A thesis project implemented [Summaries of methods](https://github.com/lassebe/jpf-summary) when executing in JPF.
 It includes a representation of the summaries that captures all side effects of the given procedure; and 
 implements modifications of the program state. 
