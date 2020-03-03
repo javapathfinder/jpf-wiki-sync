@@ -7,8 +7,6 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support Java 11+ for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
 
-
-
 ### JPF Application Domains
 
 * [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Nastaran><Cyrille>
@@ -156,7 +154,7 @@ Experiments have shown that without summarizing the effects of constructors, mos
 **Required skills:** Knowledge of Java bytecode  
 **Preferred skills:** Handling of weak references, garbage collection
 
-#### Model Checking Distributed Java Applications
+#### <a name="model-checking-distributed-java-applications"></a>Model Checking Distributed Java Applications
 
 **Description:**
 [jpf-nas](https://github.com/javapathfinder/jpf-nas) is an extension of JPF that provides support for model checking distributed multithreaded Java applications. It relies on the multiprocess support included in the jpf-core which provides basic functionality to verify the bytecode of distributed applications. jpf-nas supports interprocess communication via TCP sockets by modeling the Java networking package java.net. This tool can handle simple multi-client server applications. Some examples can be found in the jpf-nas distribution (at jpf-nas/src/examples/). The goal of this project is to extend the functionality of jpf-nas in various ways, such as extending the communication model supported by the tool towards an existing open source Java library/framework, called [QuickServer](http://www.quickserver.org/), increasing the performance of the tool by improving the mechanism used to manage the state of communication objects, extending the tool with the cache-based approach used in [net-iocache](https://bitbucket.org/cyrille.artho/net-iocache), etc.
