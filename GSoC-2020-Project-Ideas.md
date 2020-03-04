@@ -25,7 +25,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Automatic Program Repair
 
-* [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach><Vaibhav><Eric>
+* [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach><Vaibhav><Eric><Corina>
 
 ### Symbolic Execution
 
