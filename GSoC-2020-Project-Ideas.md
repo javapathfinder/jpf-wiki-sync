@@ -257,13 +257,13 @@ Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical sym
 <!-- #### Generic GREEN
 [GREEN](http://dl.acm.org/citation.cfm?id=2393665) is a framework being used to cache constraints with satisfiability and model counting results during analysis. It is used in several jpf-symbc extensions for probabilistic software analysis. Recently there has been a number of suggested improvements to optimise such caching. This project will focus on two ideas: one reusing previous solutions for SAT checking and secondly to store the characterising function for model counting produced by a tool like Barvinok to allow one to reuse model counting solutions even when bounds on variables change. -->
 
-<!-- #### Improving Symbolic PathFinder
-This project idea seeks to improve Symbolic PathFinder by adding unit tests and improving the quality of the code base.
-
 #### Symbolic PathFinder for Neural Network Analysis
 
 **Description:**
 This project explores the application of symbolic execution and related methods to the domain of neural networks.  The goal of the project is to design and implement a family of integrated analyses that allow testing and debugging of neural networks.  The project will build on recent advances in symbolic analysis of neural networks and utilize the SPF/JPF toolset.
+
+<!-- #### Improving Symbolic PathFinder
+This project idea seeks to improve Symbolic PathFinder by adding unit tests and improving the quality of the code base.
 
 #### Improving Sampling of Symbolic Paths
 
