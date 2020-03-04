@@ -39,7 +39,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike><Elena>
 
-* [Symbolic PathFinder for Neural Network Analysis]<Corina><Sarfraz>
+* [Symbolic PathFinder for Neural Network Analysis](#symbolic-pathfinder-for-neural-network-analysis) <Corina><Sarfraz>
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
 
