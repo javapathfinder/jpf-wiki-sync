@@ -9,25 +9,23 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### JPF Application Domains
 
-* [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Nastaran><Cyrille>
+* [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Cyrille>
 
 <!-- * [Verification of Multi Agent Systems](#verification-of-multi-agent-systems) <Franco><Eric><CheckWithNeha> -->
 
-<!--* [Verification of Actor-based Systems](#verification-of-actor-based-systems)--> <Nastaran>
+<!--* [Verification of Actor-based Systems](#verification-of-actor-based-systems) <Nastaran> -->
 
 <!--* [Verification of Event-Driven Applications](#verification-of-event-driven-applications) <Oksana>-->
 
-<!-- * [Verification of epistemic properties of Java programs](#verification-of-epistemic-properties-of-java-programs)--> <Franco><Nikos>
+<!-- * [Verification of epistemic properties of Java programs](#verification-of-epistemic-properties-of-java-programs) <Franco><Nikos> -->
 
-<!--
-### Separation Logic
+<!-- ### Separation Logic
 
-* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang>
--->
+* [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang> -->
 
 ### Automatic Program Repair
 
-* [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach>
+* [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach><Vaibhav><Eric>
 
 ### Symbolic Execution
 
@@ -37,13 +35,13 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Improving String analysis in SPF](#improving-string-analysis-in-spf) <Yannic><Corina>
 
-* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Mike><Elena>
+* [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Elena>
 
 * [Symbolic PathFinder for Neural Network Analysis](#symbolic-pathfinder-for-neural-network-analysis) <Corina><Sarfraz>
 
-<!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution)--> <Corina><Nastaran>
+<!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution) <Corina><Nastaran> -->
 
-* [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution) <Willem>
+* [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution)
 
 <!-- * [Generic GREEN](#generic-green) <Willem> -->
 
@@ -61,13 +59,13 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Fuzzing
 
-* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) <Willem>
+* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) 
 
-* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Willem><Corina><Yannic>
+* [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Corina><Yannic>
 
 ### Smart Contract
 
-* [Smart Contract Analysis](#smart-contract-analysis) <Willem>
+* [Smart Contract Analysis](#smart-contract-analysis) <Cyrille>
 
 <!-- ### Android
 
