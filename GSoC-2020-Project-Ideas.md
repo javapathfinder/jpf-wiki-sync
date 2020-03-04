@@ -11,7 +11,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Nastaran><Cyrille>
 
-* [Verification of Multi Agent Systems](#verification-of-multi-agent-systems) <Franco><Eric><CheckWithNeha>
+<!-- * [Verification of Multi Agent Systems](#verification-of-multi-agent-systems) <Franco><Eric><CheckWithNeha> -->
 
 <!--* [Verification of Actor-based Systems](#verification-of-actor-based-systems)--> <Nastaran>
 
@@ -158,10 +158,10 @@ Experiments have shown that without summarizing the effects of constructors, mos
 **Required skills:** Knowledge of Java networking  
 **Preferred skills:** Knowledge of jpf-nas or net-iocache
 
-#### Verification of Multi Agent Systems
+<!-- #### Verification of Multi Agent Systems
 
 **Description:**
-The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line.
+The goal of this project is to develop techniques that analyze key properties in multi-agent systems. The [jpf-mas](http://dl.acm.org/citation.cfm?id=2485058) extension will initially provide the ability to generate the reachable state space of Brahms models. The reachable state space can then be encoded into input for a variety of model checkers such as SPIN, NuSMV and PRISM, thereby enabling the verification of LTL, CTL and PCTL properties. The project will also need to investigate how to generate the set of reachable states for other kinds of models, such as Jason models, and how to compose reachable states of different modelling languages both at run-time and off-line. -->
 
 <!--
 #### Verification of unbounded heap-manipulating programs via learning
