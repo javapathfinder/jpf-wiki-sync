@@ -194,6 +194,11 @@ This project may use components such as jpf-symbc, jpf-concolic and jpf-abstract
 **Description:**
 SPF constraints need to be refactored to allow different kinds of constraints to be combined during the construction of a path condition. An example of how it should be after the refactoring is the Abstract Syntax Tree constructed by [GREEN](http://dl.acm.org/citation.cfm?id=2393665).
 
+**Difficulty:** Medium  
+**Required skills:** Knowledge of object-oriented programming in Java, general knowledge of SMT-solvers  
+**Preferred skills:** Priori software development experience using SMT-solvers' APIs  
+**Expected outcomes:** More efficient and flexible constraint interface used to express a path constraints
+
 #### Hash-consing for SPF
 
 **Description:**
