@@ -302,10 +302,10 @@ JDart is a dynamic symbolic execution for Java programs and is based on Java Pat
 
 To further robustness of JDart, the tools needs a small overhaul of its architecture: the build system has to be updated to maven or gradle, dependencies should be handled by the build system, and proper unit tests should be executed by the build system. (A subset of) SV-Comp and OWASP benchmarks should become regression tests. To increase scalability, JDart should be make use of parallelization. Concolic execution lends itself to parallelization as individual executions are completely independent of one another (cf. works of white-box fuzzing). The architecture of JDart should be modularized with clear APIs between components as a basis for making JDart parallel. Google summer of code project could focus on a subset on these goals depending on skill set and interests of students.
 
-**Difficulty:** Medium
-**Required skills:** Java, maven/gradle, unit testing
-**Preferred skills:** APIs, docker, multi-threading, distributed applications
-**Expected outcomes:** An overhauled version of JDart should be made available under the Java PathFinder organization on github as one result of the Google summer of code project. When tackling scalability, results could be submitted to the JPF workshop.
+**Difficulty:** Medium  
+**Required skills:** Java, maven/gradle, unit testing  
+**Preferred skills:** APIs, docker, multi-threading, distributed applications  
+**Expected outcomes:** An overhauled version of JDart should be made available under the Java PathFinder organization on github as one result of the Google summer of code project. When tackling scalability, results could be submitted to the JPF workshop.  
 
 <!--
 #### New Features for JDart
