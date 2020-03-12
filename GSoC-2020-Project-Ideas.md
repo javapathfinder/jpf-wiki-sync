@@ -41,7 +41,8 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 <!-- * [Handling Native Calls in the Context of Symbolic Execution](#handling-native-calls-in-the-context-of-symbolic-execution) <Corina><Nastaran> -->
 
-* [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution)
+<!--
+* [Comparison between concolic execution and classical symbolic execution](#comparison-between-concolic-and-classical-symbolic-execution) -->
 
 <!-- * [Generic GREEN](#generic-green) <Willem> -->
 
@@ -59,7 +60,8 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Fuzzing
 
-* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner) 
+<!--
+* [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner)  -->
 
 * [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Corina><Yannic>
 
@@ -242,20 +244,22 @@ Path-merging has recently been implemented as an extension to the Symbolic PathF
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
 
+<!--
 #### Whitebox Fuzzer and Grammar Learner
 
 **Description:**
-Build a whitebox fuzzing tool on top of Symbolic PathFinder, that can learn the input grammar of a piece of code in an iterative fashion. The idea would be to first run the code on symbolic input of a fixed length and then learn a possible grammar for this length, at that point extend the length and generalise the grammar. The main research goal behind this project is to see if one can do whitebox fuzzing without a pre-determined seed file (which is the way most whitebox fuzzers work at the moment). 
+Build a whitebox fuzzing tool on top of Symbolic PathFinder, that can learn the input grammar of a piece of code in an iterative fashion. The idea would be to first run the code on symbolic input of a fixed length and then learn a possible grammar for this length, at that point extend the length and generalise the grammar. The main research goal behind this project is to see if one can do whitebox fuzzing without a pre-determined seed file (which is the way most whitebox fuzzers work at the moment).  -->
 
 #### Fuzzing and Symbolic Execution
 
 **Description:**
 Develop a fuzzer for Java that can be integrated with SPF (or another Java based symbolic execution engine). The idea would be that when fuzzing gets stuck and makes no progress that the symbolic analysis can create a new seed file to allow analysis to progress.
 
+<!-- 
 #### Comparison between concolic and classical symbolic execution
 
 **Description:**
-Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical symbolic execution, e.g. SPF.
+Comparison between concolic execution, e.g. DEEPSEA and JDart, and classical symbolic execution, e.g. SPF. -->
 
 <!-- #### Generic GREEN
 [GREEN](http://dl.acm.org/citation.cfm?id=2393665) is a framework being used to cache constraints with satisfiability and model counting results during analysis. It is used in several jpf-symbc extensions for probabilistic software analysis. Recently there has been a number of suggested improvements to optimise such caching. This project will focus on two ideas: one reusing previous solutions for SAT checking and secondly to store the characterising function for model counting produced by a tool like Barvinok to allow one to reuse model counting solutions even when bounds on variables change. -->
