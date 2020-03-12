@@ -73,7 +73,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Concolic Execution
 
-* [JDart for Dynamic Taint Analysis](#jdart-for-dynamic-taint-analysis) <Falk>
+* [JDart maintenance and scalability](#jdart-maintenance-and-scalability) <Falk>
 
 <!--
 * [New Features for JDart](#new-features-for-jdart) <Kasper>
@@ -295,27 +295,17 @@ Various ideas are welcome here. Here are a couple of possible subprojects:
 **Description:**
 Develop a mechanism to allow the analysis of Ethereum Virtual Machine (EVM) bytecode by replacing the JVM bytecodes with EVM bytecodes within JPF. The second part of the project would be to extend the bytecodes further to allow symbolic execution as well. 
 
-#### JDart for Dynamic Taint Analysis
+#### JDart maintenance and scalability
 
 **Description:**
-JDart is a dynamic symbolic execution engine Java based on Java PathFinder (JPF). The tool executes Java programs with concrete and symbolic values at the same time and records symbolic constraints describing all the decisions along a particular path of the execution. These path constraints are then used to find new paths in the program. Concrete data values for exercising these paths are generated using a constraint solver.
+JDart is a dynamic symbolic execution for Java programs and is based on Java PathFinder (JPF). The tool executes Java programs with concrete and symbolic values at the same time and records symbolic constraints describing all the decisions along a particular path of the execution. These path constraints are then used to find new paths in the program. Concrete data values for exercising these paths are generated using a constraint solver. Recent development on JDart has focused on supporting more language features of Java (e.g., symbolic analysis of String variables) and on implementing taint analysis on top of concolic execution. As a consequence, JDart scored the third place in the Java track of SV-Comp 2020 and was able to beat the OWASP security benchmark. Source code of recent development can be found at [https://github.com/tudo-aqua/jdart](https://github.com/tudo-aqua/jdart).
 
-Currently JDart has two mechanisms for marking data values in a program for symbolic analysis. First, JDart analyzes methods during starting symbolic analysis. All parameters of an analyzed method are treated symbolically. Second, special annotations can be used to mark class members that should be analyzed symbolically. This mode of operation is geared towards generating test cases as well as the symbolic summaries of methods.
+To further robustness of JDart, the tools needs a small overhaul of its architecture: the build system has to be updated to maven or gradle, dependencies should be handled by the build system, and proper unit tests should be executed by the build system. (A subset of) SV-Comp and OWASP benchmarks should become regression tests. To increase scalability, JDart should be make use of parallelization. Concolic execution lends itself to parallelization as individual executions are completely independent of one another (cf. works of white-box fuzzing). The architecture of JDart should be modularized with clear APIs between components as a basis for making JDart parallel. Google summer of code project could focus on a subset on these goals depending on skill set and interests of students.
 
-The goal of this project is to add a new mode of operation to JDart, in which symbolic variables can be introduced dynamically during execution – and also be made purely concrete again. This can be done by introducing symbolic variables for (or removing symbolic annotations from) the return values of specific methods (e.g., Random.nextInt()) – using listeners provided by JPF. This new mode of operation would have two benefits:
-
-1. Existing programs can be analyzed without modifications. And analysis is not confined to individual methods. This will, e.g., enable JDart to analyze the Java programs in the SVCOMP benchmarks ([Injection Flaws](https://www.owasp.org/index.php/Top_10_2007-Injection_Flaws)).
-2. It is one step towards enabling using JDart for dynamic taint analysis, e.g., for analyzing potential for injection attacks ([Minepump](https://github.com/sosy-lab/sv-benchmarks/tree/master/java/MinePump)). Web-applications tend to contain code of form: 
-```
-u = Request.getValueOf(“user”); //Taint u (symbolically) 
-query = “SELECT user FROM table WHERE uid=”+u; //query becomes tainted
-query = santitize(query); //Un-taint query (symbolically.) 
-db.select(query);
-```
-If the value of u is not properly analyzed and sanitized, an attacker can exploit this code to gain access to arbitrary information in the applications database. Making the return value of Request.getValueOf(“user”) symbolic, is the first step towards tracing taint of this value.
-
-Please note: For a full dynamic taint analysis, JDart would also have to be extended to analyze strings and arrays symbolically --- this is out of the scope of this project.
-
+**Difficulty:** Medium
+**Required skills:** Java, maven/gradle, unit testing
+**Preferred skills:** APIs, docker, multi-threading, distributed applications
+**Expected outcomes:** An overhauled version of JDart should be made available under the Java PathFinder organization on github as one result of the Google summer of code project. When tackling scalability, results could be submitted to the JPF workshop.
 
 <!--
 #### New Features for JDart
