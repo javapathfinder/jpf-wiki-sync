@@ -43,12 +43,19 @@ You will need to submit a proposal to Google during the student application phas
 
 A good proposal should contain the following:
 
-1. Title, summary (about 100 words).
+1. Title and a short summary or abstract (about 100-150 words).
 
-2. Goals. Have multiple, prioritized goals, so you have alternatives if something does not go as expected.
+2. Self-introduction: your education, experience, past projects, and open source usage/involvement. This should include past contributions to open-source software (JPF or other). If you can submit a patch to JPF to fix a small problem, this is the best proof that you can successfully use and modify JPF!
 
-3. Implementation plan. An initial plan of how to reach the first goal(s).
+3. Goals. Have multiple, prioritized goals, so that you have alternatives if something does not go as expected.
 
-4. Tentative timeline. Be detailed for the first three weeks, and outline the remainder. Leave open some extra time for unexpected problems.
+4. Detailed description and implementation plan. What you plan to implement (what feature is missing). Include initial steps you have already taken and/or an initial plan of how to reach the first goal(s). Be as concrete as possible.
 
-5. Self-introduction. This should include past contributions to open-source software (JPF or other). If you can submit a patch to JPF to fixes a small problem, this is the best proof that you can successfully use and modify JPF!
+5. Tentative timeline. A detailed weekly plan for the first 3 - 4 weeks, and outline the remainder as a list of larger steps ("sprints") for the remaining time, perhaps 2 - 3 weeks as an interval for that. Make sure you have enough time for testing and documentation. Leave open some extra time for unexpected problems.
+
+6. A list of foreseen major challenges, a plan to deal with them, including a back-up plan if something does not work out as intended.
+
+7. Plans for future improvements (and possible future involvement) after GSoC.
+
+8. Any possible conflicts of interest. You can compensate for being absent for a week or two by starting earlier (during the community bonding period). However, finishing late is not possible as the evaluation deadlines set by Google are strict.
+
