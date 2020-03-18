@@ -58,7 +58,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Beneficial path-merging for SPF](#beneficial-path-merging-for-SPF) <Vaibhav>
 
-* [Test generation with path-merging](#test-gen-with-path-merging) <Vaibhav>
+* [Test generation with path-merging](#test-generation-with-path-merging) <Vaibhav>
 
 ### Fuzzing
 
