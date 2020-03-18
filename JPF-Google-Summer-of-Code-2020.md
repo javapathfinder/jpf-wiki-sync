@@ -39,7 +39,7 @@ JPF is a fairly complex system. The first step to start is to get JPF [running](
 
 You will need to submit a proposal to Google during the student application phase. Check out the [GSoC FAQ](https://developers.google.com/open-source/gsoc/faq) page for more information. 
 
-### Proposal outline
+### Proposal template
 
 A good proposal should contain the following:
 
