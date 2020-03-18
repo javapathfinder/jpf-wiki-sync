@@ -58,6 +58,8 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Beneficial path-merging for SPF](#beneficial-path-merging-for-SPF) <Vaibhav>
 
+* [Test generation with path-merging](#test-gen-with-path-merging) <Vaibhav>
+
 ### Fuzzing
 
 <!--
@@ -240,6 +242,16 @@ Path-merging has recently been implemented as an extension to the Symbolic PathF
 **Required skills:** Knowledge of path-merging in symbolic execution; examples include [dynamic state merging](https://dslab.epfl.ch/pubs/stateMerging.pdf) and/or [veritesting](https://dl.acm.org/doi/abs/10.1145/2568225.2568293?casa_token=WgY5X3ESR5AAAAAA:50nH1DsJ_YRg1Pyv4zNgz8a4RLfyj49eETxFH7OhuQmwr_4vjjS9u5h5_aSsJt54fvNIuBEc0mYdu2M)  
 **Preferred skills:** Knowledge of SPF's internals when it comes to its execution of conditional branches; knowledge of [Java Ranger](https://github.com/vaibhavbsharma/java-ranger) would be further beneficial  
 **Expected outcomes:** a heuristic that improves SPF's performance when it uses path-merging but avoids path-merging when it doesn't seem beneficial; the targeted heuristic is of the kind proposed in the state merging paper above by Kuznetsov et al.
+
+#### Test generation with path-merging
+
+**Description:**
+Path-merging has recently been implemented as an extension to the Symbolic PathFinder tool. However, test generation with a path-merging symbolic executor is different because we would not want test generation to undo all the benefits of path-merging. Test generation should instead be targeted towards achieving coverage of some coverage criterion specified by the user. In this project, we will attempt to do test generation with a path-merging symbolic executor which will be [Java Ranger](https://github.com/vaibhavbsharma/java-ranger). One example of test generation can be found in the test generation performed with [veritesting](https://doi.org/10.1145/2568225.2568293) by Avgerinos et al.
+
+**Difficulty:** Hard  
+**Required skills:** Knowledge of path-merging in symbolic execution; examples include [dynamic state merging](https://dslab.epfl.ch/pubs/stateMerging.pdf) and/or [veritesting](https://doi.org/10.1145/2568225.2568293). This project would also involve knowledge of test criteria like MC/DC.
+**Preferred skills:** Knowledge of SPF's internals when it comes to its execution of conditional branches; knowledge of [Java Ranger](https://github.com/vaibhavbsharma/java-ranger) would be further beneficial  
+**Expected outcomes:** a implementation that generates tests with a path-merging symbolic executor like Java Ranger
 
 <!-- #### Handling Native Calls in the Context of Symbolic Execution
 The goal of this project is to handle native calls in the context of symbolic execution by generating native peers and associating them with native methods on-the-fly. For the native peers we need concrete values to be used as input parameters for automatically generated native peers methods. The idea is to first solve the constraints obtained with symbolic execution and use those solutions as input parameters. This can be accomplished by enhancing [jpf-symbc](http://babelfish.arc.nasa.gov/trac/jpf/wiki/projects/jpf-symbc) to use the [jpf-nhandler](https://bitbucket.org/nastaran/jpf-nhandler) extension of JPF. -->
