@@ -7,7 +7,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support Java 11 (bootstrap methods) for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
 
-* [Support Java 12 (private API dependencies) for jpf-core](#support-for-java-12-\(private-api-dependencies\)-for-jpf-core) <!-- (#support-java-12-for-jpf-core) --> <Cyrille>
+* [Support Java 12 (private API dependencies) for jpf-core](#support-for-java-12-(private-api-dependencies%29-for-jpf-core) <!-- (#support-java-12-for-jpf-core) --> <Cyrille>
 
 ### JPF Application Domains
 
