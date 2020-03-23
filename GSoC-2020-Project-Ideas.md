@@ -124,7 +124,7 @@ This is a high-priority project, as support for Java 8 is limited to the near fu
 **Required skills:** Knowledge of Java bytecode  
 **Preferred skills:** Knowledge of bootstrap methods in Java bytecode
 
-### Support for Java 12 (private API dependencies) for jpf-core
+#### Support for Java 12 (private API dependencies) for jpf-core
 
 Related to the project above, there are also some internal APIs from Java 11 that no longer exist in Java 12 and later.
 This requires redesigning and reimplementing part of the code, in order to take a different approach that no longer depends on functionality that was removed in Java 12. The code in question is easily found by trying to compile branch `java-10-gradle` with Java 12.
