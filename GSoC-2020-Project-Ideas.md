@@ -5,7 +5,9 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### JPF Infrastructure
 
-* [Support Java 11+ for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
+* [Support Java 11 (bootstrap methods) for jpf-core](#support-java-11-for-jpf-core) <Cyrille>
+
+* [Support Java 12 (private API dependencies) for jpf-core](#support-java-12-for-jpf-core) <Cyrille>
 
 ### JPF Application Domains
 
@@ -111,16 +113,24 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Projects Descriptions
 
-#### Support Java 11 for jpf-core
+#### Support Java 11 (bootstrap methods) for jpf-core
 
 **Description:**
-jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature.
-There are also some internal APIs from Java 11 that no longer exist in Java 12 and later, so time permitting, we would also like to update code depending on these.
+jpf-core is essentially a JVM that currently fully supports only Java 8. The goal of this project is to make it up-to-date with new features of Java 11. The JPF source itself has already been made compatible with Java 11. Now, JPF should support new features of Java 11 bytecode. The key feature of Java 11 that is currently not supported are bootstrap methods that are generated at load time. They are used for things as common as string concatenation ("Hello, " + name). As of now, a few specialized cases are supported, but there are still many programs (and unit tests) that fail with Java 11. It is therefore very important for us that we support the general case of this feature. The current state can be seen by running the unit tests of branch `java-10-gradle` with Java 11.
+
 This is a high-priority project, as support for Java 8 is limited to the near future.
 
 **Difficulty:** Hard  
 **Required skills:** Knowledge of Java bytecode  
 **Preferred skills:** Knowledge of bootstrap methods in Java bytecode
+
+### Support for Java 12 (private API dependencies) for jpf-core
+
+Related to the project above, there are also some internal APIs from Java 11 that no longer exist in Java 12 and later.
+This requires redesigning and reimplementing part of the code, in order to take a different approach that no longer depends on functionality that was removed in Java 12. The code in question is easily found by trying to compile branch `java-10-gradle` with Java 12.
+
+**Difficulty:** Medium  
+**Required skills:** Knowledge of Java internals
 
 #### Support Java 11 for SPF
 
