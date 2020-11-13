@@ -46,6 +46,8 @@
 ---
 * [JPF core project](JPF-core)
 ---
+* [Online JPF Day 2020](JPF-Online-Day-2020)
+---
 * [Java Pathfinder Workshop 2018](JPF-Workshop-2018)
 ---
 * [Java Pathfinder Workshop 2017](JPF-Workshop-2017)
