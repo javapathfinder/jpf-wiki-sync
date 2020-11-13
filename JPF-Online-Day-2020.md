@@ -16,7 +16,7 @@ Submit a one-page abstract to parizek@d3s.mff.cuni.cz and franck@eecs.yorku.ca b
 
 ## Presentations
 
-Each accepted presenter will get assigned a 15 minutes slot, 5-10 minutes presentation (leaving the exact length up to the presenter), and the remainder for questions and discussion.Preference for the early or late session will be taken into account, but cannot be guaranteed.The presentation can be either recorded in advance or live.
+Each accepted presenter will get assigned a 15 minutes slot, 5-10 minutes presentation (leaving the exact length up to the presenter), and the remainder for questions and discussion. Preference for the early or late session will be taken into account, but cannot be guaranteed. The presentation can be either recorded in advance or live.
 
 ## Participation
 
@@ -26,7 +26,7 @@ For those interested in participating, please send an email to parizek@d3s.mff.c
 
 All times are in UTC.
 
-Session I; chair: Pavel Parizek
+Session I; chair: Pavel Parízek
 
   * 11:00 Eva Darulova - Finding Inductive (Floating-point) Loop Invariants using Counterexamples - invited talk
   * 11:45 Cuong Bui Quang - Automated Repair of Regression Error for Java Program
