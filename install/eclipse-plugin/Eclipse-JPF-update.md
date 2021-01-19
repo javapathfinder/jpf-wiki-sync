@@ -1,1 +1,1 @@
-This is the target location for the eclipse-jpf update site.
+Due to recent changes in JPF,Eclipse plugin support was withdrawn.
