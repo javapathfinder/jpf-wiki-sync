@@ -1,6 +1,6 @@
 ## Ideas: [[GSoC 2021 Project Ideas]]
 
-The Java Pathfinder (JPF) team will apply again as a mentor organization for the [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) program this year 2021. The GSoC program, is a program where Google sponsors university students to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The length of the program is about four months, and it can be done remotely, and it is generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
+The Java Pathfinder (JPF) team will apply again as a mentor organization for the [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) program this year 2021. The GSoC program, is a program where Google sponsors student developers to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The complete length of the program is about three months, which are done remotely, and it is generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
 
 ## Java Pathfinder ##
 
@@ -14,11 +14,12 @@ You can learn more about JPF at the [JPF wiki](https://github.com/javapathfinder
 
 ## Interested Students - Contact Us ##
 
-You can find existing project ideas on our [[GSoC 2021 Project Ideas]] page. If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, email us at \<jpf.gsoc [at] gmail.com\>. Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects. Join our IRC channel #jpf on freenode to engage in a discussion about all things JPF.
+You can find existing project ideas on our [[GSoC 2021 Project Ideas]] page. If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, email us at \<jpf.gsoc [at] gmail.com\>. Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects.
+<!-- Join our IRC channel #jpf on freenode to engage in a discussion about all things JPF.-->
 
-## [Timeline](https://summerofcode.withgoogle.com/how-it-works/#timeline) ##
+## Timeline ##
 
-This list contains only the key deadlines; see above for the full timeline.
+This list contains only the key deadlines; see [here](https://summerofcode.withgoogle.com/how-it-works/#timeline) for the full timeline.
 
 * | 03/30 - 04/14 | Student application period |
 * | 05/18 | Announcement of accepted students |
@@ -49,12 +50,14 @@ A good proposal should contain the following:
 
 3. Goals. Have multiple, prioritized goals, so that you have alternatives if something does not go as expected.
 
-4. Detailed description and implementation plan. What you plan to implement (what feature is missing). Include initial steps you have already taken and/or an initial plan of how to reach the first goal(s). Be as concrete as possible.
+4. Detailed description and concrete implementation plan. What you plan to implement (what feature is missing). Include initial steps you have already taken and/or an your plan of how to reach the first goal(s). Be as concrete as possible.
 
-5. Tentative timeline. A detailed weekly plan for the first 3 - 4 weeks, and outline the remainder as a list of larger steps ("sprints") for the remaining time, perhaps 2 - 3 weeks as an interval for that. Make sure you have enough time for testing and documentation. Leave open some extra time for unexpected problems.
+5. Tentative timeline. A detailed weekly plan for the first 3 - 4 weeks, and outline the remainder as a list of larger steps ("sprints") for the remaining time, perhaps 1 - 2 weeks as an interval for that. Make sure you have enough time for testing and documentation. Leave open some extra time for unexpected problems.
 
 6. A list of foreseen major challenges, a plan to deal with them, including a back-up plan if something does not work out as intended.
 
 7. Plans for future improvements (and possible future involvement) after GSoC.
 
-8. Any possible conflicts of interest. You can compensate for being absent for a week or two by starting earlier (during the community bonding period). However, finishing late is not possible as the evaluation deadlines set by Google are strict.
+8. Any possible conflicts of interest.
+
+9. Scheduling issues. You can compensate for being absent for a week by starting earlier (during the community bonding period). However, finishing late is not possible as the evaluation deadlines set by Google are strict.
