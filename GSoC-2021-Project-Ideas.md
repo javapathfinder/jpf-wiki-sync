@@ -102,7 +102,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 <!-- * [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana> -->
 
-<!-- * [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille> -->
+* [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
 
 <!-- * [Method summaries, extended](#method-summaries)<Cyrille><Pavel> -->
 
@@ -148,3 +148,20 @@ This requires redesigning and reimplementing part of the code, in order to take 
 
 **Difficulty:** Medium  
 **Required skills:** Knowledge of Java internals
+
+<a name="mbt-modbat"></a>
+#### Test Case Generation/Model-based Testing with Modbat for JPF
+
+**Description:**
+JPF requires test cases as a starting point to explore a system. It is therefore suitable to use
+test case generation to create test cases automatically. [Modbat](https://github.com/cyrille-artho/modbat/) is an open-source tool for test case generation. For testing concurrent software,
+an obvious choice would be to combine Modbat (to generate tests) with JPF (to execute tests and
+find concurrency problems). This has been done once as a [proof of concept](https://people.kth.se/~artho/papers/ase-2013-preprint.pdf) but is not supported in the current version of Modbat.
+The main reason for this is that Modbat's reporting has to read and parse bytecode, which requires
+access to some native code that JPF does not support.
+The goal is to find all problems where Modbat requires native access, and to use jpf-nhandler
+to resolve as many of these cases as possible. Remaining cases can be handled with custom model/peer classes, perhaps not with the full feature set, but at least to avoid JPF aborting due to an unsupported feature.
+
+**Difficulty:** Easy  
+**Required skills:** Knowledge of Java Pathfinder  
+**Preferred skills:** Knowledge of test generation
