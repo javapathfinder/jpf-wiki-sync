@@ -98,8 +98,6 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Environment and Test Case Generation
 
-* TBA
-
 <!-- * [Environment and Test Case Generation for Specific Domains](#environment-and-test-case-generation-for-specific-domains) <Oksana> -->
 
 * [Model-based Testing with Modbat for JPF](#mbt-modbat) <Cyrille>
