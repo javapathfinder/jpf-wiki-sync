@@ -164,20 +164,24 @@ to resolve as many of these cases as possible. Remaining cases can be handled wi
 **Required skills:** Knowledge of Java Pathfinder  
 **Preferred skills:** Knowledge of test generation
 
+
+<a name="support-gradle-for-spf"></a>
 #### Support for gradle for SPF
 
 **Description:**
 The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
 
 **Difficulty:** Easy  
-**Required skills:** Knowledge of Java Pathfinder and Gradle build system
-**Preferred skills:** Knowledge of Symbolic Pathfinder
+**Required skills:** Knowledge of Java Pathfinder and Gradle build automation  
+**Preferred skills:** Knowledge of Symbolic Pathfinder  
 
+
+<a name="improving-string-analysis-in-spf"></a>
 #### Improving String Analysis in SPF
 
 **Description:**
 Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
 
-**Difficulty:** Easy  
-**Required skills:** Knowledge of Symbolic Pathfinder
-**Preferred skills:** Knowledge of String constraint solvers like ABC and Z3.
+**Difficulty:** Medium  
+**Required skills:** Knowledge of Symbolic Pathfinder  
+**Preferred skills:** JUnit testing, Knowledge of ABC and/or Z3  
