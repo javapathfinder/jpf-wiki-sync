@@ -35,7 +35,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Symbolic Execution
 
-* [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina><Elena>
+<!--* [Support Java 11+ for SPF](#support-java-11-for-spf) <Yannic><Corina><Elena> -->
 
 * [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
@@ -163,3 +163,21 @@ to resolve as many of these cases as possible. Remaining cases can be handled wi
 **Difficulty:** Easy  
 **Required skills:** Knowledge of Java Pathfinder  
 **Preferred skills:** Knowledge of test generation
+
+#### Support for gradle for SPF
+
+**Description:**
+The goal of this project is to (1) implement gradle support for Symbolic Pathfinder, (2) to update the extension template, including gradle support and updated documentation.
+
+**Difficulty:** Easy  
+**Required skills:** Knowledge of Java Pathfinder and Gradle build system
+**Preferred skills:** Knowledge of Symbolic Pathfinder
+
+#### Improving String Analysis in SPF
+
+**Description:**
+Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
+
+**Difficulty:** Easy  
+**Required skills:** Knowledge of Symbolic Pathfinder
+**Preferred skills:** Knowledge of String constraint solvers like ABC and Z3.
