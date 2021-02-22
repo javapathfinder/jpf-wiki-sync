@@ -65,11 +65,13 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 ### Fuzzing
 
-* TBA
-
 <!-- * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner)  -->
 
 <!-- * [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Corina><Yannic> -->
+
+* [Using Lightweight Specifications with Fuzzing and Symbolic Execution to Reveal Security and Semantic Bugs](#fuzzing-lightweight-specification)
+
+
 
 ### Smart Contract
 
@@ -185,3 +187,14 @@ Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable an
 **Difficulty:** Medium  
 **Required skills:** Knowledge of Symbolic Pathfinder  
 **Preferred skills:** JUnit testing, Knowledge of ABC and/or Z3  
+
+
+<a name="fuzzing-lightweight-specification"></a>
+#### Using Lightweight Specifications with Fuzzing and Symbolic Execution to Reveal Security and Semantic Bugs
+
+**Description:**
+In this work, we plan to investigate the benefits of using lightweight program specifications in conjunction with hybrid fuzzing methods to discover security and semantic bugs in Java programs. We plan to build on Badger (a guided fuzzer tool for Java using SPF) and the runtime assertion checker of OpenJML. Badger will be used to generate test inputs to achieve branch coverage. OpenJML will be used to filter invalid inputs, revealing security and semantic bugs using the lightweight specification with running valid inputs.
+
+**Difficulty:** Medium  
+**Required skills:** Knowledge of Symbolic Pathfinder  
+**Preferred skills:** Knowledge of Badger and Kelinci, fuzzing in general  
