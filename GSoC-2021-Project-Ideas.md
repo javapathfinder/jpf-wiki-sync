@@ -202,8 +202,8 @@ Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable an
 SPF currently uses a depth-first search strategy, in this project we will add random search strategy to SPF. This will allow SPF to have faster coverage given a limited time budget. 
 
 **Difficulty:** Medium  
-**Required skills:** Knowledge of Symbolic Pathfinder  
-**Preferred skills:** Knowledge of random search strategy.
+**Required skills:** Knowledge of Symbolic Pathfinder.  
+**Preferred skills:** Knowledge of random search strategy.  
 
 
 <a name="bvfloating-point-in-spf"></a>
@@ -213,8 +213,8 @@ SPF currently uses a depth-first search strategy, in this project we will add ra
 This project will focus on supporting floating-point in the bit-vector solver mode.  
 
 **Difficulty:** Hard  
-**Required skills:** Knowledge of Symbolic PathFinder
-**Preferred skills:** Knowledge of bit-vector solving mode.
+**Required skills:** Knowledge of Symbolic PathFinder.  
+**Preferred skills:** Knowledge of bit-vector solving mode.  
 
 <a name="minimize-testcases-path-merging"></a>
 #### Minimizing Test-Cases for Branch Coverage of Path-Merged Regions
@@ -223,8 +223,8 @@ This project will focus on supporting floating-point in the bit-vector solver mo
 When generating test cases for path-merging more branch obligations could be covered with a single test case. In this project, we will focus on ways to minimize the number of test cases generated from path-merging for branch coverage criteria. 
 
 **Difficulty:** Hard  
-**Required skills:** Knowledge of Symbolic PathFinder
-**Preferred skills:** Knowledge of Java Ranger.
+**Required skills:** Knowledge of Symbolic PathFinder.  
+**Preferred skills:** Knowledge of Java Ranger.  
 
 
 <a name="fuzzing-lightweight-specification"></a>
