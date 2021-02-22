@@ -63,13 +63,13 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 <!-- * [Test generation with path-merging](#test-generation-with-path-merging) <Vaibhav> -->
 
-### Fuzzing
+### Hybrid Fuzzing
 
 <!-- * [Whitebox Fuzzer and Grammar Learner](#whitebox-fuzzer-and-grammar-learner)  -->
 
 <!-- * [Fuzzing and Symbolic Execution](#fuzzing-and-symbolic-execution) <Corina><Yannic> -->
 
-* [Using Lightweight Specifications with Fuzzing and Symbolic Execution to Reveal Security and Semantic Bugs](#fuzzing-lightweight-specification)
+* [Using Lightweight Specifications with Fuzzing and Symbolic Execution to Reveal Security and Semantic Bugs](#fuzzing-lightweight-specification) <Corina><Yannic>
 
 
 
@@ -197,4 +197,4 @@ In this work, we plan to investigate the benefits of using lightweight program s
 
 **Difficulty:** Medium  
 **Required skills:** Knowledge of Symbolic Pathfinder  
-**Preferred skills:** Knowledge of Badger and Kelinci, fuzzing in general  
+**Preferred skills:** Knowledge of Badger and Kelinci, Fuzzing in general  
