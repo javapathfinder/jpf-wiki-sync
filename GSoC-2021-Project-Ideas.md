@@ -196,7 +196,7 @@ Symbolic PathFinder incorporates several String constraint solvers to enable ana
 
 
 <a name="random-search-in-spf"></a>
-#### Support Random Search Strategy in SPF
+#### Support Random Search Strategy in SPF and Path-Merging  
 
 **Description:**
 SPF currently uses a depth-first search strategy, in this project we will first add random search strategy to SPF. This will allow SPF to have faster coverage given a limited time budget. The second piece of this project is to integrate random search strategy with path-merging.
