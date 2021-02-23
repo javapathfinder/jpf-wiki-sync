@@ -41,7 +41,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [String Constraint Solver Integration in SPF](#improving-string-analysis-in-spf) <Yannic><Corina><Elena>
 
-* [Support Random Search Strategy in SPF](#random-search-in-spf) <Soha>
+* [Support Random Search Strategy in SPF and Path-Merging](#random-search-in-spf) <Soha>
 
 <!-- * [Support Bit-Vector Floating Point in SPF](#bvfloating-point-in-spf) <Soha> -->
 
@@ -199,11 +199,11 @@ Symbolic PathFinder incorporates several String constraint solvers to enable ana
 #### Support Random Search Strategy in SPF
 
 **Description:**
-SPF currently uses a depth-first search strategy, in this project we will add random search strategy to SPF. This will allow SPF to have faster coverage given a limited time budget. 
+SPF currently uses a depth-first search strategy, in this project we will first add random search strategy to SPF. This will allow SPF to have faster coverage given a limited time budget. The second piece of this project is to integrate random search strategy with path-merging.
 
-**Difficulty:** Medium  
+**Difficulty:** Hard  
 **Required skills:** Knowledge of Symbolic Pathfinder.  
-**Preferred skills:** Knowledge of random search strategy.  
+**Preferred skills:** Knowledge of random search strategy, and path-merging.  
 
 
 <a name="minimize-testcases-path-merging"></a>
