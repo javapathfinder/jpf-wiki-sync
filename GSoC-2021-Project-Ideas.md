@@ -43,7 +43,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support Random Search Strategy in SPF](#random-search-in-spf) <Soha>
 
-* [Support Bit-Vector Floating Point in SPF](#bvfloating-point-in-spf) <Soha>
+<!-- * [Support Bit-Vector Floating Point in SPF](#bvfloating-point-in-spf) <Soha> -->
 
 <!-- * [Refactoring SPF constraint library](#refactoring-spf-constraint-library) <Elena> -->
 
@@ -205,16 +205,6 @@ SPF currently uses a depth-first search strategy, in this project we will add ra
 **Required skills:** Knowledge of Symbolic Pathfinder.  
 **Preferred skills:** Knowledge of random search strategy.  
 
-
-<a name="bvfloating-point-in-spf"></a>
-#### Support Bit-Vector Floating-Point in SPF
-
-**Description:**
-This project will focus on supporting floating-point in the bit-vector solver mode.  
-
-**Difficulty:** Hard  
-**Required skills:** Knowledge of Symbolic PathFinder.  
-**Preferred skills:** Knowledge of bit-vector solving mode.  
 
 <a name="minimize-testcases-path-merging"></a>
 #### Minimizing Test-Cases for Branch Coverage of Path-Merged Regions
