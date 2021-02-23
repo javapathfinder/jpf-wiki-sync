@@ -39,7 +39,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
-* [Improving String analysis in SPF](#improving-string-analysis-in-spf) <Yannic><Corina>
+* [String Constraint Solver Integration in SPF](#improving-string-analysis-in-spf) <Yannic><Corina><Elena>
 
 * [Support Random Search Strategy in SPF](#random-search-in-spf) <Soha>
 
@@ -185,14 +185,14 @@ The goal of this project is to (1) implement gradle support for Symbolic Pathfin
 
 
 <a name="improving-string-analysis-in-spf"></a>
-#### Improving String Analysis in SPF
+#### String Constraint Solver Integration in SPF
 
 **Description:**
-Symbolic PathFinder incorporates String constraint solvers (ABC,Z3) to enable analysis of programs that process Strings. The project will involve careful testing and improving the infrastructure for String solving. 
+Symbolic PathFinder incorporates several String constraint solvers to enable analysis of programs that process Strings. The project will evaluate the current integration of a string constraint solver into SPF and fix current integration issues with String solvers.
 
-**Difficulty:** Medium  
-**Required skills:** Knowledge of Symbolic Pathfinder  
-**Preferred skills:** JUnit testing, Knowledge of ABC and/or Z3  
+**Difficulty:** Medium    
+**Required skills:** Knowledge of symbolic execution, automata theory.  
+**Preferred skills:** Familiarity with Symbolic PathFinder, knowledge of a string constraint solver or familiarity with String decision procedures.  
 
 
 <a name="random-search-in-spf"></a>
