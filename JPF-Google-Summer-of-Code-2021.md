@@ -1,6 +1,6 @@
 ## Ideas: [[GSoC 2021 Project Ideas]]
 
-The Java Pathfinder (JPF) team will apply again as a mentor organization for the [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) program this year 2021. The GSoC program, is a program where Google sponsors student developers to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The complete length of the program is about three months, which are done remotely, and it is generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
+The Java Pathfinder (JPF) team will be again a mentor organization for the [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) program this year 2021. The GSoC program, is a program where Google sponsors student developers to write code for open source projects at selected mentoring organizations. Each student is guided by a mentor throughout the program. The complete length of the program is about three months, which are done remotely, and it is generally fun. You can learn about the program rules and your eligibility [here](https://summerofcode.withgoogle.com/rules/).
 
 ## Java Pathfinder ##
 
