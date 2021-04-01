@@ -14,7 +14,8 @@ You can learn more about JPF at the [JPF wiki](https://github.com/javapathfinder
 
 ## Interested Students - Contact Us ##
 
-You can find existing project ideas on our [[GSoC 2021 Project Ideas]] page. If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, email us at \<jpf.gsoc [at] gmail.com\>. Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects.
+You can find existing project ideas on our [[GSoC 2021 Project Ideas]] page. If you are interested in a JPF related project which is not listed here, we would love to hear about it. If you have any questions or suggestions regarding JPF and GSoC, use our Google Group: https://groups.google.com/g/java-pathfinder .
+Please be sure to describe your interests and background. The more we know about you, the better we will be able to answer you questions about JPF and its potential projects.
 <!-- Join our IRC channel #jpf on freenode to engage in a discussion about all things JPF.-->
 
 ## Timeline ##
