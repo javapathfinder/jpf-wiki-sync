@@ -35,7 +35,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support gradle for SPF](#support-gradle-for-spf) <Yannic><Corina>
 
-* [String Constraint Solver Integration in SPF](#improving-string-analysis-in-spf) <Yannic><Corina><Elena>
+* [String Constraint Solver Integration in SPF](#improving-string-analysis-in-spf) <Yannic><Corina><Elena><Soha>
 
 * [Support Random Search Strategy in SPF](#random-search-in-spf) <Soha>
 
