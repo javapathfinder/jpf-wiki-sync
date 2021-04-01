@@ -9,9 +9,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Support Java 12 (private API dependencies) for jpf-core](#support-java-12) <Cyrille> 
 
-### JPF Application Domains
-
-* TBA
+<!-- ### JPF Application Domains -->
 
 <!-- * [Model Checking Distributed Java Applications](#model-checking-distributed-java-applications) <Cyrille> -->
 
@@ -27,9 +25,7 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 * [Verification of unbounded heap-manipulating programs via learning](#verification-of-unbounded-heap-manipulating-programs-via-learning) <Loc><Sang> -->
 
-### Automatic Program Repair
-
-* TBA
+<!-- ### Automatic Program Repair -->
 
 <!-- * [Automatic program repair using annotations](#automatic-program-repair-using-annotations) <Bach><Vaibhav><Eric><Corina> -->
 
@@ -77,19 +73,19 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 
 
-### Smart Contract
-
-* TBA
+<!-- ### Smart Contract -->
 
 <!-- * [Smart Contract Analysis](#smart-contract-analysis) <Cyrille> -->
 
-<!-- ### Android
 
-* [Analysis of Android Applications](#analysis-of-android-applications) -->
 
-### Concolic Execution
+<!-- ### Android -->
 
-* TBA
+<!-- * [Analysis of Android Applications](#analysis-of-android-applications) -->
+
+
+
+<!-- ### Concolic Execution -->
 
 <!-- * [JDart maintenance and scalability](#jdart-maintenance-and-scalability) <Falk> -->
 
@@ -101,6 +97,8 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 * [Support for parallel or distributed exploration in JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)
 
 * [Regression tests for JDart](#support-for-parallel-or-distributed-exploration-in-jdart-and-regression-tests-for-jdart)-->
+
+
 
 ### Environment and Test Case Generation
 
@@ -116,17 +114,19 @@ A possible proposal template can be found at the bottom of our GSoC page: [[JPF 
 
 <!-- * [Test Case Generation for Evolving Applications](#test-case-generation-for-evolving-applications) <Oksana> -->
 
-### JPF Extensions and External Systems Interfacing
 
-* TBA
+
+<!-- ### JPF Extensions and External Systems Interfacing -->
 
 <!-- * [Evaluating jpf-psyco](#evaluating-jpf-psyco) <Kasper><CheckWithFalk> -->
 
-### Symbolic Data-race Detection
 
-* TBA
+
+<!-- ### Symbolic Data-race Detection -->
 
 <!-- * [Symbolic data-race detection for Habanero Java](#symbolic-data-race-detection-for-habanero-java) <Eric> -->
+
+
 
 ### Project Description
 
