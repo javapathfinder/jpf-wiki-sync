@@ -61,4 +61,4 @@ A good proposal should contain the following:
 
 8. Any possible conflicts of interest.
 
-9. Scheduling issues. You can compensate for being absent for a week by starting earlier (during the community bonding period). However, finishing late is not possible as the evaluation deadlines set by Google are strict.
+9. Scheduling issues. GSoC 2021 increases the flexibility in planning the milestones for each project. If you already know when you will not be available (e.g., due to final exams or personal commitments), you can already highlight this in the proposal. That allows the mentors to plan with you ahead of time to adjust the schedule early during the community bonding period.
