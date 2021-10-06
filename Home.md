@@ -45,13 +45,14 @@ This is the main page for Java™ Pathfinder (JPF). JPF is an extensible softwar
 * [JPF core project](JPF-core) - description and link to jpf-core
 * [Projects](Projects) - link to currently active and legacy extensions of JPF
 * [Workshops](JPF-Workshops) - link to annual workshops on JPF
-* [Google Summer of Code](Google-Summer-of-Code) - link to JPF's participation in the Google Summer of Code program, current ideas page [here](GSoC-2020-Project-Ideas). 
+* [Google Summer of Code](Google-Summer-of-Code) - link to JPF's participation in the Google Summer of Code program, current ideas page [here](GSoC-2021-Project-Ideas). 
 * [Mailing list](https://groups.google.com/forum/#!forum/java-pathfinder) - discussion about JPF takes place in Google Groups [JPF Google Group](https://groups.google.com/forum/#!forum/java-pathfinder)
 <!--* [Related research and publications](Related-publications)-->
 
 ---
 
 #### Latest JPF News 
+*  03/09/2021 [GSoC 2021](https://developers.google.com/open-source/gsoc/): The JPF team has been accepted again as mentor organization for the GSoC program! To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2021) page.
 *  02/21/2020 The JPF team has been accepted to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2020! To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2020) page.
 *  07/24/2019 [JPF Workshop 2019](https://2019.ase-conferences.org/home/jpf-2019). The workshop will be co-located with [ASE](https://2019.ase-conferences.org/) in San Diego, CA.
 *  02/26/2019 The JPF team has been accepted to the [GSoC](https://developers.google.com/open-source/gsoc/) program for 2019! To learn more, please visit the [JPF/GSoC](JPF-Google-Summer-of-Code-2019) page.

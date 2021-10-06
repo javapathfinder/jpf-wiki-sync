@@ -46,6 +46,8 @@
 ---
 * [JPF core project](JPF-core)
 ---
+* [Google Summer of Code 2021](JPF-Google-Summer-of-Code-2021)
+---
 * [Online JPF Day 2020](JPF-Online-Day-2020)
 ---
 * [Java Pathfinder Workshop 2018](JPF-Workshop-2018)
