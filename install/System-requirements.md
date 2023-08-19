@@ -1,5 +1,5 @@
 ## Java ##
-Most of the JPF components, including the [jpf-core](JPF-core), are pure Java applications. The minimal version is Java SE 8. We generally advise using the latest stable Java version that is available for your platform.
+Most of the JPF components, including the [jpf-core](JPF-core), are pure Java applications. The oldest version supported is Java SE 8 (in `java-8` branch) and the latest Java version supported is Java SE 11 (in `java-11` branch). The other branches (except `java-8` and `java-11`) are obsolete and will no longer be maintained.
 
 > If you have to use JDK 1.7 or JDK 1.6, please, get in touch with us through our mailing list (java-pathfinder@googlegroups.com).
 > Keep in mind that JDK 1.7 and JDK 1.6 have reached their end-of-life cycle and Oracle does not support them anymore.

@@ -1,6 +1,5 @@
-As of July 2018, we are migrating our build workflow to `Gradle`, and we will use it as our standard builder after merging the `Gradle` support to our main branch.
-However, our existing `Ant` support is still available in the branch `java-8`.
-In the following, we provide instructions for your, according to the builder you are using:
+We have migrated our build system to Gradle on the two stable branches `java-8` (which supports Java 8) and `java-11` (which supports Java 11).
+In the following, we provide instructions for your:
 
 ***
 ### Important
