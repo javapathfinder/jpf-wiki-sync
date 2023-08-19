@@ -49,7 +49,7 @@ That's all you need! We build JPF with the Gradle Build System, and we provide a
 
 ## Apache Ant ##
 
-JPF doesn't use ant build system anymore.
+JPF doesn't use Ant build system anymore.
 
 ## JPF IDE plugins ##
 
