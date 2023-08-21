@@ -1,4 +1,4 @@
-We have migrated our build system to Gradle on the two stable branches `java-8` (which supports Java 8) and `java-11` (which supports Java 11).
+JPF builds using Gradle on two stable branches `java-8` and `java-11`, which support Java 8 and Java 11 respectively.
 In the following, we provide instructions for your:
 
 ***
