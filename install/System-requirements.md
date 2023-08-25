@@ -1,5 +1,5 @@
 ## Java ##
-Most of the JPF components, including the [jpf-core](JPF-core), are pure Java applications. The minimal version is Java SE 8. We generally advise using the latest stable Java version that is available for your platform.
+Most of the JPF components, including the [jpf-core](JPF-core), are pure Java applications. The oldest version supported is Java SE 8 (in `java-8` branch) and the latest Java version supported is Java SE 11 (in `java-11` branch). The other branches (except `java-8` and `java-11`) are obsolete and will no longer be maintained.
 
 > If you have to use JDK 1.7 or JDK 1.6, please, get in touch with us through our mailing list (java-pathfinder@googlegroups.com).
 > Keep in mind that JDK 1.7 and JDK 1.6 have reached their end-of-life cycle and Oracle does not support them anymore.
@@ -47,26 +47,9 @@ For more information about Git and how to use it to clone the repository, refer 
 
 That's all you need! We build JPF with the Gradle Build System, and we provide a wrapper in our repository that requires you nothing but Java. Check the [Build, Test, and Run](https://github.com/javapathfinder/jpf-core/wiki/Build,-Test,-Run) page for more information.
 
-If you are checking our `java-8` branch, you will need to use Ant and manage some dependencies manually.
-<details close>
-<summary>Click here for more details if you are using Ant.</summary>
-
 ## Apache Ant ##
 
-Although you can also build from Eclipse, we use [Apache Ant](http://ant.apache.org) as our primary build system. **Ant is no longer included in the jpf-core distribution** so you have to install it separately. Currently (as of Ant 1.9.3), this involves
-
- * getting Ant binaries e.g. from http://www.apache.org/dist/ant/binaries/
- * setting the `ANT_HOME` environment variable to the directory where you unpacked the binaries
- * adding `ANT_HOME/bin` to your `PATH` environment variable
-
-
-## JUnit ##
-
-Our Ant script (build.xml) includes a `test` target which uses [JUnit](http://junit.org) to run regression tests. **JUnit is no longer included in the jpf-core distribution**. For JUnit-4.11 installation involves the following steps
-
- * get junit-<version>.jar and hamcrest-core-<version>.jar, e.g. from the links on https://github.com/junit-team/junit/wiki/Download-and-Install
- * add both jars to your `CLASSPATH` environment variable 
-
+JPF doesn't use Ant build system anymore.
 
 ## JPF IDE plugins ##
 
@@ -78,4 +61,3 @@ If you want to go with Eclipse and have to rebuild the JPF [Eclipse plugin](./ec
 
 If you want to use the [NetBeans plugin](./netbeans-jpf), the minimal NetBeans version is 6.5.
 
-</details>
