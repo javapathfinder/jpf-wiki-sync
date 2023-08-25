@@ -1,5 +1,7 @@
 # Java Pathfinder wiki repository
 
+# Note: GitHub has changed the way the "shadow wiki repo" works, and the process below is broken. Suggestions/fixes are welcome.
+
 This repository is a mirror of the wiki contents. By having a separate
 repository, we can accept pull requests for the documentation, which
 is something the web interface of github does not offer.
